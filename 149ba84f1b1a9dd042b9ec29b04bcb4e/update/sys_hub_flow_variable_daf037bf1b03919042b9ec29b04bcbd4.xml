@@ -38,7 +38,7 @@
         <label>Previous updated question value</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SecretShop: Calculate total &amp; bonus pts on Question update">8ef0f3bf1b03919042b9ec29b04bcbb8</model>
+        <model display_value="">8ef0f3bf1b03919042b9ec29b04bcbb8</model>
         <model_id>8ef0f3bf1b03919042b9ec29b04bcbb8</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_8ef0f3bf1b03919042b9ec29b04bcbb8</name>

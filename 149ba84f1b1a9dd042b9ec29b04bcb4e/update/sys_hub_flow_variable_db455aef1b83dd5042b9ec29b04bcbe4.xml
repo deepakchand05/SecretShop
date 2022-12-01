@@ -38,7 +38,7 @@
         <label>Total Points</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Calculate total points available on  template">4f451aef1b83dd5042b9ec29b04bcbcf</model>
+        <model display_value="">4f451aef1b83dd5042b9ec29b04bcbcf</model>
         <model_id>4f451aef1b83dd5042b9ec29b04bcbcf</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_4f451aef1b83dd5042b9ec29b04bcbcf</name>

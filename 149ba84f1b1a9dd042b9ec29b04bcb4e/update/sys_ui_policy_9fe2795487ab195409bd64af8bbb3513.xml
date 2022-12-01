@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <conditions/>
         <description/>
         <global>true</global>
@@ -27,7 +27,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>9fe2795487ab195409bd64af8bbb3513</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>On Load - Hide Sections</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
@@ -36,7 +36,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_ui_policy_9fe2795487ab195409bd64af8bbb3513</sys_update_name>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-01 00:28:39</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:40:41</sys_updated_on>
         <table>x_autg_kbb_secret_questions</table>
         <ui_type>10</ui_type>
         <view/>
