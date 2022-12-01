@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="edd250171bda111442b9ec29b04bcb40" sys_domain="global" table="x_autg_kbb_secret_answers" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-10-07 19:58:50</sys_created_on>
+            <sys_id>38f94dd31bda511442b9ec29b04bcbe8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_answers" sys_domain="global" view="Default view">edd250171bda111442b9ec29b04bcb40</sys_ui_section>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-10-07 19:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>scorecard</element>
+            <position>1</position>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-10-07 19:58:50</sys_created_on>
+            <sys_id>3cf94dd31bda511442b9ec29b04bcbe8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_answers" sys_domain="global" view="Default view">edd250171bda111442b9ec29b04bcb40</sys_ui_section>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-10-07 19:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>template</element>
+            <position>2</position>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-10-07 19:58:50</sys_created_on>
+            <sys_id>30f94dd31bda511442b9ec29b04bcbe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_answers" sys_domain="global" view="Default view">edd250171bda111442b9ec29b04bcb40</sys_ui_section>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-10-07 19:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>question</element>
+            <position>3</position>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-10-07 19:58:50</sys_created_on>
+            <sys_id>34f94dd31bda511442b9ec29b04bcbe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_answers" sys_domain="global" view="Default view">edd250171bda111442b9ec29b04bcb40</sys_ui_section>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-10-07 19:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-10-07 19:58:50</sys_created_on>
+            <sys_id>38f94dd31bda511442b9ec29b04bcbe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_answers" sys_domain="global" view="Default view">edd250171bda111442b9ec29b04bcb40</sys_ui_section>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-10-07 19:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>points_received</element>
+            <position>5</position>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-10-07 19:58:50</sys_created_on>
+            <sys_id>3cf94dd31bda511442b9ec29b04bcbe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_answers" sys_domain="global" view="Default view">edd250171bda111442b9ec29b04bcb40</sys_ui_section>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-10-07 19:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>percent_of_points</element>
+            <position>6</position>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-10-07 19:58:50</sys_created_on>
+            <sys_id>30f94dd31bda511442b9ec29b04bcbea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_answers" sys_domain="global" view="Default view">edd250171bda111442b9ec29b04bcb40</sys_ui_section>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-10-07 19:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <position>7</position>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-10-07 19:58:50</sys_created_on>
+            <sys_id>34f94dd31bda511442b9ec29b04bcbea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_answers" sys_domain="global" view="Default view">edd250171bda111442b9ec29b04bcb40</sys_ui_section>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-10-07 19:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>order</element>
+            <position>8</position>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-10-07 19:58:50</sys_created_on>
+            <sys_id>38f94dd31bda511442b9ec29b04bcbea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_answers" sys_domain="global" view="Default view">edd250171bda111442b9ec29b04bcb40</sys_ui_section>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-10-07 19:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comment</element>
+            <position>9</position>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-10-14 20:25:45</sys_created_on>
+            <sys_id>1b331d291be2d55042b9ec29b04bcb0c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_answers" sys_domain="global" view="Default view">edd250171bda111442b9ec29b04bcb40</sys_ui_section>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-10-14 20:25:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>subtotal_max</element>
+            <position>10</position>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-20 04:25:06</sys_created_on>
+            <sys_id>483a5c51875f15d009bd64af8bbb3591</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_answers" sys_domain="global" view="Default view">edd250171bda111442b9ec29b04bcb40</sys_ui_section>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-20 04:25:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>subtotal_for_section</element>
+            <position>11</position>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-20 04:28:53</sys_created_on>
+            <sys_id>6f0b1cd1875f15d009bd64af8bbb35d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_answers" sys_domain="global" view="Default view">edd250171bda111442b9ec29b04bcb40</sys_ui_section>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-20 04:28:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_autg_kbb_secret_answers</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-10-07 15:58:03</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>edd250171bda111442b9ec29b04bcb40</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_autg_kbb_secret_answers</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+            <sys_update_name>sys_ui_section_edd250171bda111442b9ec29b04bcb40</sys_update_name>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-10-07 15:58:03</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

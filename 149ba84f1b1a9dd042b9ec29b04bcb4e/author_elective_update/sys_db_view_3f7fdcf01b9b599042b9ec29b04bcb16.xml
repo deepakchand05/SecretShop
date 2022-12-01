@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view">
+    <sys_db_view action="DELETE">
+        <description/>
+        <label/>
+        <name>x_autg_kbb_secret_test</name>
+        <plural/>
+        <sys_class_name>sys_db_view</sys_class_name>
+        <sys_created_by>skoka-a</sys_created_by>
+        <sys_created_on>2022-11-18 15:31:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3f7fdcf01b9b599042b9ec29b04bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_autg_kbb_secret_test</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_db_view_3f7fdcf01b9b599042b9ec29b04bcb16</sys_update_name>
+        <sys_updated_by>skoka-a</sys_updated_by>
+        <sys_updated_on>2022-11-18 15:31:34</sys_updated_on>
+    </sys_db_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</application>
+        <comments/>
+        <file_path/>
+        <instance_id>bcef3b732bcb784070acbb4f59da1588</instance_id>
+        <instance_name>coxautodev</instance_name>
+        <name>sys_db_view_3f7fdcf01b9b599042b9ec29b04bcb16</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view"><sys_db_view action="INSERT_OR_UPDATE"><description/><label/><name>x_autg_kbb_secret_test</name><plural/><sys_class_name>sys_db_view</sys_class_name><sys_created_by>skoka-a</sys_created_by><sys_created_on>2022-11-18 15:31:34</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>3f7fdcf01b9b599042b9ec29b04bcb16</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_autg_kbb_secret_test</sys_name><sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope><sys_update_name>sys_db_view_3f7fdcf01b9b599042b9ec29b04bcb16</sys_update_name><sys_updated_by>skoka-a</sys_updated_by><sys_updated_on>2022-11-18 15:31:34</sys_updated_on></sys_db_view></record_update>]]></payload>
+        <payload_hash>-571308746</payload_hash>
+        <record_name>x_autg_kbb_secret_test</record_name>
+        <reverted_from/>
+        <source>f66bb4b71bcf119042b9ec29b04bcba9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>skoka-a</sys_created_by>
+        <sys_created_on>2022-11-18 15:31:34</sys_created_on>
+        <sys_id>db8f50341b9b599042b9ec29b04bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1848b5ddbd10000001</sys_recorded_at>
+        <sys_updated_by>skoka-a</sys_updated_by>
+        <sys_updated_on>2022-11-18 15:31:34</sys_updated_on>
+        <type>Database View</type>
+        <update_guid>d38f5034d49b5990b3d29f67712ff3ce</update_guid>
+        <update_guid_history>d38f5034d49b5990b3d29f67712ff3ce:-571308746</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>skoka-a</sys_created_by>
+        <sys_created_on>2022-11-18 15:47:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_db_view">sys_db_view</sys_db_object>
+        <sys_id>445d2ea43c0548a898a8ebd9e82cca40</sys_id>
+        <sys_metadata>3f7fdcf01b9b599042b9ec29b04bcb16</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_autg_kbb_secret_test</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
+        <sys_update_name>sys_db_view_3f7fdcf01b9b599042b9ec29b04bcb16</sys_update_name>
+        <sys_update_version display_value="sys_db_view_3f7fdcf01b9b599042b9ec29b04bcb16">db8f50341b9b599042b9ec29b04bcbce</sys_update_version>
+        <sys_updated_by>skoka-a</sys_updated_by>
+        <sys_updated_on>2022-11-18 15:47:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

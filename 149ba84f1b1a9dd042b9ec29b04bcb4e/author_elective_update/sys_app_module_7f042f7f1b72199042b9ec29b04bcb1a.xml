@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Secret Shop">9b5f7ccb1b9a9dd042b9ec29b04bcbeb</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Answer Choices</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_autg_kbb_secret_answer_choices</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_autg_kbb_secret.answer_choices_user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>nnunna-a</sys_created_by>
+        <sys_created_on>2022-11-03 17:00:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>7f042f7f1b72199042b9ec29b04bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Answer Choices</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_app_module_7f042f7f1b72199042b9ec29b04bcb1a</sys_update_name>
+        <sys_updated_by>nnunna-a</sys_updated_by>
+        <sys_updated_on>2022-11-03 17:00:30</sys_updated_on>
+        <timeline_page/>
+        <title>Answer Choices</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</application>
+        <comments/>
+        <file_path/>
+        <instance_id>bcef3b732bcb784070acbb4f59da1588</instance_id>
+        <instance_name>coxautodev</instance_name>
+        <name>sys_app_module_7f042f7f1b72199042b9ec29b04bcb1a</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Secret Shop">9b5f7ccb1b9a9dd042b9ec29b04bcbeb</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Answer Choices</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_autg_kbb_secret_answer_choices</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_autg_kbb_secret.answer_choices_user</roles><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>nnunna-a</sys_created_by><sys_created_on>2022-11-03 17:00:30</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>7f042f7f1b72199042b9ec29b04bcb1a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Answer Choices</sys_name><sys_overrides/><sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope><sys_update_name>sys_app_module_7f042f7f1b72199042b9ec29b04bcb1a</sys_update_name><sys_updated_by>nnunna-a</sys_updated_by><sys_updated_on>2022-11-03 17:00:30</sys_updated_on><timeline_page/><title>Answer Choices</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-994761943</payload_hash>
+        <record_name>Answer Choices</record_name>
+        <reverted_from/>
+        <source>7bd3c33f1b3ad59042b9ec29b04bcb18</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>nnunna-a</sys_created_by>
+        <sys_created_on>2022-11-03 17:00:30</sys_created_on>
+        <sys_id>b3042f7f1b72199042b9ec29b04bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1843e6fe3390000001</sys_recorded_at>
+        <sys_updated_by>nnunna-a</sys_updated_by>
+        <sys_updated_on>2022-11-03 17:00:30</sys_updated_on>
+        <type>Module</type>
+        <update_guid>bb042f7f65721990efd5e7a1391d511d</update_guid>
+        <update_guid_history>bb042f7f65721990efd5e7a1391d511d:-994761943</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 11-03-2022 1:42:04 PM">b89de7331b36199042b9ec29b04bcba8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>nnunna-a</sys_created_by>
+        <sys_created_on>2022-11-03 17:42:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>306d2a92b6e541559861c17f1decb301</sys_id>
+        <sys_metadata>7f042f7f1b72199042b9ec29b04bcb1a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Answer Choices</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
+        <sys_update_name>sys_app_module_7f042f7f1b72199042b9ec29b04bcb1a</sys_update_name>
+        <sys_update_version display_value="sys_app_module_7f042f7f1b72199042b9ec29b04bcb1a">b3042f7f1b72199042b9ec29b04bcb1e</sys_update_version>
+        <sys_updated_by>nnunna-a</sys_updated_by>
+        <sys_updated_on>2022-11-03 17:42:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

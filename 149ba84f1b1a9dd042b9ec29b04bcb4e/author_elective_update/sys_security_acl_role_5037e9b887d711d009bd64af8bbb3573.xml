@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-18 20:44:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5037e9b887d711d009bd64af8bbb3573</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_autg_kbb_secret_answers.x_autg_kbb_secret.answers_user</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_security_acl display_value="x_autg_kbb_secret_answers">d837e9b887d711d009bd64af8bbb3572</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_5037e9b887d711d009bd64af8bbb3573</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-19 04:42:15</sys_updated_on>
+        <sys_user_role display_value="x_autg_kbb_secret.answers_user" name="x_autg_kbb_secret.answers_user">4376f84f1b5a9dd042b9ec29b04bcbf0</sys_user_role>
+        <transaction_id>d437217887d711d009bd64af8bbb35c8</transaction_id>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</application>
+        <comments/>
+        <file_path/>
+        <instance_id>bcef3b732bcb784070acbb4f59da1588</instance_id>
+        <instance_name>coxautodev</instance_name>
+        <name>sys_security_acl_role_5037e9b887d711d009bd64af8bbb3573</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>datluri-a</sys_created_by><sys_created_on>2022-11-18 20:44:34</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>5037e9b887d711d009bd64af8bbb3573</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_autg_kbb_secret_answers.x_autg_kbb_secret.answers_user</sys_name><sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope><sys_security_acl display_value="x_autg_kbb_secret_answers">d837e9b887d711d009bd64af8bbb3572</sys_security_acl><sys_update_name>sys_security_acl_role_5037e9b887d711d009bd64af8bbb3573</sys_update_name><sys_updated_by>datluri-a</sys_updated_by><sys_updated_on>2022-11-19 04:42:15</sys_updated_on><sys_user_role display_value="x_autg_kbb_secret.answers_user" name="x_autg_kbb_secret.answers_user">4376f84f1b5a9dd042b9ec29b04bcbf0</sys_user_role><transaction_id>d437217887d711d009bd64af8bbb35c8</transaction_id></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1486048356</payload_hash>
+        <record_name>x_autg_kbb_secret_answers.x_autg_kbb_secret.answers_user</record_name>
+        <reverted_from/>
+        <source>1c9ba84f1b1a9dd042b9ec29b04bcb50</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-19 04:42:15</sys_created_on>
+        <sys_id>6d849f34875351d009bd64af8bbb3538</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1848e31bd150000001</sys_recorded_at>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-19 04:42:15</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>65849f348d5351d05cb1c61ef2e39138</update_guid>
+        <update_guid_history>65849f348d5351d05cb1c61ef2e39138:-1486048356,2d849f345d5351d0b98ddf533281f036:-1114408532</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 11-18-2022 11:51:28 PM">a8a69ff4875351d009bd64af8bbb353e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-19 04:51:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0f59d1de386140e4891042134523c9c4</sys_id>
+        <sys_metadata>5037e9b887d711d009bd64af8bbb3573</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_autg_kbb_secret_answers.x_autg_kbb_secret.answers_user</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_5037e9b887d711d009bd64af8bbb3573</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_5037e9b887d711d009bd64af8bbb3573">6d849f34875351d009bd64af8bbb3538</sys_update_version>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-19 04:51:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -3,238 +3,252 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>active</element>
             <position>0</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>3ea1af5087dbd99009bd64af8bbb352d</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>f3063c2c87535d9009bd64af8bbb359b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number</element>
             <position>1</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>32a1af5087dbd99009bd64af8bbb352e</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>f7063c2c87535d9009bd64af8bbb359b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>dealership</element>
             <position>2</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>36a1af5087dbd99009bd64af8bbb352e</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>fb063c2c87535d9009bd64af8bbb359b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>svoc</element>
             <position>3</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>3aa1af5087dbd99009bd64af8bbb352e</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>ff063c2c87535d9009bd64af8bbb359b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>4</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>3ea1af5087dbd99009bd64af8bbb352e</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>f3063c2c87535d9009bd64af8bbb359c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>total_score</element>
             <position>5</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>32a1af5087dbd99009bd64af8bbb352f</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>f7063c2c87535d9009bd64af8bbb359c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>shop_date</element>
             <position>6</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>36a1af5087dbd99009bd64af8bbb352f</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>fb063c2c87535d9009bd64af8bbb359c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
             <position>7</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>3aa1af5087dbd99009bd64af8bbb352f</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>ff063c2c87535d9009bd64af8bbb359c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
             <position>8</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>3ea1af5087dbd99009bd64af8bbb352f</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>f3063c2c87535d9009bd64af8bbb359d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
             <position>9</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>32a1af5087dbd99009bd64af8bbb3530</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>f7063c2c87535d9009bd64af8bbb359d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>scorecard_template</element>
             <position>10</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>36a1af5087dbd99009bd64af8bbb3530</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>fb063c2c87535d9009bd64af8bbb359d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>11</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>3aa1af5087dbd99009bd64af8bbb3530</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>ff063c2c87535d9009bd64af8bbb359d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
             <position>12</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>3ea1af5087dbd99009bd64af8bbb3530</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>f3063c2c87535d9009bd64af8bbb359e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>shopper_alias</element>
             <position>13</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>32a1af5087dbd99009bd64af8bbb3531</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>f7063c2c87535d9009bd64af8bbb359e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>shopper</element>
             <position>14</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>36a1af5087dbd99009bd64af8bbb3531</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>fb063c2c87535d9009bd64af8bbb359e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>performance_scale</element>
             <position>15</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>3aa1af5087dbd99009bd64af8bbb3531</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>ff063c2c87535d9009bd64af8bbb359e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>points_available</element>
             <position>16</position>
-            <sys_created_by>skoka-a</sys_created_by>
-            <sys_created_on>2022-11-17 16:22:43</sys_created_on>
-            <sys_id>3ea1af5087dbd99009bd64af8bbb3531</sys_id>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-17 22:31:26</sys_created_on>
+            <sys_id>f3063c2c87535d9009bd64af8bbb359f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
-            <sys_updated_by>skoka-a</sys_updated_by>
-            <sys_updated_on>2022-11-17 16:22:43</sys_updated_on>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-17 22:31:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>percent_points</element>
+            <position>17</position>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-28 21:34:48</sys_created_on>
+            <sys_id>2d925980876f155409bd64af8bbb35e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_autg_kbb_secret_scorecards" sys_domain="global" view="Default view">c126e34387d2d91409bd64af8bbb3592</sys_ui_section>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-11-28 21:34:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

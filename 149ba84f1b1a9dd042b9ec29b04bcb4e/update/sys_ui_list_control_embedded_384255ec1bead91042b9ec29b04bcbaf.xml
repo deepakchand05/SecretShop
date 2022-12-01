@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_list_control_embedded">
+    <sys_ui_list_control_embedded action="INSERT_OR_UPDATE">
+        <columns_condition/>
+        <empty_condition/>
+        <label/>
+        <link_condition/>
+        <link_roles/>
+        <list_edit_ref_qual_tag/>
+        <name>x_autg_kbb_secret_scorecards</name>
+        <new_condition/>
+        <new_roles/>
+        <omit_columns_if_empty>false</omit_columns_if_empty>
+        <omit_if_empty>false</omit_if_empty>
+        <omit_links>false</omit_links>
+        <related_list>x_autg_kbb_secret_answers.scorecard</related_list>
+        <sys_class_name>sys_ui_list_control_embedded</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-10-11 17:49:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>384255ec1bead91042b9ec29b04bcbaf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_autg_kbb_secret_scorecards</sys_name>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_ui_list_control_embedded_384255ec1bead91042b9ec29b04bcbaf</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-10-11 19:04:12</sys_updated_on>
+    </sys_ui_list_control_embedded>
+</record_update>

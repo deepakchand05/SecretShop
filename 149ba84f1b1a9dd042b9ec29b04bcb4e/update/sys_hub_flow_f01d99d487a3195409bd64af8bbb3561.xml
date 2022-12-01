@@ -1,0 +1,2023 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>When a Template's State = Published, all of its Questions that are not in State = Retired should be updated to State = Published.
+
+When a Template's State = Draft, all of its Questions that are not in State = Retired should be updated to State = Draft.</description>
+        <internal_name>secretshop_template_state_changes</internal_name>
+        <label_cache>[{"name":"d8f35a4c-d428-4487-9e91-3c7b799d32e5.__dont_treat_as_error__","label":"3 - Update Multiple Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"d8f35a4c-d428-4487-9e91-3c7b799d32e5.__action_status__","label":"3 - Update Multiple Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"d8f35a4c-d428-4487-9e91-3c7b799d32e5.message","label":"3 - Update Multiple Records➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"eae4ca7a-5ba6-465c-b7bd-6ba1cf184947"}},{"name":"d8f35a4c-d428-4487-9e91-3c7b799d32e5.status","label":"3 - Update Multiple Records➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"0","order":0.0},{"label":"Error","value":"1","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"828e2127-df28-4eda-af48-ee4e876cca1e"}},{"name":"d8f35a4c-d428-4487-9e91-3c7b799d32e5.count","label":"3 - Update Multiple Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"edb3c082-a356-4943-a263-55232fc02390"}},{"name":"990680a0-5708-426e-9562-3e48cf6b4bad.__dont_treat_as_error__","label":"5 - Update Multiple Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"990680a0-5708-426e-9562-3e48cf6b4bad.__action_status__","label":"5 - Update Multiple Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"990680a0-5708-426e-9562-3e48cf6b4bad.message","label":"5 - Update Multiple Records➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"eae4ca7a-5ba6-465c-b7bd-6ba1cf184947"}},{"name":"990680a0-5708-426e-9562-3e48cf6b4bad.status","label":"5 - Update Multiple Records➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"0","order":0.0},{"label":"Error","value":"1","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"828e2127-df28-4eda-af48-ee4e876cca1e"}},{"name":"990680a0-5708-426e-9562-3e48cf6b4bad.count","label":"5 - Update Multiple Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"edb3c082-a356-4943-a263-55232fc02390"}},{"name":"d06cfa92-dde6-4428-973f-60b0764bff1f.item.state","label":"3 - For Each➛Question Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"state","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Draft","reference":false,"missing":false,"rawLabel":"Draft","value":"Draft","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Published","reference":false,"missing":false,"rawLabel":"Published","value":"Published","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Retired","reference":false,"missing":false,"rawLabel":"Retired","value":"Retired","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"c4ea5632-1ad6-4557-8026-415fec8d6cab.item","label":"5 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Updated_1.current.state","label":"Trigger - Record Updated➛Template Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_templates","column_name":"state","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Draft","reference":false,"missing":false,"rawLabel":"Draft","value":"Draft","parameters":{"name":"x_autg_kbb_secret_templates"}},{"used":false,"image":"","selected":false,"label":"Published","reference":false,"missing":false,"rawLabel":"Published","value":"Published","parameters":{"name":"x_autg_kbb_secret_templates"}},{"used":false,"image":"","selected":false,"label":"Retired","reference":false,"missing":false,"rawLabel":"Retired","value":"Retired","parameters":{"name":"x_autg_kbb_secret_templates"}}]},{"name":"d06cfa92-dde6-4428-973f-60b0764bff1f.item","label":"3 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Template Record","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","attributes":{}},{"name":"bf04f9cb-1777-4c77-825f-af6dd66b4cf4.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"bf04f9cb-1777-4c77-825f-af6dd66b4cf4.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"bf04f9cb-1777-4c77-825f-af6dd66b4cf4.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf04f9cb-1777-4c77-825f-af6dd66b4cf4.Table","label":"1 - Look Up Records➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf04f9cb-1777-4c77-825f-af6dd66b4cf4.Records","label":"1 - Look Up Records➛Question Records","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bbf1d9f7-ea3d-4007-91ce-e0dc0250765f.count","label":"5 - Update Multiple Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"edb3c082-a356-4943-a263-55232fc02390"}},{"name":"bbf1d9f7-ea3d-4007-91ce-e0dc0250765f.status","label":"5 - Update Multiple Records➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"0","order":0.0},{"label":"Error","value":"1","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"828e2127-df28-4eda-af48-ee4e876cca1e"}},{"name":"bbf1d9f7-ea3d-4007-91ce-e0dc0250765f.message","label":"5 - Update Multiple Records➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"eae4ca7a-5ba6-465c-b7bd-6ba1cf184947"}},{"name":"bbf1d9f7-ea3d-4007-91ce-e0dc0250765f.__action_status__","label":"5 - Update Multiple Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"bbf1d9f7-ea3d-4007-91ce-e0dc0250765f.__dont_treat_as_error__","label":"5 - Update Multiple Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
+        <master_snapshot>c7e0255887e3195409bd64af8bbb3590</master_snapshot>
+        <name>SecretShop: Template State Changes</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>f3e0a55887e3195409bd64af8bbb35df</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 16:59:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>f01d99d487a3195409bd64af8bbb3561</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>SecretShop: Template State Changes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_hub_flow_f01d99d487a3195409bd64af8bbb3561</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:58</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=f01d99d487a3195409bd64af8bbb3561"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_autg_kbb_secret_templates">stateCHANGESTORetired^NQstateCHANGESTOPublished^NQstateCHANGESTODraft<item display_value="Retired" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="Retired"/>
+            <item display_value="Published" endquery="false" field="state" goto="false" newquery="true" operator="CHANGESTO" or="false" value="Published"/>
+            <item display_value="Draft" endquery="false" field="state" goto="false" newquery="true" operator="CHANGESTO" or="false" value="Draft"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>f3e0a55887e3195409bd64af8bbb35df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:58</sys_updated_on>
+        <table>x_autg_kbb_secret_templates</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"33e0a55887e3195409bd64af8bbb35e0","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>f01d99d487a3195409bd64af8bbb3561</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:58</sys_created_on>
+        <sys_id>33e0a55887e3195409bd64af8bbb35e0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:58</sys_updated_on>
+        <trigger display_value="">f3e0a55887e3195409bd64af8bbb35df</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>33e0a55887e3195409bd64af8bbb35e0</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:58</sys_created_on>
+        <sys_id>33e0a55887e3195409bd64af8bbb35e1</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=f01d99d487a3195409bd64af8bbb3561^sys_idNOT IN33e0a55887e3195409bd64af8bbb35e0"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=f01d99d487a3195409bd64af8bbb3561^sys_idNOT IN1bbfddd087e3195409bd64af8bbb3522"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SecretShop: Template State Changes">f01d99d487a3195409bd64af8bbb3561</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1bbfddd087e3195409bd64af8bbb3522</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:58</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1bbfddd087e3195409bd64af8bbb3522"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>1bbfddd087e3195409bd64af8bbb3522</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>1bbfddd087e3195409bd64af8bbb3524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <value>x_autg_kbb_secret_templates</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>1bbfddd087e3195409bd64af8bbb3522</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>57bfddd087e3195409bd64af8bbb3524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <value>stateCHANGESTORetired^NQstateCHANGESTOPublished^NQstateCHANGESTODraft</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>1bbfddd087e3195409bd64af8bbb3522</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>dbbfddd087e3195409bd64af8bbb3523</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=1bbfddd087e3195409bd64af8bbb3522"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f01d99d487a3195409bd64af8bbb3561"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f01d99d487a3195409bd64af8bbb3561^sys_idNOT INf41d99d487a3195409bd64af8bbb3563"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f01d99d487a3195409bd64af8bbb3561</id>
+        <name>SecretShop: Template State Changes</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 16:59:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f41d99d487a3195409bd64af8bbb3563</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 16:59:07</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f41d99d487a3195409bd64af8bbb3563"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f01d99d487a3195409bd64af8bbb3561^sys_idNOT IN93bfddd087e3195409bd64af8bbb3505,dbbfddd087e3195409bd64af8bbb350c,dfbfddd087e3195409bd64af8bbb351c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SecretShop: Template State Changes">f01d99d487a3195409bd64af8bbb3561</model>
+        <model_id>f01d99d487a3195409bd64af8bbb3561</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f01d99d487a3195409bd64af8bbb3561</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>93bfddd087e3195409bd64af8bbb3505</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_model_id/>
+        <u_normalize_set/>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD37e0a558dfe319543d51305f01b8f1f3,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="SecretShop: Template State Changes">f01d99d487a3195409bd64af8bbb3561</model>
+        <model_id>f01d99d487a3195409bd64af8bbb3561</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f01d99d487a3195409bd64af8bbb3561</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dbbfddd087e3195409bd64af8bbb350c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_model_id/>
+        <u_normalize_set/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SecretShop: Template State Changes">f01d99d487a3195409bd64af8bbb3561</model>
+        <model_id>f01d99d487a3195409bd64af8bbb3561</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f01d99d487a3195409bd64af8bbb3561</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dfbfddd087e3195409bd64af8bbb351c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_model_id/>
+        <u_normalize_set/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=f01d99d487a3195409bd64af8bbb3561"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f01d99d487a3195409bd64af8bbb3561"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=f01d99d487a3195409bd64af8bbb3561^sys_idNOT IN57bfddd087e3195409bd64af8bbb3538,63bfddd087e3195409bd64af8bbb356e,a3bfddd087e3195409bd64af8bbb3588"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="SecretShop: Template State Changes">f01d99d487a3195409bd64af8bbb3561</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>57bfddd087e3195409bd64af8bbb3538</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:17:56</sys_updated_on>
+        <ui_id>bf04f9cb-1777-4c77-825f-af6dd66b4cf4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=57bfddd087e3195409bd64af8bbb3538"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>57bfddd087e3195409bd64af8bbb3538</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>57bfddd087e3195409bd64af8bbb353c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <value>x_autg_kbb_secret_questions</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>57bfddd087e3195409bd64af8bbb3538</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>93bfddd087e3195409bd64af8bbb353c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <value>100</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>57bfddd087e3195409bd64af8bbb3538</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>dfbfddd087e3195409bd64af8bbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <value>order</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=57bfddd087e3195409bd64af8bbb3538"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>57bfddd087e3195409bd64af8bbb3538</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>9bbfddd087e3195409bd64af8bbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>template={{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>max_results</field>
+        <id>57bfddd087e3195409bd64af8bbb3538</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>9fbfddd087e3195409bd64af8bbb353a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>57bfddd087e3195409bd64af8bbb3538</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>d7bfddd087e3195409bd64af8bbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>57bfddd087e3195409bd64af8bbb3538</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>5fbfddd087e3195409bd64af8bbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=57bfddd087e3195409bd64af8bbb3538"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=57bfddd087e3195409bd64af8bbb3538"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="SecretShop: Template State Changes">f01d99d487a3195409bd64af8bbb3561</flow>
+        <order>3</order>
+        <parent_ui_id>be7b80ce-0c15-4381-974b-292ffe553341</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>63bfddd087e3195409bd64af8bbb356e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:17:56</sys_updated_on>
+        <ui_id>d8f35a4c-d428-4487-9e91-3c7b799d32e5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=63bfddd087e3195409bd64af8bbb356e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>63bfddd087e3195409bd64af8bbb356e</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>abbfddd087e3195409bd64af8bbb3570</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <value>state=Published</value>
+        <variable display_value="Fields">99af2a72c75100105312134c95c26082</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>63bfddd087e3195409bd64af8bbb356e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>e7bfddd087e3195409bd64af8bbb3570</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <value>x_autg_kbb_secret_questions</value>
+        <variable display_value="Table">5daf2a72c75100105312134c95c26074</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=63bfddd087e3195409bd64af8bbb356e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>63bfddd087e3195409bd64af8bbb356e</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>efbfddd087e3195409bd64af8bbb356f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value>state!=Retired^template={{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>63bfddd087e3195409bd64af8bbb356e</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>67bfddd087e3195409bd64af8bbb3570</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>63bfddd087e3195409bd64af8bbb356e</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>a3bfddd087e3195409bd64af8bbb3570</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=63bfddd087e3195409bd64af8bbb356e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=63bfddd087e3195409bd64af8bbb356e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="SecretShop: Template State Changes">f01d99d487a3195409bd64af8bbb3561</flow>
+        <order>5</order>
+        <parent_ui_id>de7648c5-4172-434e-830c-11d964a37fce</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a3bfddd087e3195409bd64af8bbb3588</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:17:56</sys_updated_on>
+        <ui_id>bbf1d9f7-ea3d-4007-91ce-e0dc0250765f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a3bfddd087e3195409bd64af8bbb3588"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a3bfddd087e3195409bd64af8bbb3588</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:46</sys_created_on>
+        <sys_id>27bfddd087e3195409bd64af8bbb358a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:46</sys_updated_on>
+        <value>order</value>
+        <variable display_value="Order by">e0f859a2c72200105312134c95c26007</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a3bfddd087e3195409bd64af8bbb3588</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:46</sys_created_on>
+        <sys_id>abbfddd087e3195409bd64af8bbb358a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:46</sys_updated_on>
+        <value>state=Draft</value>
+        <variable display_value="Fields">99af2a72c75100105312134c95c26082</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a3bfddd087e3195409bd64af8bbb3588</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:46</sys_created_on>
+        <sys_id>e7bfddd087e3195409bd64af8bbb358a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:46</sys_updated_on>
+        <value>x_autg_kbb_secret_questions</value>
+        <variable display_value="Table">5daf2a72c75100105312134c95c26074</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a3bfddd087e3195409bd64af8bbb3588"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>a3bfddd087e3195409bd64af8bbb3588</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:46</sys_created_on>
+        <sys_id>2fbfddd087e3195409bd64af8bbb3589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value>state!=Retired^template={{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>a3bfddd087e3195409bd64af8bbb3588</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:46</sys_created_on>
+        <sys_id>a3bfddd087e3195409bd64af8bbb358a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>a3bfddd087e3195409bd64af8bbb3588</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:46</sys_created_on>
+        <sys_id>6bbfddd087e3195409bd64af8bbb3589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a3bfddd087e3195409bd64af8bbb3588</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:46</sys_created_on>
+        <sys_id>efbfddd087e3195409bd64af8bbb3589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a3bfddd087e3195409bd64af8bbb3588"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a3bfddd087e3195409bd64af8bbb3588"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=f01d99d487a3195409bd64af8bbb3561"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=f01d99d487a3195409bd64af8bbb3561^sys_idNOT IN5bbfddd087e3195409bd64af8bbb353d,e7bfddd087e3195409bd64af8bbb3571"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">dbbfddd087e3195409bd64af8bbb353c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SecretShop: Template State Changes">f01d99d487a3195409bd64af8bbb3561</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5bbfddd087e3195409bd64af8bbb353d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:58</sys_updated_on>
+        <ui_id>be7b80ce-0c15-4381-974b-292ffe553341</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5bbfddd087e3195409bd64af8bbb353d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5bbfddd087e3195409bd64af8bbb353d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>23bfddd087e3195409bd64af8bbb3567</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <value>Template State changes to "Published"</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5bbfddd087e3195409bd64af8bbb353d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>5bbfddd087e3195409bd64af8bbb353d</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>afbfddd087e3195409bd64af8bbb3566</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.state}}=Published</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>5bbfddd087e3195409bd64af8bbb353d</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>ebbfddd087e3195409bd64af8bbb3566</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5bbfddd087e3195409bd64af8bbb353d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5bbfddd087e3195409bd64af8bbb353d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">23bfddd087e3195409bd64af8bbb3571</block>
+        <comment/>
+        <connected_to>be7b80ce-0c15-4381-974b-292ffe553341</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SecretShop: Template State Changes">f01d99d487a3195409bd64af8bbb3561</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e7bfddd087e3195409bd64af8bbb3571</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:58</sys_updated_on>
+        <ui_id>de7648c5-4172-434e-830c-11d964a37fce</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e7bfddd087e3195409bd64af8bbb3571"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e7bfddd087e3195409bd64af8bbb3571</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>e3bfddd087e3195409bd64af8bbb3581</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <value>Template State changes to "Draft"</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e7bfddd087e3195409bd64af8bbb3571"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e7bfddd087e3195409bd64af8bbb3571</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>63bfddd087e3195409bd64af8bbb3581</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Updated_1.current.state}}=Draft</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e7bfddd087e3195409bd64af8bbb3571</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:45</sys_created_on>
+        <sys_id>afbfddd087e3195409bd64af8bbb3580</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e7bfddd087e3195409bd64af8bbb3571"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e7bfddd087e3195409bd64af8bbb3571"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f01d99d487a3195409bd64af8bbb3561"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f01d99d487a3195409bd64af8bbb3561"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f01d99d487a3195409bd64af8bbb3561^sys_idNOT IN13bfddd087e3195409bd64af8bbb351c,1bbfddd087e3195409bd64af8bbb351f,97bfddd087e3195409bd64af8bbb350b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f01d99d487a3195409bd64af8bbb3561</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>13bfddd087e3195409bd64af8bbb351c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f01d99d487a3195409bd64af8bbb3561</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1bbfddd087e3195409bd64af8bbb351f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f01d99d487a3195409bd64af8bbb3561</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:10:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>97bfddd087e3195409bd64af8bbb350b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:10:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f01d99d487a3195409bd64af8bbb3561"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_f01d99d487a3195409bd64af8bbb3561"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f01d99d487a3195409bd64af8bbb3561"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f01d99d487a3195409bd64af8bbb3561^sys_idNOT IN33e0a55887e3195409bd64af8bbb35e2"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"33e0a55887e3195409bd64af8bbb35e2","name":"plan","plan_signature":null}}</plan>
+        <plan_id>f01d99d487a3195409bd64af8bbb3561</plan_id>
+        <snapshot>28612dd887e3195409bd64af8bbb3578</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>33e0a55887e3195409bd64af8bbb35e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:58</sys_updated_on>
+        <trigger display_value="">f3e0a55887e3195409bd64af8bbb35df</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f01d99d487a3195409bd64af8bbb3561"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>When a Template's State = Published, all of its Questions that are not in State = Retired should be updated to State = Published.
+
+When a Template's State = Draft, all of its Questions that are not in State = Retired should be updated to State = Draft.</description>
+        <internal_name>secretshop_template_state_changes</internal_name>
+        <label_cache>[{"name":"d8f35a4c-d428-4487-9e91-3c7b799d32e5.__dont_treat_as_error__","label":"3 - Update Multiple Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"d8f35a4c-d428-4487-9e91-3c7b799d32e5.__action_status__","label":"3 - Update Multiple Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"d8f35a4c-d428-4487-9e91-3c7b799d32e5.message","label":"3 - Update Multiple Records➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"eae4ca7a-5ba6-465c-b7bd-6ba1cf184947"}},{"name":"d8f35a4c-d428-4487-9e91-3c7b799d32e5.status","label":"3 - Update Multiple Records➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"0","order":0.0},{"label":"Error","value":"1","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"828e2127-df28-4eda-af48-ee4e876cca1e"}},{"name":"d8f35a4c-d428-4487-9e91-3c7b799d32e5.count","label":"3 - Update Multiple Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"edb3c082-a356-4943-a263-55232fc02390"}},{"name":"990680a0-5708-426e-9562-3e48cf6b4bad.__dont_treat_as_error__","label":"5 - Update Multiple Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"990680a0-5708-426e-9562-3e48cf6b4bad.__action_status__","label":"5 - Update Multiple Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"990680a0-5708-426e-9562-3e48cf6b4bad.message","label":"5 - Update Multiple Records➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"eae4ca7a-5ba6-465c-b7bd-6ba1cf184947"}},{"name":"990680a0-5708-426e-9562-3e48cf6b4bad.status","label":"5 - Update Multiple Records➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"0","order":0.0},{"label":"Error","value":"1","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"828e2127-df28-4eda-af48-ee4e876cca1e"}},{"name":"990680a0-5708-426e-9562-3e48cf6b4bad.count","label":"5 - Update Multiple Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"edb3c082-a356-4943-a263-55232fc02390"}},{"name":"d06cfa92-dde6-4428-973f-60b0764bff1f.item.state","label":"3 - For Each➛Question Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"state","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Draft","reference":false,"missing":false,"rawLabel":"Draft","value":"Draft","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Published","reference":false,"missing":false,"rawLabel":"Published","value":"Published","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Retired","reference":false,"missing":false,"rawLabel":"Retired","value":"Retired","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"c4ea5632-1ad6-4557-8026-415fec8d6cab.item","label":"5 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Updated_1.current.state","label":"Trigger - Record Updated➛Template Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_templates","column_name":"state","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Draft","reference":false,"missing":false,"rawLabel":"Draft","value":"Draft","parameters":{"name":"x_autg_kbb_secret_templates"}},{"used":false,"image":"","selected":false,"label":"Published","reference":false,"missing":false,"rawLabel":"Published","value":"Published","parameters":{"name":"x_autg_kbb_secret_templates"}},{"used":false,"image":"","selected":false,"label":"Retired","reference":false,"missing":false,"rawLabel":"Retired","value":"Retired","parameters":{"name":"x_autg_kbb_secret_templates"}}]},{"name":"d06cfa92-dde6-4428-973f-60b0764bff1f.item","label":"3 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Template Record","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","attributes":{}},{"name":"bf04f9cb-1777-4c77-825f-af6dd66b4cf4.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"bf04f9cb-1777-4c77-825f-af6dd66b4cf4.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"bf04f9cb-1777-4c77-825f-af6dd66b4cf4.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf04f9cb-1777-4c77-825f-af6dd66b4cf4.Table","label":"1 - Look Up Records➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf04f9cb-1777-4c77-825f-af6dd66b4cf4.Records","label":"1 - Look Up Records➛Question Records","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bbf1d9f7-ea3d-4007-91ce-e0dc0250765f.count","label":"5 - Update Multiple Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"edb3c082-a356-4943-a263-55232fc02390"}},{"name":"bbf1d9f7-ea3d-4007-91ce-e0dc0250765f.status","label":"5 - Update Multiple Records➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"0","order":0.0},{"label":"Error","value":"1","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"828e2127-df28-4eda-af48-ee4e876cca1e"}},{"name":"bbf1d9f7-ea3d-4007-91ce-e0dc0250765f.message","label":"5 - Update Multiple Records➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"eae4ca7a-5ba6-465c-b7bd-6ba1cf184947"}},{"name":"bbf1d9f7-ea3d-4007-91ce-e0dc0250765f.__action_status__","label":"5 - Update Multiple Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"bbf1d9f7-ea3d-4007-91ce-e0dc0250765f.__dont_treat_as_error__","label":"5 - Update Multiple Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
+        <master>true</master>
+        <name>SecretShop: Template State Changes</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="SecretShop: Template State Changes">f01d99d487a3195409bd64af8bbb3561</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>c7e0255887e3195409bd64af8bbb3590</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:55</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=c7e0255887e3195409bd64af8bbb3590"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=c7e0255887e3195409bd64af8bbb3590^sys_idNOT IN2fe0a55887e3195409bd64af8bbb3531"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SecretShop: Template State Changes">c7e0255887e3195409bd64af8bbb3590</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2fe0a55887e3195409bd64af8bbb3531</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:58</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2fe0a55887e3195409bd64af8bbb3531"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2fe0a55887e3195409bd64af8bbb3531</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>6fe0a55887e3195409bd64af8bbb3533</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <value>x_autg_kbb_secret_templates</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2fe0a55887e3195409bd64af8bbb3531</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>abe0a55887e3195409bd64af8bbb3533</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <value>stateCHANGESTORetired^NQstateCHANGESTOPublished^NQstateCHANGESTODraft</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2fe0a55887e3195409bd64af8bbb3531</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>e7e0a55887e3195409bd64af8bbb3533</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=2fe0a55887e3195409bd64af8bbb3531"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c7e0255887e3195409bd64af8bbb3590"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c7e0255887e3195409bd64af8bbb3590^sys_idNOT IN03e0255887e3195409bd64af8bbb3592"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c7e0255887e3195409bd64af8bbb3590</id>
+        <name>SecretShop: Template State Changes</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>03e0255887e3195409bd64af8bbb3592</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:55</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=03e0255887e3195409bd64af8bbb3592"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c7e0255887e3195409bd64af8bbb3590^sys_idNOT IN1fe0655887e3195409bd64af8bbb35d5,47e0255887e3195409bd64af8bbb3595,5fe0655887e3195409bd64af8bbb35c0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SecretShop: Template State Changes">c7e0255887e3195409bd64af8bbb3590</model>
+        <model_id>c7e0255887e3195409bd64af8bbb3590</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c7e0255887e3195409bd64af8bbb3590</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1fe0655887e3195409bd64af8bbb35d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_model_id/>
+        <u_normalize_set/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SecretShop: Template State Changes">c7e0255887e3195409bd64af8bbb3590</model>
+        <model_id>c7e0255887e3195409bd64af8bbb3590</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c7e0255887e3195409bd64af8bbb3590</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>47e0255887e3195409bd64af8bbb3595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_model_id/>
+        <u_normalize_set/>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD03e02558dce31954e98d170a04317693,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="SecretShop: Template State Changes">c7e0255887e3195409bd64af8bbb3590</model>
+        <model_id>c7e0255887e3195409bd64af8bbb3590</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c7e0255887e3195409bd64af8bbb3590</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5fe0655887e3195409bd64af8bbb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_model_id/>
+        <u_normalize_set/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=c7e0255887e3195409bd64af8bbb3590"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c7e0255887e3195409bd64af8bbb3590"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=c7e0255887e3195409bd64af8bbb3590^sys_idNOT IN23e0a55887e3195409bd64af8bbb352f,5be0a55887e3195409bd64af8bbb350c,93e0a55887e3195409bd64af8bbb3519"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
+        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="SecretShop: Template State Changes">c7e0255887e3195409bd64af8bbb3590</flow>
+        <order>5</order>
+        <parent_ui_id>de7648c5-4172-434e-830c-11d964a37fce</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>23e0a55887e3195409bd64af8bbb352f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <ui_id>bbf1d9f7-ea3d-4007-91ce-e0dc0250765f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=23e0a55887e3195409bd64af8bbb352f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>23e0a55887e3195409bd64af8bbb352f</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>2be0a55887e3195409bd64af8bbb3531</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <value>state=Draft</value>
+        <variable display_value="Fields">99af2a72c75100105312134c95c26082</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>23e0a55887e3195409bd64af8bbb352f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>67e0a55887e3195409bd64af8bbb3531</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <value>x_autg_kbb_secret_questions</value>
+        <variable display_value="Table">5daf2a72c75100105312134c95c26074</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>23e0a55887e3195409bd64af8bbb352f</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>a3e0a55887e3195409bd64af8bbb3531</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <value>order</value>
+        <variable display_value="Order by">e0f859a2c72200105312134c95c26007</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=23e0a55887e3195409bd64af8bbb352f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>23e0a55887e3195409bd64af8bbb352f</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>abe0a55887e3195409bd64af8bbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value>state!=Retired^template={{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>23e0a55887e3195409bd64af8bbb352f</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>23e0a55887e3195409bd64af8bbb3531</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>23e0a55887e3195409bd64af8bbb352f</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>e7e0a55887e3195409bd64af8bbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>23e0a55887e3195409bd64af8bbb352f</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>6fe0a55887e3195409bd64af8bbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=23e0a55887e3195409bd64af8bbb352f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=23e0a55887e3195409bd64af8bbb352f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="SecretShop: Template State Changes">c7e0255887e3195409bd64af8bbb3590</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5be0a55887e3195409bd64af8bbb350c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <ui_id>bf04f9cb-1777-4c77-825f-af6dd66b4cf4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5be0a55887e3195409bd64af8bbb350c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5be0a55887e3195409bd64af8bbb350c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>1be0a55887e3195409bd64af8bbb350f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <value>x_autg_kbb_secret_questions</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5be0a55887e3195409bd64af8bbb350c</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>57e0a55887e3195409bd64af8bbb350f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <value>100</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5be0a55887e3195409bd64af8bbb350c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>93e0a55887e3195409bd64af8bbb350f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <value>order</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5be0a55887e3195409bd64af8bbb350c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>5be0a55887e3195409bd64af8bbb350c</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>5fe0a55887e3195409bd64af8bbb350e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>template={{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>max_results</field>
+        <id>5be0a55887e3195409bd64af8bbb350c</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>d7e0a55887e3195409bd64af8bbb350e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>5be0a55887e3195409bd64af8bbb350c</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>9be0a55887e3195409bd64af8bbb350e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>5be0a55887e3195409bd64af8bbb350c</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>13e0a55887e3195409bd64af8bbb350f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5be0a55887e3195409bd64af8bbb350c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5be0a55887e3195409bd64af8bbb350c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
+        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="SecretShop: Template State Changes">c7e0255887e3195409bd64af8bbb3590</flow>
+        <order>3</order>
+        <parent_ui_id>be7b80ce-0c15-4381-974b-292ffe553341</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>93e0a55887e3195409bd64af8bbb3519</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <ui_id>d8f35a4c-d428-4487-9e91-3c7b799d32e5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=93e0a55887e3195409bd64af8bbb3519"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>93e0a55887e3195409bd64af8bbb3519</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>1be0a55887e3195409bd64af8bbb351b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <value>state=Published</value>
+        <variable display_value="Fields">99af2a72c75100105312134c95c26082</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>93e0a55887e3195409bd64af8bbb3519</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>57e0a55887e3195409bd64af8bbb351b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <value>x_autg_kbb_secret_questions</value>
+        <variable display_value="Table">5daf2a72c75100105312134c95c26074</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=93e0a55887e3195409bd64af8bbb3519"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>93e0a55887e3195409bd64af8bbb3519</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>5fe0a55887e3195409bd64af8bbb351a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value>state!=Retired^template={{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>93e0a55887e3195409bd64af8bbb3519</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>d3e0a55887e3195409bd64af8bbb351b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>93e0a55887e3195409bd64af8bbb3519</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>13e0a55887e3195409bd64af8bbb351b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=93e0a55887e3195409bd64af8bbb3519"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=93e0a55887e3195409bd64af8bbb3519"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c7e0255887e3195409bd64af8bbb3590"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=c7e0255887e3195409bd64af8bbb3590^sys_idNOT IN13e0655887e3195409bd64af8bbb35e2,17e0655887e3195409bd64af8bbb35e7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">dbbfddd087e3195409bd64af8bbb353c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SecretShop: Template State Changes">c7e0255887e3195409bd64af8bbb3590</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>13e0655887e3195409bd64af8bbb35e2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <ui_id>be7b80ce-0c15-4381-974b-292ffe553341</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=13e0655887e3195409bd64af8bbb35e2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>13e0655887e3195409bd64af8bbb35e2</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>53e0655887e3195409bd64af8bbb35e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <value>Template State changes to "Published"</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=13e0655887e3195409bd64af8bbb35e2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>13e0655887e3195409bd64af8bbb35e2</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>dfe0655887e3195409bd64af8bbb35e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.state}}=Published</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>13e0655887e3195409bd64af8bbb35e2</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>1be0655887e3195409bd64af8bbb35e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=13e0655887e3195409bd64af8bbb35e2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=13e0655887e3195409bd64af8bbb35e2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">23bfddd087e3195409bd64af8bbb3571</block>
+        <comment/>
+        <connected_to>be7b80ce-0c15-4381-974b-292ffe553341</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SecretShop: Template State Changes">c7e0255887e3195409bd64af8bbb3590</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>17e0655887e3195409bd64af8bbb35e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <ui_id>de7648c5-4172-434e-830c-11d964a37fce</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=17e0655887e3195409bd64af8bbb35e7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>17e0655887e3195409bd64af8bbb35e7</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>5fe0655887e3195409bd64af8bbb35ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <value>Template State changes to "Draft"</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=17e0655887e3195409bd64af8bbb35e7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>17e0655887e3195409bd64af8bbb35e7</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>dbe0655887e3195409bd64af8bbb35ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Updated_1.current.state}}=Draft</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>17e0655887e3195409bd64af8bbb35e7</id>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_id>1be0655887e3195409bd64af8bbb35ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=17e0655887e3195409bd64af8bbb35e7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=17e0655887e3195409bd64af8bbb35e7"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c7e0255887e3195409bd64af8bbb3590"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c7e0255887e3195409bd64af8bbb3590"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c7e0255887e3195409bd64af8bbb3590^sys_idNOT IN17e0655887e3195409bd64af8bbb35bd,1fe0655887e3195409bd64af8bbb35c5,d7e0655887e3195409bd64af8bbb35da"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c7e0255887e3195409bd64af8bbb3590</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>17e0655887e3195409bd64af8bbb35bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c7e0255887e3195409bd64af8bbb3590</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1fe0655887e3195409bd64af8bbb35c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c7e0255887e3195409bd64af8bbb3590</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-29 17:15:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d7e0655887e3195409bd64af8bbb35da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-29 17:15:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c7e0255887e3195409bd64af8bbb3590"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c7e0255887e3195409bd64af8bbb3590"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c7e0255887e3195409bd64af8bbb3590"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>f01d99d487a3195409bd64af8bbb3561</sys_id>
+        <latest_snapshot>c7e0255887e3195409bd64af8bbb3590</latest_snapshot>
+        <compiler_build>glide-sandiego-12-22-2021__patch7a-09-20-2022_10-04-2022_1309.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

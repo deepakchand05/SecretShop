@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>skoka-a</sys_created_by>
+        <sys_created_on>2022-11-21 16:25:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>36a8cc71879b59d009bd64af8bbb356d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_autg_kbb_secret_questions.order.snc_internal</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_security_acl display_value="x_autg_kbb_secret_questions.order">c96848fd875b59d009bd64af8bbb35a8</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_36a8cc71879b59d009bd64af8bbb356d</sys_update_name>
+        <sys_updated_by>skoka-a</sys_updated_by>
+        <sys_updated_on>2022-11-21 16:25:31</sys_updated_on>
+        <sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role>
+        <transaction_id>36a84879871b59d009bd64af8bbb35ce</transaction_id>
+    </sys_security_acl_role>
+</record_update>
