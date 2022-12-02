@@ -36,7 +36,7 @@ secretshopUtilities.prototype = {
             gr.addQuery('table', tableName);
             gr.query();
             while (gr.next()) {
-                this.gl.logDebug("secretshopUtilities: getAvaiableAnswers() = Inside while loop  gr.dependent_value=  " + gr.dependent_value + "   Choice =  " + gr.choice + "   Element = " + gr.element + "    Table = " + gr.table + "   Order =  " + gr.order);
+                this.gl.logDebug("secretshopUtilities: getAvaiableAnswers() = Inside while loop  gr.dependent_value=  " + gr.dependent_value + "   Choice =  " + gr.choice + "   Element = " + gr.element + "   Table = " + gr.table + "   Order =  " + gr.order);
 
                 if (type == "Yes/No")
                     choiceList.push(gr.getUniqueValue());
@@ -749,7 +749,7 @@ secretshopUtilities.prototype = {
         <sys_created_on>2022-11-14 00:56:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>10a0b4131b8fd95042b9ec29b04bcb3c</sys_id>
-        <sys_mod_count>172</sys_mod_count>
+        <sys_mod_count>173</sys_mod_count>
         <sys_name>secretshopUtilities</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
@@ -757,6 +757,6 @@ secretshopUtilities.prototype = {
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_script_include_10a0b4131b8fd95042b9ec29b04bcb3c</sys_update_name>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-29 22:31:59</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:48:00</sys_updated_on>
     </sys_script_include>
 </record_update>

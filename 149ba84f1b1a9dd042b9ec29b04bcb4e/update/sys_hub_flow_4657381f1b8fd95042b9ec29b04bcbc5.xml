@@ -12,10 +12,10 @@
         <internal_name>secretshop_scoring_logic</internal_name>
         <label_cache>[{"name":"85a34793-20d4-4c57-83af-9bb422292743.__dont_treat_as_error__","label":"6 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"85a34793-20d4-4c57-83af-9bb422292743.__action_status__","label":"6 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"6d798485-3539-4bc3-a88a-e67d845f479b.__dont_treat_as_error__","label":"3 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6d798485-3539-4bc3-a88a-e67d845f479b.__action_status__","label":"3 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_value","label":"1➛FDChangeDetails➛Current Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.previous_value","label":"1➛FDChangeDetails➛Previous Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item","label":"1 - For Each➛FDChangeDetails","reference_display":"FDChangeDetails","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Updated_1.changed_fields","label":"Trigger - Record Updated➛Changed Fields","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"Updated_1.current.scorecard","label":"Trigger - Record Updated➛Answer Record➛Scorecard","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_answers","column_name":"scorecard"},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.table_name","label":"7 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.record","label":"7 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.log","label":"1 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.error_message","label":"1 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.status","label":"1 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"Updated_1.current.type","label":"Trigger - Record Updated➛Answer Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_answers","column_name":"type","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Yes/No","reference":false,"missing":false,"rawLabel":"Yes/No","value":"Yes/No","parameters":{"name":"x_autg_kbb_secret_answers"}},{"used":false,"image":"","selected":false,"label":"Range","reference":false,"missing":false,"rawLabel":"Range","value":"Range","parameters":{"name":"x_autg_kbb_secret_answers"}},{"used":false,"image":"","selected":false,"label":"Sub Total","reference":false,"missing":false,"rawLabel":"Sub Total","value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_answers"}},{"used":false,"image":"","selected":false,"label":"Section","reference":false,"missing":false,"rawLabel":"Section","value":"Section","parameters":{"name":"x_autg_kbb_secret_answers"}}]},{"name":"Updated_1.current.category","label":"Trigger - Record Updated➛Answer Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_answers","column_name":"category","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Section","reference":false,"missing":false,"rawLabel":"Section","value":"Section","parameters":{"name":"x_autg_kbb_secret_answers"}},{"used":false,"image":"","selected":false,"label":"Questions","reference":false,"missing":false,"rawLabel":"Questions","value":"Questions","parameters":{"name":"x_autg_kbb_secret_answers"}},{"used":false,"image":"","selected":false,"label":"Bonus Question","reference":false,"missing":false,"rawLabel":"Bonus Question","value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_answers"}},{"used":false,"image":"","selected":false,"label":"Sub Total","reference":false,"missing":false,"rawLabel":"Sub Total","value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_answers"}}]},{"name":"Updated_1.current.max_score","label":"Trigger - Record Updated➛Answer Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_answers","column_name":"max_score"},{"name":"Updated_1.current.min_score","label":"Trigger - Record Updated➛Answer Record➛Minimum Score","reference":"","reference_display":"Minimum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_answers","column_name":"min_score"},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.previous_display_value","label":"1➛FDChangeDetails➛Previous Display Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"flow_variable.totalscore","label":"Flow Variables➛totalScore","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"8225da5e-27b5-42b4-be1d-bf5f5d2e9f6b"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.record","label":"10 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.table_name","label":"10 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_value","label":"1➛FDChangeDetails➛Current Display Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"flow_variable.previous_value","label":"Flow Variables➛previous value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7fb9822e-4e97-4711-80ba-6dd5ee83a5c7"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.record","label":"4 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.table_name","label":"4 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.record","label":"4 - Update Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.table_name","label":"4 - Update Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.record","label":"4 - Update Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.table_name","label":"4 - Update Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"d0b6ed03-5f5c-420f-bcc0-25a394d05033.__action_status__","label":"6 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d0b6ed03-5f5c-420f-bcc0-25a394d05033.__dont_treat_as_error__","label":"6 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.sectionsubtoal","label":"Flow Variables➛sectionSubToal","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f269e92b-f7cc-47b5-a39c-befdaa9c1975","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.subtotalpercentage","label":"Flow Variables➛subTotalPercentage","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2db66c16-078a-417c-bae3-c32901f37acd"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.status","label":"11 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.error_message","label":"11 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.log","label":"11 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.record","label":"11 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.table_name","label":"11 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
         <master_snapshot>038659af1b0f9d5042b9ec29b04bcb75</master_snapshot>
-        <name>SecretShop: Scoring Logic</name>
+        <name>Scoring Logic</name>
         <natlang/>
         <outputs/>
-        <remote_trigger_id>085c5c48872fd15409bd64af8bbb3530</remote_trigger_id>
+        <remote_trigger_id>906410fc87ab5d5409bd64af8bbb3556</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -28,8 +28,8 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>4657381f1b8fd95042b9ec29b04bcbc5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>SecretShop: Scoring Logic</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Scoring Logic</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
@@ -37,7 +37,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_hub_flow_4657381f1b8fd95042b9ec29b04bcbc5</sys_update_name>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-01 00:37:56</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:29</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=4657381f1b8fd95042b9ec29b04bcbc5"/>
@@ -57,10 +57,10 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-11-28 17:37:41</sys_created_on>
+        <sys_created_on>2022-12-01 00:58:27</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>085c5c48872fd15409bd64af8bbb3530</sys_id>
+        <sys_id>906410fc87ab5d5409bd64af8bbb3556</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
@@ -70,39 +70,39 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:41</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:27</sys_updated_on>
         <table>x_autg_kbb_secret_answers</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
         <active>true</active>
-        <data>{"table":"sys_trigger_runner_mapping","id":"c05c5c48872fd15409bd64af8bbb3531","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <data>{"table":"sys_trigger_runner_mapping","id":"186410fc87ab5d5409bd64af8bbb3556","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
         <identifier>4657381f1b8fd95042b9ec29b04bcbc5</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-11-28 17:37:41</sys_created_on>
-        <sys_id>c05c5c48872fd15409bd64af8bbb3531</sys_id>
+        <sys_created_on>2022-12-01 00:58:27</sys_created_on>
+        <sys_id>186410fc87ab5d5409bd64af8bbb3556</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:41</sys_updated_on>
-        <trigger display_value="">085c5c48872fd15409bd64af8bbb3530</trigger>
+        <sys_updated_on>2022-12-01 00:58:27</sys_updated_on>
+        <trigger display_value="">906410fc87ab5d5409bd64af8bbb3556</trigger>
     </sys_trigger_runner_mapping>
     <sys_json_chunk action="INSERT_OR_UPDATE">
         <data>H4sIAAAAAAAAAGXNWQqAMAxF0b3k2xV0KyKh0nSAkkCbUkXcuwOCgr/vcHkblMbos3RMDAa8FApFGjsYbuqRGFulgjlVBTNOn72SauJwdrNo/BUvW14fFUZalNiRu+5srgT7AQu8nBCGAAAA</data>
-        <document_id>c05c5c48872fd15409bd64af8bbb3531</document_id>
+        <document_id>186410fc87ab5d5409bd64af8bbb3556</document_id>
         <field>trigger_runner</field>
         <length>144</length>
         <position>0</position>
         <source_table>sys_trigger_runner_mapping</source_table>
         <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-11-28 17:37:41</sys_created_on>
-        <sys_id>c85c5c48872fd15409bd64af8bbb3531</sys_id>
+        <sys_created_on>2022-12-01 00:58:27</sys_created_on>
+        <sys_id>1c6410fc87ab5d5409bd64af8bbb3556</sys_id>
     </sys_json_chunk>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=4657381f1b8fd95042b9ec29b04bcbc5^sys_idNOT INc05c5c48872fd15409bd64af8bbb3531"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=4657381f1b8fd95042b9ec29b04bcbc5^sys_idNOT IN186410fc87ab5d5409bd64af8bbb3556"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=4657381f1b8fd95042b9ec29b04bcbc5^sys_idNOT INafa7f05f1b8fd95042b9ec29b04bcb84"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
+        <flow display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
         <name>Updated</name>
         <remote_sys_id/>
         <sys_class_name>sys_hub_trigger_instance</sys_class_name>
@@ -110,7 +110,7 @@
         <sys_created_on>2022-11-14 01:26:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>afa7f05f1b8fd95042b9ec29b04bcb84</sys_id>
-        <sys_mod_count>137</sys_mod_count>
+        <sys_mod_count>140</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -118,7 +118,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:41</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:28</sys_updated_on>
         <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -243,7 +243,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
+        <model display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
         <model_id>4657381f1b8fd95042b9ec29b04bcbc5</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_4657381f1b8fd95042b9ec29b04bcbc5</name>
@@ -267,7 +267,7 @@
         <sys_created_on>2022-11-14 01:26:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>27a7f05f1b8fd95042b9ec29b04bcb7f</sys_id>
-        <sys_mod_count>85</sys_mod_count>
+        <sys_mod_count>87</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -275,7 +275,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:41</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:28</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -328,7 +328,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
+        <model display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
         <model_id>4657381f1b8fd95042b9ec29b04bcbc5</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_4657381f1b8fd95042b9ec29b04bcbc5</name>
@@ -352,7 +352,7 @@
         <sys_created_on>2022-11-14 01:26:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2fa7f05f1b8fd95042b9ec29b04bcb50</sys_id>
-        <sys_mod_count>85</sys_mod_count>
+        <sys_mod_count>87</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -360,7 +360,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:41</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:28</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -378,7 +378,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDa74c1c489f2fd15405f423fbcfecc143,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD7f54dcbc26ab5d549cdb269eb1776e80,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
         <audit>false</audit>
         <calculation>(function calculatedFieldValue(current) {
 
@@ -413,7 +413,7 @@
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
+        <model display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
         <model_id>4657381f1b8fd95042b9ec29b04bcbc5</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_4657381f1b8fd95042b9ec29b04bcbc5</name>
@@ -437,7 +437,7 @@
         <sys_created_on>2022-11-14 01:26:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a3a7f05f1b8fd95042b9ec29b04bcb56</sys_id>
-        <sys_mod_count>136</sys_mod_count>
+        <sys_mod_count>139</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -445,7 +445,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:41</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:28</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -469,7 +469,7 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
+        <flow display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
         <order>3</order>
         <parent_ui_id>23bd6d12-c7be-41eb-9a51-ca8b2646f5da</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -477,7 +477,7 @@
         <sys_created_on>2022-11-16 22:24:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>16faa3c88793599009bd64af8bbb3549</sys_id>
-        <sys_mod_count>328</sys_mod_count>
+        <sys_mod_count>336</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -485,7 +485,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-11-28 19:37:59</sys_updated_on>
+        <sys_updated_on>2022-12-01 01:14:09</sys_updated_on>
         <ui_id>6d798485-3539-4bc3-a88a-e67d845f479b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=16faa3c88793599009bd64af8bbb3549"/>
@@ -513,7 +513,7 @@ Current Value = ﻿{{23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_v
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
+        <flow display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
         <order>7</order>
         <parent_ui_id>50b4859c-8a69-4c37-b523-bccf6557b6d7</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -521,7 +521,7 @@ Current Value = ﻿{{23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_v
         <sys_created_on>2022-11-14 02:23:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>41b4455f1bcfd95042b9ec29b04bcb42</sys_id>
-        <sys_mod_count>346</sys_mod_count>
+        <sys_mod_count>354</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -529,7 +529,7 @@ Current Value = ﻿{{23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_v
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-11-28 19:37:59</sys_updated_on>
+        <sys_updated_on>2022-12-01 01:14:09</sys_updated_on>
         <ui_id>c428e5ef-bea2-46a9-8d34-fbb771111435</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=41b4455f1bcfd95042b9ec29b04bcb42"/>
@@ -620,7 +620,7 @@ Current Value = ﻿{{23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_v
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
+        <flow display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
         <order>6</order>
         <parent_ui_id>50b4859c-8a69-4c37-b523-bccf6557b6d7</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -628,7 +628,7 @@ Current Value = ﻿{{23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_v
         <sys_created_on>2022-11-21 23:38:40</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>73cba9bd8753d9d009bd64af8bbb35db</sys_id>
-        <sys_mod_count>160</sys_mod_count>
+        <sys_mod_count>168</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -636,7 +636,7 @@ Current Value = ﻿{{23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_v
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-11-28 19:37:59</sys_updated_on>
+        <sys_updated_on>2022-12-01 01:14:09</sys_updated_on>
         <ui_id>d0b6ed03-5f5c-420f-bcc0-25a394d05033</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=73cba9bd8753d9d009bd64af8bbb35db"/>
@@ -664,7 +664,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
+        <flow display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
         <order>10</order>
         <parent_ui_id>15b11897-0877-425b-a358-5f3266bfaa50</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -672,7 +672,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-18 02:43:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fcbf612c871b5d9009bd64af8bbb35d3</sys_id>
-        <sys_mod_count>218</sys_mod_count>
+        <sys_mod_count>226</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -680,7 +680,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-11-28 19:37:59</sys_updated_on>
+        <sys_updated_on>2022-12-01 01:14:09</sys_updated_on>
         <ui_id>1dd1d994-f7f9-47c7-8301-244e21d4327a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fcbf612c871b5d9009bd64af8bbb35d3"/>
@@ -753,14 +753,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=4657381f1b8fd95042b9ec29b04bcbc5"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=4657381f1b8fd95042b9ec29b04bcbc5^sys_idNOT IN06faa3c88793599009bd64af8bbb3530,348ee3c887d3599009bd64af8bbb357d,7c8ee3c887d3599009bd64af8bbb355b,994c8f4a8753ddd009bd64af8bbb35ff,defaa3c88793599009bd64af8bbb3534,fc8ee3c887d3599009bd64af8bbb3556,fc8ee3c887d3599009bd64af8bbb3578"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">0afaa3c88793599009bd64af8bbb352f</block>
+        <block display_value="">805498bc87ab5d5409bd64af8bbb3566</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
+        <flow display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -775,7 +775,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-16 22:24:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>06faa3c88793599009bd64af8bbb3530</sys_id>
-        <sys_mod_count>126</sys_mod_count>
+        <sys_mod_count>130</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -783,7 +783,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:41</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:28</sys_updated_on>
         <ui_id>23bd6d12-c7be-41eb-9a51-ca8b2646f5da</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -806,14 +806,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=06faa3c88793599009bd64af8bbb3530"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=06faa3c88793599009bd64af8bbb3530"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">7c8ee3c887d3599009bd64af8bbb357c</block>
+        <block display_value="">c05498bc87ab5d5409bd64af8bbb3596</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
+        <flow display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
         <flow_variable/>
         <flow_variables_assigned>totalscore,sectionsubtoal</flow_variables_assigned>
         <inputs/>
@@ -827,7 +827,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-16 22:40:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>348ee3c887d3599009bd64af8bbb357d</sys_id>
-        <sys_mod_count>129</sys_mod_count>
+        <sys_mod_count>133</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -835,7 +835,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:42</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:29</sys_updated_on>
         <ui_id>d9cfdb39-e76a-461b-9f4d-91bce7080e61</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -885,14 +885,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_updated_on>2022-11-23 00:28:37</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">b48ee3c887d3599009bd64af8bbb355b</block>
+        <block display_value="">0c5498bc87ab5d5409bd64af8bbb3586</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
+        <flow display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
         <flow_variable/>
         <flow_variables_assigned>totalscore,sectionsubtoal</flow_variables_assigned>
         <inputs/>
@@ -906,7 +906,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-16 22:40:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7c8ee3c887d3599009bd64af8bbb355b</sys_id>
-        <sys_mod_count>127</sys_mod_count>
+        <sys_mod_count>131</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -914,7 +914,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:42</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:28</sys_updated_on>
         <ui_id>f9f11da2-47f0-428b-9ae8-e84a513e5749</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -964,14 +964,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_updated_on>2022-11-23 00:12:06</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">9d4c8f4a8753ddd009bd64af8bbb35fe</block>
+        <block display_value="">c05498bc87ab5d5409bd64af8bbb359e</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
+        <flow display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
         <flow_variable/>
         <flow_variables_assigned>pointsreceived</flow_variables_assigned>
         <inputs/>
@@ -985,7 +985,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-23 01:18:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>994c8f4a8753ddd009bd64af8bbb35ff</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -993,7 +993,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:42</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:29</sys_updated_on>
         <ui_id>750aa878-9809-459c-8e4d-715936e586e3</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1030,14 +1030,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_updated_on>2022-11-23 02:20:25</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">1afaa3c88793599009bd64af8bbb3534</block>
+        <block display_value="">c45498bc87ab5d5409bd64af8bbb356c</block>
         <comment>Capture current and previous values</comment>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
+        <flow display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>previous_value,current_value</flow_variables_assigned>
@@ -1052,7 +1052,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-16 22:24:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>defaa3c88793599009bd64af8bbb3534</sys_id>
-        <sys_mod_count>128</sys_mod_count>
+        <sys_mod_count>132</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1060,7 +1060,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:41</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:28</sys_updated_on>
         <ui_id>65b93f04-1503-4493-ad3b-0851e068706c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1119,14 +1119,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_updated_on>2022-11-20 00:01:42</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">f08ee3c887d3599009bd64af8bbb3556</block>
+        <block display_value="">045498bc87ab5d5409bd64af8bbb3580</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
+        <flow display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1141,7 +1141,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-16 22:40:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fc8ee3c887d3599009bd64af8bbb3556</sys_id>
-        <sys_mod_count>124</sys_mod_count>
+        <sys_mod_count>128</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1149,7 +1149,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:42</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:28</sys_updated_on>
         <ui_id>50b4859c-8a69-4c37-b523-bccf6557b6d7</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1198,14 +1198,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=fc8ee3c887d3599009bd64af8bbb3556"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=fc8ee3c887d3599009bd64af8bbb3556"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">388ee3c887d3599009bd64af8bbb3578</block>
+        <block display_value="">c85498bc87ab5d5409bd64af8bbb358f</block>
         <comment/>
         <connected_to>50b4859c-8a69-4c37-b523-bccf6557b6d7</connected_to>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
+        <flow display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1220,7 +1220,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-16 22:40:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fc8ee3c887d3599009bd64af8bbb3578</sys_id>
-        <sys_mod_count>126</sys_mod_count>
+        <sys_mod_count>130</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1228,7 +1228,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:42</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:28</sys_updated_on>
         <ui_id>15b11897-0877-425b-a358-5f3266bfaa50</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1317,7 +1317,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>percentagePointsAnswers</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
+        <model display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
         <model_id>4657381f1b8fd95042b9ec29b04bcbc5</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_4657381f1b8fd95042b9ec29b04bcbc5</name>
@@ -1402,7 +1402,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>sectionSubToal</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
+        <model display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
         <model_id>4657381f1b8fd95042b9ec29b04bcbc5</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_4657381f1b8fd95042b9ec29b04bcbc5</name>
@@ -1487,7 +1487,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>percentagePointsSubTotal</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
+        <model display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
         <model_id>4657381f1b8fd95042b9ec29b04bcbc5</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_4657381f1b8fd95042b9ec29b04bcbc5</name>
@@ -1572,7 +1572,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>previous value</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
+        <model display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
         <model_id>4657381f1b8fd95042b9ec29b04bcbc5</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_4657381f1b8fd95042b9ec29b04bcbc5</name>
@@ -1657,7 +1657,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>subTotalOrder</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
+        <model display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
         <model_id>4657381f1b8fd95042b9ec29b04bcbc5</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_4657381f1b8fd95042b9ec29b04bcbc5</name>
@@ -1742,7 +1742,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>pointsReceived</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
+        <model display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
         <model_id>4657381f1b8fd95042b9ec29b04bcbc5</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_4657381f1b8fd95042b9ec29b04bcbc5</name>
@@ -1827,7 +1827,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>totalScore</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
+        <model display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
         <model_id>4657381f1b8fd95042b9ec29b04bcbc5</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_4657381f1b8fd95042b9ec29b04bcbc5</name>
@@ -1912,7 +1912,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>current value</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
+        <model display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
         <model_id>4657381f1b8fd95042b9ec29b04bcbc5</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_4657381f1b8fd95042b9ec29b04bcbc5</name>
@@ -1973,12 +1973,12 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>67a7f05f1b8fd95042b9ec29b04bcb7e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Changed Fields</sys_name>
+        <sys_name/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4657381f1b8fd95042b9ec29b04bcbc5_changed_fields_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
         <sys_updated_on>2022-11-14 01:26:06</sys_updated_on>
         <url/>
@@ -1998,12 +1998,12 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6fa7f05f1b8fd95042b9ec29b04bcb81</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4657381f1b8fd95042b9ec29b04bcbc5_table_name_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
         <sys_updated_on>2022-11-14 01:26:06</sys_updated_on>
         <url/>
@@ -2023,12 +2023,12 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>afa7f05f1b8fd95042b9ec29b04bcb54</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Record</sys_name>
+        <sys_name/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4657381f1b8fd95042b9ec29b04bcbc5_current_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
         <sys_updated_on>2022-11-14 01:26:06</sys_updated_on>
         <url/>
@@ -2042,14 +2042,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"6b8699af1b0f9d5042b9ec29b04bcbda","name":"plan","plan_signature":null}}</plan>
         <plan_id>4657381f1b8fd95042b9ec29b04bcbc5</plan_id>
-        <snapshot>56d7fc0887e3155409bd64af8bbb35d8</snapshot>
+        <snapshot>c6f79c3887eb5d5409bd64af8bbb354b</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-11-14 22:19:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>6b8699af1b0f9d5042b9ec29b04bcbda</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2058,8 +2058,8 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:41</sys_updated_on>
-        <trigger display_value="">085c5c48872fd15409bd64af8bbb3530</trigger>
+        <sys_updated_on>2022-12-01 00:58:27</sys_updated_on>
+        <trigger display_value="">906410fc87ab5d5409bd64af8bbb3556</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=4657381f1b8fd95042b9ec29b04bcbc5"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -2075,10 +2075,10 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <internal_name>secretshop_scoring_logic</internal_name>
         <label_cache>[{"name":"85a34793-20d4-4c57-83af-9bb422292743.__dont_treat_as_error__","label":"6 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"85a34793-20d4-4c57-83af-9bb422292743.__action_status__","label":"6 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"6d798485-3539-4bc3-a88a-e67d845f479b.__dont_treat_as_error__","label":"3 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6d798485-3539-4bc3-a88a-e67d845f479b.__action_status__","label":"3 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_value","label":"1➛FDChangeDetails➛Current Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.previous_value","label":"1➛FDChangeDetails➛Previous Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item","label":"1 - For Each➛FDChangeDetails","reference_display":"FDChangeDetails","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Updated_1.changed_fields","label":"Trigger - Record Updated➛Changed Fields","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"Updated_1.current.scorecard","label":"Trigger - Record Updated➛Answer Record➛Scorecard","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_answers","column_name":"scorecard"},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.table_name","label":"7 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.record","label":"7 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.log","label":"1 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.error_message","label":"1 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.status","label":"1 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"Updated_1.current.type","label":"Trigger - Record Updated➛Answer Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_answers","column_name":"type","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Yes/No","reference":false,"missing":false,"rawLabel":"Yes/No","value":"Yes/No","parameters":{"name":"x_autg_kbb_secret_answers"}},{"used":false,"image":"","selected":false,"label":"Range","reference":false,"missing":false,"rawLabel":"Range","value":"Range","parameters":{"name":"x_autg_kbb_secret_answers"}},{"used":false,"image":"","selected":false,"label":"Sub Total","reference":false,"missing":false,"rawLabel":"Sub Total","value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_answers"}},{"used":false,"image":"","selected":false,"label":"Section","reference":false,"missing":false,"rawLabel":"Section","value":"Section","parameters":{"name":"x_autg_kbb_secret_answers"}}]},{"name":"Updated_1.current.category","label":"Trigger - Record Updated➛Answer Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_answers","column_name":"category","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Section","reference":false,"missing":false,"rawLabel":"Section","value":"Section","parameters":{"name":"x_autg_kbb_secret_answers"}},{"used":false,"image":"","selected":false,"label":"Questions","reference":false,"missing":false,"rawLabel":"Questions","value":"Questions","parameters":{"name":"x_autg_kbb_secret_answers"}},{"used":false,"image":"","selected":false,"label":"Bonus Question","reference":false,"missing":false,"rawLabel":"Bonus Question","value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_answers"}},{"used":false,"image":"","selected":false,"label":"Sub Total","reference":false,"missing":false,"rawLabel":"Sub Total","value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_answers"}}]},{"name":"Updated_1.current.max_score","label":"Trigger - Record Updated➛Answer Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_answers","column_name":"max_score"},{"name":"Updated_1.current.min_score","label":"Trigger - Record Updated➛Answer Record➛Minimum Score","reference":"","reference_display":"Minimum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_answers","column_name":"min_score"},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.previous_display_value","label":"1➛FDChangeDetails➛Previous Display Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"flow_variable.totalscore","label":"Flow Variables➛totalScore","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"8225da5e-27b5-42b4-be1d-bf5f5d2e9f6b"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.record","label":"10 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.table_name","label":"10 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_value","label":"1➛FDChangeDetails➛Current Display Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"flow_variable.previous_value","label":"Flow Variables➛previous value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7fb9822e-4e97-4711-80ba-6dd5ee83a5c7"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.record","label":"4 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.table_name","label":"4 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.record","label":"4 - Update Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.table_name","label":"4 - Update Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.record","label":"4 - Update Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.table_name","label":"4 - Update Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"d0b6ed03-5f5c-420f-bcc0-25a394d05033.__action_status__","label":"6 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d0b6ed03-5f5c-420f-bcc0-25a394d05033.__dont_treat_as_error__","label":"6 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.sectionsubtoal","label":"Flow Variables➛sectionSubToal","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f269e92b-f7cc-47b5-a39c-befdaa9c1975","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.subtotalpercentage","label":"Flow Variables➛subTotalPercentage","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2db66c16-078a-417c-bae3-c32901f37acd"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.status","label":"11 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.error_message","label":"11 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.log","label":"11 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.record","label":"11 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.table_name","label":"11 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
         <master>true</master>
-        <name>SecretShop: Scoring Logic</name>
+        <name>Scoring Logic</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</parent_flow>
+        <parent_flow display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</parent_flow>
         <remote_trigger_id/>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -2090,7 +2090,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>038659af1b0f9d5042b9ec29b04bcb75</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2099,7 +2099,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:39</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:26</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_variable_value action="delete_multiple" query="document_key=038659af1b0f9d5042b9ec29b04bcb75"/>
@@ -2107,7 +2107,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
+        <flow display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
         <name>Updated</name>
         <remote_sys_id/>
         <sys_class_name>sys_hub_trigger_instance</sys_class_name>
@@ -2115,7 +2115,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-14 22:19:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>678699af1b0f9d5042b9ec29b04bcbaf</sys_id>
-        <sys_mod_count>130</sys_mod_count>
+        <sys_mod_count>133</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2123,7 +2123,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:41</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:28</sys_updated_on>
         <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -2248,7 +2248,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
+        <model display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
         <model_id>038659af1b0f9d5042b9ec29b04bcb75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_038659af1b0f9d5042b9ec29b04bcb75</name>
@@ -2272,7 +2272,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-14 22:19:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1b8699af1b0f9d5042b9ec29b04bcb99</sys_id>
-        <sys_mod_count>85</sys_mod_count>
+        <sys_mod_count>87</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2280,7 +2280,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:38</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -2298,7 +2298,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDa74c1c489f2fd15405f423fbcfecc143,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD7f54dcbc26ab5d549cdb269eb1776e80,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
         <audit>false</audit>
         <calculation>(function calculatedFieldValue(current) {
 
@@ -2333,7 +2333,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
+        <model display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
         <model_id>038659af1b0f9d5042b9ec29b04bcb75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_038659af1b0f9d5042b9ec29b04bcb75</name>
@@ -2357,7 +2357,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-14 22:19:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5b8699af1b0f9d5042b9ec29b04bcb84</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2365,7 +2365,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:38</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -2418,7 +2418,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
+        <model display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
         <model_id>038659af1b0f9d5042b9ec29b04bcb75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_038659af1b0f9d5042b9ec29b04bcb75</name>
@@ -2442,7 +2442,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-14 22:19:27</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9f8659af1b0f9d5042b9ec29b04bcb79</sys_id>
-        <sys_mod_count>85</sys_mod_count>
+        <sys_mod_count>87</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2450,7 +2450,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:38</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -2474,7 +2474,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
+        <flow display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
         <order>10</order>
         <parent_ui_id>15b11897-0877-425b-a358-5f3266bfaa50</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2482,7 +2482,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-18 02:43:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3dbf252c871b5d9009bd64af8bbb350b</sys_id>
-        <sys_mod_count>108</sys_mod_count>
+        <sys_mod_count>112</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2490,7 +2490,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:39</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:26</sys_updated_on>
         <ui_id>1dd1d994-f7f9-47c7-8301-244e21d4327a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3dbf252c871b5d9009bd64af8bbb350b"/>
@@ -2567,7 +2567,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
+        <flow display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
         <order>3</order>
         <parent_ui_id>23bd6d12-c7be-41eb-9a51-ca8b2646f5da</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2575,7 +2575,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-16 22:24:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3efae3c88793599009bd64af8bbb3581</sys_id>
-        <sys_mod_count>172</sys_mod_count>
+        <sys_mod_count>176</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2583,7 +2583,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:39</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:26</sys_updated_on>
         <ui_id>6d798485-3539-4bc3-a88a-e67d845f479b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3efae3c88793599009bd64af8bbb3581"/>
@@ -2611,7 +2611,7 @@ Current Value = ﻿{{23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_v
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
+        <flow display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
         <order>6</order>
         <parent_ui_id>50b4859c-8a69-4c37-b523-bccf6557b6d7</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2619,7 +2619,7 @@ Current Value = ﻿{{23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_v
         <sys_created_on>2022-11-21 23:39:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>85eba1fd8753d9d009bd64af8bbb3512</sys_id>
-        <sys_mod_count>80</sys_mod_count>
+        <sys_mod_count>84</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2627,7 +2627,7 @@ Current Value = ﻿{{23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_v
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:39</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:26</sys_updated_on>
         <ui_id>d0b6ed03-5f5c-420f-bcc0-25a394d05033</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=85eba1fd8753d9d009bd64af8bbb3512"/>
@@ -2655,7 +2655,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
+        <flow display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
         <order>7</order>
         <parent_ui_id>50b4859c-8a69-4c37-b523-bccf6557b6d7</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2663,7 +2663,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-14 22:19:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a38699af1b0f9d5042b9ec29b04bcbab</sys_id>
-        <sys_mod_count>174</sys_mod_count>
+        <sys_mod_count>178</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2671,7 +2671,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:39</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:26</sys_updated_on>
         <ui_id>c428e5ef-bea2-46a9-8d34-fbb771111435</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a38699af1b0f9d5042b9ec29b04bcbab"/>
@@ -2758,14 +2758,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=038659af1b0f9d5042b9ec29b04bcb75"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=038659af1b0f9d5042b9ec29b04bcb75^sys_idNOT IN358e67c887d3599009bd64af8bbb3565,7afae3c88793599009bd64af8bbb3586,7d8e67c887d3599009bd64af8bbb3543,7efae3c88793599009bd64af8bbb3596,d64c438a8753ddd009bd64af8bbb35a9,f18e67c887d3599009bd64af8bbb35b4,fd8e67c887d3599009bd64af8bbb3560"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">388ee3c887d3599009bd64af8bbb3578</block>
+        <block display_value="">c85498bc87ab5d5409bd64af8bbb358f</block>
         <comment/>
         <connected_to>50b4859c-8a69-4c37-b523-bccf6557b6d7</connected_to>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
+        <flow display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2780,7 +2780,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-16 22:40:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>358e67c887d3599009bd64af8bbb3565</sys_id>
-        <sys_mod_count>86</sys_mod_count>
+        <sys_mod_count>89</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2788,7 +2788,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:39</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:26</sys_updated_on>
         <ui_id>15b11897-0877-425b-a358-5f3266bfaa50</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2837,14 +2837,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=358e67c887d3599009bd64af8bbb3565"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=358e67c887d3599009bd64af8bbb3565"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">0afaa3c88793599009bd64af8bbb352f</block>
+        <block display_value="">805498bc87ab5d5409bd64af8bbb3566</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
+        <flow display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2859,7 +2859,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-16 22:24:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7afae3c88793599009bd64af8bbb3586</sys_id>
-        <sys_mod_count>86</sys_mod_count>
+        <sys_mod_count>89</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2867,7 +2867,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:39</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:26</sys_updated_on>
         <ui_id>23bd6d12-c7be-41eb-9a51-ca8b2646f5da</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2890,14 +2890,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7afae3c88793599009bd64af8bbb3586"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=7afae3c88793599009bd64af8bbb3586"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">f08ee3c887d3599009bd64af8bbb3556</block>
+        <block display_value="">045498bc87ab5d5409bd64af8bbb3580</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
+        <flow display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2912,7 +2912,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-16 22:40:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7d8e67c887d3599009bd64af8bbb3543</sys_id>
-        <sys_mod_count>84</sys_mod_count>
+        <sys_mod_count>87</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2920,7 +2920,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:39</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:26</sys_updated_on>
         <ui_id>50b4859c-8a69-4c37-b523-bccf6557b6d7</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2969,14 +2969,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7d8e67c887d3599009bd64af8bbb3543"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=7d8e67c887d3599009bd64af8bbb3543"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">1afaa3c88793599009bd64af8bbb3534</block>
+        <block display_value="">c45498bc87ab5d5409bd64af8bbb356c</block>
         <comment>Capture current and previous values</comment>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
+        <flow display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>previous_value,current_value</flow_variables_assigned>
@@ -2991,7 +2991,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-16 22:24:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7efae3c88793599009bd64af8bbb3596</sys_id>
-        <sys_mod_count>88</sys_mod_count>
+        <sys_mod_count>91</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2999,7 +2999,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:39</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:26</sys_updated_on>
         <ui_id>65b93f04-1503-4493-ad3b-0851e068706c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3058,14 +3058,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_updated_on>2022-11-20 00:01:58</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">9d4c8f4a8753ddd009bd64af8bbb35fe</block>
+        <block display_value="">c05498bc87ab5d5409bd64af8bbb359e</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
+        <flow display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
         <flow_variable/>
         <flow_variables_assigned>pointsreceived</flow_variables_assigned>
         <inputs/>
@@ -3079,7 +3079,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-23 01:18:40</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d64c438a8753ddd009bd64af8bbb35a9</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3087,7 +3087,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:39</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:26</sys_updated_on>
         <ui_id>750aa878-9809-459c-8e4d-715936e586e3</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3124,14 +3124,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_updated_on>2022-11-23 02:20:38</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">7c8ee3c887d3599009bd64af8bbb357c</block>
+        <block display_value="">c05498bc87ab5d5409bd64af8bbb3596</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
+        <flow display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
         <flow_variable/>
         <flow_variables_assigned>totalscore,sectionsubtoal</flow_variables_assigned>
         <inputs/>
@@ -3145,7 +3145,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-16 22:40:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f18e67c887d3599009bd64af8bbb35b4</sys_id>
-        <sys_mod_count>88</sys_mod_count>
+        <sys_mod_count>91</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3153,7 +3153,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:39</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:26</sys_updated_on>
         <ui_id>d9cfdb39-e76a-461b-9f4d-91bce7080e61</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3203,14 +3203,14 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_updated_on>2022-11-23 00:30:45</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">b48ee3c887d3599009bd64af8bbb355b</block>
+        <block display_value="">0c5498bc87ab5d5409bd64af8bbb3586</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
+        <flow display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</flow>
         <flow_variable/>
         <flow_variables_assigned>totalscore,sectionsubtoal</flow_variables_assigned>
         <inputs/>
@@ -3224,7 +3224,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_created_on>2022-11-16 22:40:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fd8e67c887d3599009bd64af8bbb3560</sys_id>
-        <sys_mod_count>86</sys_mod_count>
+        <sys_mod_count>89</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3232,7 +3232,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 17:37:39</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:58:26</sys_updated_on>
         <ui_id>f9f11da2-47f0-428b-9ae8-e84a513e5749</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3322,7 +3322,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>current value</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
+        <model display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
         <model_id>038659af1b0f9d5042b9ec29b04bcb75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_038659af1b0f9d5042b9ec29b04bcb75</name>
@@ -3407,7 +3407,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>sectionSubToal</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
+        <model display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
         <model_id>038659af1b0f9d5042b9ec29b04bcb75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_038659af1b0f9d5042b9ec29b04bcb75</name>
@@ -3492,7 +3492,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>percentagePointsAnswers</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
+        <model display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
         <model_id>038659af1b0f9d5042b9ec29b04bcb75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_038659af1b0f9d5042b9ec29b04bcb75</name>
@@ -3577,7 +3577,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>previous value</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
+        <model display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
         <model_id>038659af1b0f9d5042b9ec29b04bcb75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_038659af1b0f9d5042b9ec29b04bcb75</name>
@@ -3662,7 +3662,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>totalScore</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
+        <model display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
         <model_id>038659af1b0f9d5042b9ec29b04bcb75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_038659af1b0f9d5042b9ec29b04bcb75</name>
@@ -3747,7 +3747,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>pointsReceived</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
+        <model display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
         <model_id>038659af1b0f9d5042b9ec29b04bcb75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_038659af1b0f9d5042b9ec29b04bcb75</name>
@@ -3832,7 +3832,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>percentagePointsSubTotal</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
+        <model display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
         <model_id>038659af1b0f9d5042b9ec29b04bcb75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_038659af1b0f9d5042b9ec29b04bcb75</name>
@@ -3917,7 +3917,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <label>subTotalOrder</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
+        <model display_value="Scoring Logic">038659af1b0f9d5042b9ec29b04bcb75</model>
         <model_id>038659af1b0f9d5042b9ec29b04bcb75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_038659af1b0f9d5042b9ec29b04bcb75</name>
@@ -3978,12 +3978,12 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1b8699af1b0f9d5042b9ec29b04bcb89</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Changed Fields</sys_name>
+        <sys_name/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_038659af1b0f9d5042b9ec29b04bcb75_changed_fields_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
         <sys_updated_on>2022-11-14 22:19:28</sys_updated_on>
         <url/>
@@ -4003,12 +4003,12 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9b8699af1b0f9d5042b9ec29b04bcb80</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Record</sys_name>
+        <sys_name/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_038659af1b0f9d5042b9ec29b04bcb75_current_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
         <sys_updated_on>2022-11-14 22:19:28</sys_updated_on>
         <url/>
@@ -4028,12 +4028,12 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d38699af1b0f9d5042b9ec29b04bcb9e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_038659af1b0f9d5042b9ec29b04bcb75_table_name_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
         <sys_updated_on>2022-11-14 22:19:28</sys_updated_on>
         <url/>

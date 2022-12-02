@@ -12,10 +12,10 @@
         <internal_name>secretshop_calculate_total_points_available_on__template</internal_name>
         <label_cache>[{"name":"flow_variable.max_subtotal","label":"Flow Variables➛Max SubTotal","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1e9574ae-370e-4090-9232-f1eba0b38d28"}},{"name":"4a41bc07-509b-44ac-b2f3-ef1f0b080122.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a41bc07-509b-44ac-b2f3-ef1f0b080122.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a41bc07-509b-44ac-b2f3-ef1f0b080122.table_name","label":"14 - Update Record➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a41bc07-509b-44ac-b2f3-ef1f0b080122.record","label":"14 - Update Record➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a41a04be-376c-4acf-ac5e-33e24ee9e80f.__dont_treat_as_error__","label":"5 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a41a04be-376c-4acf-ac5e-33e24ee9e80f.__action_status__","label":"5 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"93c85173-6cf1-4cb7-8b6b-fc2dc22dba76.__dont_treat_as_error__","label":"10 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"93c85173-6cf1-4cb7-8b6b-fc2dc22dba76.__action_status__","label":"10 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82e6fc24-dec1-4e05-94b6-372e43f3efbd.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82e6fc24-dec1-4e05-94b6-372e43f3efbd.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82e6fc24-dec1-4e05-94b6-372e43f3efbd.table_name","label":"9 - Update Record➛Template Table","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82e6fc24-dec1-4e05-94b6-372e43f3efbd.record","label":"9 - Update Record➛Template Record","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aadcf519-8225-4555-a883-fac36d1c1b86.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aadcf519-8225-4555-a883-fac36d1c1b86.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aadcf519-8225-4555-a883-fac36d1c1b86.table_name","label":"4 - Update Record➛Template Table","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aadcf519-8225-4555-a883-fac36d1c1b86.record","label":"4 - Update Record➛Template Record","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6df5e950-c164-4e04-bcb2-4896c761c218.__dont_treat_as_error__","label":"6 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6df5e950-c164-4e04-bcb2-4896c761c218.__action_status__","label":"6 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6df5e950-c164-4e04-bcb2-4896c761c218.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6df5e950-c164-4e04-bcb2-4896c761c218.Table","label":"6 - Look Up Records➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6df5e950-c164-4e04-bcb2-4896c761c218.Records","label":"6 - Look Up Records➛Question Records","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.template","label":"Trigger - Record Created➛Question Record➛Template","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_questions","column_name":"template"},{"name":"f0935740-b717-451a-8c84-be7f2544bbf0.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0935740-b717-451a-8c84-be7f2544bbf0.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0935740-b717-451a-8c84-be7f2544bbf0.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"f0935740-b717-451a-8c84-be7f2544bbf0.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"f0935740-b717-451a-8c84-be7f2544bbf0.Table","label":"1 - Look Up Record➛Template Table","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0935740-b717-451a-8c84-be7f2544bbf0.Record","label":"1 - Look Up Record➛Template Record","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e6533b8a-4e50-4d5e-b4f2-40d93b482327.item.max_score","label":"7 - For Each➛Question Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"max_score"},{"name":"Created or Updated_1.changed_fields","label":"Trigger - Record Created or Updated➛Changed Fields","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"165ec3bc-8e9d-4fd6-b6fc-ede685693761.context","label":"4 - Dynamic Flow➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"e6533b8a-4e50-4d5e-b4f2-40d93b482327.item","label":"7 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b9a89e07-280a-4754-a4c4-5be6b52ce849.__dont_treat_as_error__","label":"3 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"b9a89e07-280a-4754-a4c4-5be6b52ce849.__action_status__","label":"3 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"b9a89e07-280a-4754-a4c4-5be6b52ce849.Count","label":"3 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b9a89e07-280a-4754-a4c4-5be6b52ce849.Table","label":"3 - Look Up Records➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b9a89e07-280a-4754-a4c4-5be6b52ce849.Records","label":"3 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e7d6a049-9692-4fdb-8fb8-0bd3d305ca48.__dont_treat_as_error__","label":"3 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e7d6a049-9692-4fdb-8fb8-0bd3d305ca48.__action_status__","label":"3 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e7d6a049-9692-4fdb-8fb8-0bd3d305ca48.Count","label":"3 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e7d6a049-9692-4fdb-8fb8-0bd3d305ca48.Table","label":"3 - Look Up Records➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e7d6a049-9692-4fdb-8fb8-0bd3d305ca48.Records","label":"3 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"069a9a42-7431-4444-9e03-7a092e939ee0.__dont_treat_as_error__","label":"2 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"069a9a42-7431-4444-9e03-7a092e939ee0.__action_status__","label":"2 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"069a9a42-7431-4444-9e03-7a092e939ee0.error_message","label":"2 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"069a9a42-7431-4444-9e03-7a092e939ee0.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"069a9a42-7431-4444-9e03-7a092e939ee0.Table","label":"2 - Look Up Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"069a9a42-7431-4444-9e03-7a092e939ee0.Record","label":"2 - Look Up Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"96824436-9100-4b25-a39e-62541795ecde.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"96824436-9100-4b25-a39e-62541795ecde.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"96824436-9100-4b25-a39e-62541795ecde.table_name","label":"14 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"96824436-9100-4b25-a39e-62541795ecde.record","label":"14 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c7ff6cc8-fcef-4c01-accb-bd437220a368.__dont_treat_as_error__","label":"12 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c7ff6cc8-fcef-4c01-accb-bd437220a368.__action_status__","label":"12 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c7ff6cc8-fcef-4c01-accb-bd437220a368.table_name","label":"12 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c7ff6cc8-fcef-4c01-accb-bd437220a368.record","label":"12 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85d5b929-7512-4ebc-a363-19bd26e11355.item.max_score","label":"6 - For Each➛Question Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"max_score"},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{}},{"name":"0ae7a9bd-a121-4fb6-a070-724c2eaeb2a4.__dont_treat_as_error__","label":"9 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0ae7a9bd-a121-4fb6-a070-724c2eaeb2a4.__action_status__","label":"9 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85d5b929-7512-4ebc-a363-19bd26e11355.item","label":"6 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"122ae5b8-5618-4274-8767-b13ca3e0b3e5.Records","label":"5 - Look Up Records➛Question Records","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"122ae5b8-5618-4274-8767-b13ca3e0b3e5.Table","label":"5 - Look Up Records➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"122ae5b8-5618-4274-8767-b13ca3e0b3e5.Count","label":"5 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"122ae5b8-5618-4274-8767-b13ca3e0b3e5.__action_status__","label":"5 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"122ae5b8-5618-4274-8767-b13ca3e0b3e5.__dont_treat_as_error__","label":"5 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c17fd6b4-5427-452f-9fe7-c6f091b20a03.Record","label":"2 - Look Up Record➛Template Record","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c17fd6b4-5427-452f-9fe7-c6f091b20a03.Table","label":"2 - Look Up Record➛Template Table","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c17fd6b4-5427-452f-9fe7-c6f091b20a03.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c17fd6b4-5427-452f-9fe7-c6f091b20a03.error_message","label":"2 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c17fd6b4-5427-452f-9fe7-c6f091b20a03.__action_status__","label":"2 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c17fd6b4-5427-452f-9fe7-c6f091b20a03.__dont_treat_as_error__","label":"2 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.template","label":"Trigger - Record Created or Updated➛Question Record➛Template","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_questions","column_name":"template"},{"name":"1ea4c431-9620-41f9-8530-4dc81c564add.Records","label":"7 - Look Up Records➛Question Records","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ea4c431-9620-41f9-8530-4dc81c564add.Table","label":"7 - Look Up Records➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ea4c431-9620-41f9-8530-4dc81c564add.Count","label":"7 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ea4c431-9620-41f9-8530-4dc81c564add.__action_status__","label":"7 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ea4c431-9620-41f9-8530-4dc81c564add.__dont_treat_as_error__","label":"7 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d4d8e45e-7e6e-47ed-bc19-914166f18d31.item","label":"8 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"flow_variable.total_bonus_points","label":"Flow Variables➛Total Bonus Points","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"585bc573-7f9d-4940-b226-d05c746d6f8f"}},{"name":"flow_variable.total_points","label":"Flow Variables➛Total Points","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"85629216-3ae3-4b1a-898f-69d4aa2bbbe7"}},{"name":"Created or Updated_1.current.category","label":"Trigger - Record Created or Updated➛Question Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"category","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Section","reference":false,"missing":false,"rawLabel":"Section","value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Questions","reference":false,"missing":false,"rawLabel":"Questions","value":"Questions","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Bonus Question","reference":false,"missing":false,"rawLabel":"Bonus Question","value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Sub Total","reference":false,"missing":false,"rawLabel":"Sub Total","value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"b84b4cbf-9219-4243-bf48-4a81459c7a25.__action_status__","label":"1 - Rally - Creation Workload Component➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"27298173-2c9a-458a-ae09-17ce04f36b12"}},{"name":"b84b4cbf-9219-4243-bf48-4a81459c7a25.__dont_treat_as_error__","label":"1 - Rally - Creation Workload Component➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"587a3394-4fc1-4392-b039-7d89f588dd72"}},{"name":"58b76807-89fa-42a3-b38d-1774673b77b3.__action_status__","label":"2 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"58b76807-89fa-42a3-b38d-1774673b77b3.__dont_treat_as_error__","label":"2 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.type","label":"Trigger - Record Created➛Question Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"type","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Yes/No","reference":false,"missing":false,"rawLabel":"Yes/No","value":"Yes/No","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Range","reference":false,"missing":false,"rawLabel":"Range","value":"Range","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Sub Total","reference":false,"missing":false,"rawLabel":"Sub Total","value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Section","reference":false,"missing":false,"rawLabel":"Section","value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"Created_1.current.category","label":"Trigger - Record Created➛Question Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"category","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Section","reference":false,"missing":false,"rawLabel":"Section","value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Questions","reference":false,"missing":false,"rawLabel":"Questions","value":"Questions","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Bonus Question","reference":false,"missing":false,"rawLabel":"Bonus Question","value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Sub Total","reference":false,"missing":false,"rawLabel":"Sub Total","value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"bb3d229f-0223-4f50-bbe4-aa871ad86fb4.__action_status__","label":"15 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb3d229f-0223-4f50-bbe4-aa871ad86fb4.__dont_treat_as_error__","label":"15 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>8c2752e31bc3dd5042b9ec29b04bcb9e</master_snapshot>
-        <name>SecretShop: Calculate total &amp; bonus pts on Question insertion</name>
+        <name>Calculate total &amp; bonus pts on Question insertion</name>
         <natlang/>
         <outputs/>
-        <remote_trigger_id>94a92cc487efd15409bd64af8bbb3575</remote_trigger_id>
+        <remote_trigger_id>603450bc87ab5d5409bd64af8bbb35fb</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -28,8 +28,8 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>08dccea31b83dd5042b9ec29b04bcb08</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>SecretShop: Calculate total &amp; bonus pts on Question insertion</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Calculate total &amp; bonus pts on Question insertion</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
@@ -37,7 +37,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_hub_flow_08dccea31b83dd5042b9ec29b04bcb08</sys_update_name>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-01 00:37:52</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:40</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=08dccea31b83dd5042b9ec29b04bcb08"/>
@@ -61,10 +61,10 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-11-28 18:35:51</sys_created_on>
+        <sys_created_on>2022-12-01 00:57:39</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>94a92cc487efd15409bd64af8bbb3575</sys_id>
+        <sys_id>603450bc87ab5d5409bd64af8bbb35fb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
@@ -74,39 +74,39 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:51</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:39</sys_updated_on>
         <table>x_autg_kbb_secret_questions</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
         <active>true</active>
-        <data>{"table":"sys_trigger_runner_mapping","id":"50a92cc487efd15409bd64af8bbb3576","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <data>{"table":"sys_trigger_runner_mapping","id":"6c3450bc87ab5d5409bd64af8bbb35fb","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
         <identifier>08dccea31b83dd5042b9ec29b04bcb08</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-11-28 18:35:51</sys_created_on>
-        <sys_id>50a92cc487efd15409bd64af8bbb3576</sys_id>
+        <sys_created_on>2022-12-01 00:57:39</sys_created_on>
+        <sys_id>6c3450bc87ab5d5409bd64af8bbb35fb</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:51</sys_updated_on>
-        <trigger display_value="">94a92cc487efd15409bd64af8bbb3575</trigger>
+        <sys_updated_on>2022-12-01 00:57:39</sys_updated_on>
+        <trigger display_value="">603450bc87ab5d5409bd64af8bbb35fb</trigger>
     </sys_trigger_runner_mapping>
     <sys_json_chunk action="INSERT_OR_UPDATE">
         <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
-        <document_id>50a92cc487efd15409bd64af8bbb3576</document_id>
+        <document_id>6c3450bc87ab5d5409bd64af8bbb35fb</document_id>
         <field>trigger_runner</field>
         <length>144</length>
         <position>0</position>
         <source_table>sys_trigger_runner_mapping</source_table>
         <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-11-28 18:35:51</sys_created_on>
-        <sys_id>58a92cc487efd15409bd64af8bbb3576</sys_id>
+        <sys_created_on>2022-12-01 00:57:39</sys_created_on>
+        <sys_id>a43450bc87ab5d5409bd64af8bbb35fc</sys_id>
     </sys_json_chunk>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=08dccea31b83dd5042b9ec29b04bcb08^sys_idNOT IN50a92cc487efd15409bd64af8bbb3576"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=08dccea31b83dd5042b9ec29b04bcb08^sys_idNOT IN6c3450bc87ab5d5409bd64af8bbb35fb"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=08dccea31b83dd5042b9ec29b04bcb08^sys_idNOT IN195953bf1b8f519042b9ec29b04bcb74"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment>Calculates total bonus points and total points after each question is created and updates the template.</comment>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <name>Created</name>
         <remote_sys_id/>
         <sys_class_name>sys_hub_trigger_instance</sys_class_name>
@@ -114,7 +114,7 @@
         <sys_created_on>2022-11-16 02:29:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>195953bf1b8f519042b9ec29b04bcb74</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -122,7 +122,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:51</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:39</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -218,7 +218,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</model>
+        <model display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</model>
         <model_id>08dccea31b83dd5042b9ec29b04bcb08</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_08dccea31b83dd5042b9ec29b04bcb08</name>
@@ -242,7 +242,7 @@
         <sys_created_on>2022-11-15 02:24:34</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>65ae06a71b83dd5042b9ec29b04bcb19</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -250,7 +250,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:51</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -303,7 +303,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</model>
+        <model display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</model>
         <model_id>08dccea31b83dd5042b9ec29b04bcb08</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_08dccea31b83dd5042b9ec29b04bcb08</name>
@@ -327,7 +327,7 @@
         <sys_created_on>2022-11-15 02:24:33</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6dae06a71b83dd5042b9ec29b04bcb10</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -335,7 +335,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:51</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -359,7 +359,7 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <order>15</order>
         <parent_ui_id>7539a75f-0bc3-43f8-ba57-93db14ff388b</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -367,7 +367,7 @@
         <sys_created_on>2022-11-20 04:19:54</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>080958dd871f15d009bd64af8bbb351a</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -375,7 +375,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:37:17</sys_updated_on>
+        <sys_updated_on>2022-12-02 08:14:42</sys_updated_on>
         <ui_id>bb3d229f-0223-4f50-bbe4-aa871ad86fb4</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=080958dd871f15d009bd64af8bbb351a"/>
@@ -401,7 +401,7 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <order>9</order>
         <parent_ui_id>06f8d41f-a8e4-4d09-aa59-6e1210ef36cb</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -409,7 +409,7 @@
         <sys_created_on>2022-11-16 02:57:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>16df533b1bcf519042b9ec29b04bcbdf</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -417,7 +417,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:37:17</sys_updated_on>
+        <sys_updated_on>2022-12-02 08:14:42</sys_updated_on>
         <ui_id>82e6fc24-dec1-4e05-94b6-372e43f3efbd</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=16df533b1bcf519042b9ec29b04bcbdf"/>
@@ -481,7 +481,7 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <order>5</order>
         <parent_ui_id>b29c2445-5b52-4dcf-8cf5-a6c39ee9248d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -489,7 +489,7 @@
         <sys_created_on>2022-11-16 21:59:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4e25a7cc8713599009bd64af8bbb35e5</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -497,7 +497,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:37:17</sys_updated_on>
+        <sys_updated_on>2022-12-02 08:14:42</sys_updated_on>
         <ui_id>a41a04be-376c-4acf-ac5e-33e24ee9e80f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4e25a7cc8713599009bd64af8bbb35e5"/>
@@ -523,7 +523,7 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <order>4</order>
         <parent_ui_id>b29c2445-5b52-4dcf-8cf5-a6c39ee9248d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -531,7 +531,7 @@
         <sys_created_on>2022-11-16 02:57:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5edf533b1bcf519042b9ec29b04bcbcc</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -539,7 +539,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:37:17</sys_updated_on>
+        <sys_updated_on>2022-12-02 08:14:42</sys_updated_on>
         <ui_id>aadcf519-8225-4555-a883-fac36d1c1b86</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5edf533b1bcf519042b9ec29b04bcbcc"/>
@@ -603,7 +603,7 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <order>10</order>
         <parent_ui_id>06f8d41f-a8e4-4d09-aa59-6e1210ef36cb</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -611,7 +611,7 @@
         <sys_created_on>2022-11-16 21:59:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ce25e7cc8713599009bd64af8bbb3521</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -619,7 +619,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:37:17</sys_updated_on>
+        <sys_updated_on>2022-12-02 08:14:42</sys_updated_on>
         <ui_id>93c85173-6cf1-4cb7-8b6b-fc2dc22dba76</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ce25e7cc8713599009bd64af8bbb3521"/>
@@ -645,7 +645,7 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <order>14</order>
         <parent_ui_id>7539a75f-0bc3-43f8-ba57-93db14ff388b</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -653,7 +653,7 @@
         <sys_created_on>2022-11-20 04:18:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e3b8989d871f15d009bd64af8bbb3595</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -661,7 +661,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:37:17</sys_updated_on>
+        <sys_updated_on>2022-12-02 08:14:42</sys_updated_on>
         <ui_id>4a41bc07-509b-44ac-b2f3-ef1f0b080122</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e3b8989d871f15d009bd64af8bbb3595"/>
@@ -725,7 +725,7 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -733,7 +733,7 @@
         <sys_created_on>2022-11-16 02:37:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f82b9f331bcf519042b9ec29b04bcb15</sys_id>
-        <sys_mod_count>72</sys_mod_count>
+        <sys_mod_count>80</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -741,7 +741,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:37:17</sys_updated_on>
+        <sys_updated_on>2022-12-02 08:14:42</sys_updated_on>
         <ui_id>f0935740-b717-451a-8c84-be7f2544bbf0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f82b9f331bcf519042b9ec29b04bcb15"/>
@@ -789,14 +789,14 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=08dccea31b83dd5042b9ec29b04bcb08"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=08dccea31b83dd5042b9ec29b04bcb08^sys_idNOT IN0231d015871f15d009bd64af8bbb3523,4081a78c87df199009bd64af8bbb35d6,722d9bf31bcf519042b9ec29b04bcbed,7a2d9bf31bcf519042b9ec29b04bcbf5,ca31d015871f15d009bd64af8bbb351e,cc81a78c87df199009bd64af8bbb35f1,f22d9bf31bcf519042b9ec29b04bcbf1,f62d9bf31bcf519042b9ec29b04bcbe7"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">4a31d015871f15d009bd64af8bbb3522</block>
+        <block display_value="">7714d87c87ab5d5409bd64af8bbb35cc</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <flow_variable/>
         <flow_variables_assigned>max_subtotal</flow_variables_assigned>
         <inputs/>
@@ -810,7 +810,7 @@
         <sys_created_on>2022-11-20 03:45:54</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0231d015871f15d009bd64af8bbb3523</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -818,7 +818,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:52</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:40</sys_updated_on>
         <ui_id>78e8b674-2540-4514-b453-49ef942958e7</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -855,14 +855,14 @@
         <sys_updated_on>2022-11-20 04:39:24</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">8881a78c87df199009bd64af8bbb35d5</block>
+        <block display_value="">3714d87c87ab5d5409bd64af8bbb3596</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -876,7 +876,7 @@
         <sys_created_on>2022-11-16 21:43:30</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4081a78c87df199009bd64af8bbb35d6</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -884,7 +884,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:51</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:40</sys_updated_on>
         <ui_id>de4cdd96-f3db-40cf-a7f2-e75ab7fa7c83</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -894,14 +894,14 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4081a78c87df199009bd64af8bbb35d6"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=4081a78c87df199009bd64af8bbb35d6"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">ba2d9bf31bcf519042b9ec29b04bcbec</block>
+        <block display_value="">7714d87c87ab5d5409bd64af8bbb358f</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <flow_variable/>
         <flow_variables_assigned>total_points</flow_variables_assigned>
         <inputs/>
@@ -915,7 +915,7 @@
         <sys_created_on>2022-11-16 02:46:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>722d9bf31bcf519042b9ec29b04bcbed</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -923,7 +923,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:51</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:40</sys_updated_on>
         <ui_id>91976f6d-c91d-401a-9337-49851ec34983</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -960,14 +960,14 @@
         <sys_updated_on>2022-11-16 02:54:35</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">b22d9bf31bcf519042b9ec29b04bcbf5</block>
+        <block display_value="">b714d87c87ab5d5409bd64af8bbb35a1</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <flow_variable/>
         <flow_variables_assigned>total_bonus_points</flow_variables_assigned>
         <inputs/>
@@ -981,7 +981,7 @@
         <sys_created_on>2022-11-16 02:46:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7a2d9bf31bcf519042b9ec29b04bcbf5</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -989,7 +989,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:52</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:40</sys_updated_on>
         <ui_id>d220304b-5a1b-423b-b729-c72db254f95b</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1026,14 +1026,14 @@
         <sys_updated_on>2022-11-16 02:54:35</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">ce31d015871f15d009bd64af8bbb351d</block>
+        <block display_value="">fb14d87c87ab5d5409bd64af8bbb35c6</block>
         <comment/>
         <connected_to>b29c2445-5b52-4dcf-8cf5-a6c39ee9248d</connected_to>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1048,7 +1048,7 @@
         <sys_created_on>2022-11-20 03:45:54</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ca31d015871f15d009bd64af8bbb351e</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1056,7 +1056,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:52</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:40</sys_updated_on>
         <ui_id>7539a75f-0bc3-43f8-ba57-93db14ff388b</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1105,14 +1105,14 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ca31d015871f15d009bd64af8bbb351e"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=ca31d015871f15d009bd64af8bbb351e"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">0881a78c87df199009bd64af8bbb35f1</block>
+        <block display_value="">7714d87c87ab5d5409bd64af8bbb35a8</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1126,7 +1126,7 @@
         <sys_created_on>2022-11-16 21:43:30</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cc81a78c87df199009bd64af8bbb35f1</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1134,7 +1134,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:52</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:40</sys_updated_on>
         <ui_id>e58cb358-c465-4b59-8f21-e92df6509c16</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1144,14 +1144,14 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=cc81a78c87df199009bd64af8bbb35f1"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=cc81a78c87df199009bd64af8bbb35f1"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">3e2d9bf31bcf519042b9ec29b04bcbf0</block>
+        <block display_value="">3f14d87c87ab5d5409bd64af8bbb359b</block>
         <comment/>
         <connected_to>b29c2445-5b52-4dcf-8cf5-a6c39ee9248d</connected_to>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1166,7 +1166,7 @@
         <sys_created_on>2022-11-16 02:46:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f22d9bf31bcf519042b9ec29b04bcbf1</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1174,7 +1174,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:52</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:40</sys_updated_on>
         <ui_id>06f8d41f-a8e4-4d09-aa59-6e1210ef36cb</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1223,14 +1223,14 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f22d9bf31bcf519042b9ec29b04bcbf1"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=f22d9bf31bcf519042b9ec29b04bcbf1"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">fa2d9bf31bcf519042b9ec29b04bcbe6</block>
+        <block display_value="">3b14d87c87ab5d5409bd64af8bbb3588</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1245,7 +1245,7 @@
         <sys_created_on>2022-11-16 02:46:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f62d9bf31bcf519042b9ec29b04bcbe7</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1253,7 +1253,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:51</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:39</sys_updated_on>
         <ui_id>b29c2445-5b52-4dcf-8cf5-a6c39ee9248d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1376,7 +1376,7 @@
         <label>Total Points</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</model>
+        <model display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</model>
         <model_id>08dccea31b83dd5042b9ec29b04bcb08</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_08dccea31b83dd5042b9ec29b04bcb08</name>
@@ -1461,7 +1461,7 @@
         <label>Max SubTotal</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</model>
+        <model display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</model>
         <model_id>08dccea31b83dd5042b9ec29b04bcb08</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_08dccea31b83dd5042b9ec29b04bcb08</name>
@@ -1546,7 +1546,7 @@
         <label>Total Bonus Points</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</model>
+        <model display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</model>
         <model_id>08dccea31b83dd5042b9ec29b04bcb08</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_08dccea31b83dd5042b9ec29b04bcb08</name>
@@ -1607,12 +1607,12 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_id>65ae06a71b83dd5042b9ec29b04bcb28</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_08dccea31b83dd5042b9ec29b04bcb08_table_name_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
         <sys_updated_on>2022-11-15 02:24:34</sys_updated_on>
         <url/>
@@ -1632,12 +1632,12 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_id>69ae06a71b83dd5042b9ec29b04bcb14</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Record</sys_name>
+        <sys_name/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_08dccea31b83dd5042b9ec29b04bcb08_current_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
         <sys_updated_on>2022-11-15 02:24:34</sys_updated_on>
         <url/>
@@ -1651,14 +1651,14 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"7827d2e31bc3dd5042b9ec29b04bcbd4","name":"plan","plan_signature":null}}</plan>
         <plan_id>08dccea31b83dd5042b9ec29b04bcb08</plan_id>
-        <snapshot>cdf9e04887efd15409bd64af8bbb3579</snapshot>
+        <snapshot>00d18b81876f519409bd64af8bbb3573</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-11-15 03:01:39</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>7827d2e31bc3dd5042b9ec29b04bcbd4</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1667,8 +1667,8 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:51</sys_updated_on>
-        <trigger display_value="">94a92cc487efd15409bd64af8bbb3575</trigger>
+        <sys_updated_on>2022-12-01 00:57:39</sys_updated_on>
+        <trigger display_value="">603450bc87ab5d5409bd64af8bbb35fb</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=08dccea31b83dd5042b9ec29b04bcb08"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -1684,10 +1684,10 @@
         <internal_name>secretshop_calculate_total_points_available_on__template</internal_name>
         <label_cache>[{"name":"flow_variable.max_subtotal","label":"Flow Variables➛Max SubTotal","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1e9574ae-370e-4090-9232-f1eba0b38d28"}},{"name":"4a41bc07-509b-44ac-b2f3-ef1f0b080122.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a41bc07-509b-44ac-b2f3-ef1f0b080122.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a41bc07-509b-44ac-b2f3-ef1f0b080122.table_name","label":"14 - Update Record➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a41bc07-509b-44ac-b2f3-ef1f0b080122.record","label":"14 - Update Record➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a41a04be-376c-4acf-ac5e-33e24ee9e80f.__dont_treat_as_error__","label":"5 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a41a04be-376c-4acf-ac5e-33e24ee9e80f.__action_status__","label":"5 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"93c85173-6cf1-4cb7-8b6b-fc2dc22dba76.__dont_treat_as_error__","label":"10 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"93c85173-6cf1-4cb7-8b6b-fc2dc22dba76.__action_status__","label":"10 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82e6fc24-dec1-4e05-94b6-372e43f3efbd.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82e6fc24-dec1-4e05-94b6-372e43f3efbd.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82e6fc24-dec1-4e05-94b6-372e43f3efbd.table_name","label":"9 - Update Record➛Template Table","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82e6fc24-dec1-4e05-94b6-372e43f3efbd.record","label":"9 - Update Record➛Template Record","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aadcf519-8225-4555-a883-fac36d1c1b86.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aadcf519-8225-4555-a883-fac36d1c1b86.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aadcf519-8225-4555-a883-fac36d1c1b86.table_name","label":"4 - Update Record➛Template Table","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aadcf519-8225-4555-a883-fac36d1c1b86.record","label":"4 - Update Record➛Template Record","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6df5e950-c164-4e04-bcb2-4896c761c218.__dont_treat_as_error__","label":"6 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6df5e950-c164-4e04-bcb2-4896c761c218.__action_status__","label":"6 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6df5e950-c164-4e04-bcb2-4896c761c218.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6df5e950-c164-4e04-bcb2-4896c761c218.Table","label":"6 - Look Up Records➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6df5e950-c164-4e04-bcb2-4896c761c218.Records","label":"6 - Look Up Records➛Question Records","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.template","label":"Trigger - Record Created➛Question Record➛Template","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_questions","column_name":"template"},{"name":"f0935740-b717-451a-8c84-be7f2544bbf0.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0935740-b717-451a-8c84-be7f2544bbf0.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0935740-b717-451a-8c84-be7f2544bbf0.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"f0935740-b717-451a-8c84-be7f2544bbf0.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"f0935740-b717-451a-8c84-be7f2544bbf0.Table","label":"1 - Look Up Record➛Template Table","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0935740-b717-451a-8c84-be7f2544bbf0.Record","label":"1 - Look Up Record➛Template Record","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e6533b8a-4e50-4d5e-b4f2-40d93b482327.item.max_score","label":"7 - For Each➛Question Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"max_score"},{"name":"Created or Updated_1.changed_fields","label":"Trigger - Record Created or Updated➛Changed Fields","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"165ec3bc-8e9d-4fd6-b6fc-ede685693761.context","label":"4 - Dynamic Flow➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"e6533b8a-4e50-4d5e-b4f2-40d93b482327.item","label":"7 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b9a89e07-280a-4754-a4c4-5be6b52ce849.__dont_treat_as_error__","label":"3 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"b9a89e07-280a-4754-a4c4-5be6b52ce849.__action_status__","label":"3 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"b9a89e07-280a-4754-a4c4-5be6b52ce849.Count","label":"3 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b9a89e07-280a-4754-a4c4-5be6b52ce849.Table","label":"3 - Look Up Records➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b9a89e07-280a-4754-a4c4-5be6b52ce849.Records","label":"3 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e7d6a049-9692-4fdb-8fb8-0bd3d305ca48.__dont_treat_as_error__","label":"3 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e7d6a049-9692-4fdb-8fb8-0bd3d305ca48.__action_status__","label":"3 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e7d6a049-9692-4fdb-8fb8-0bd3d305ca48.Count","label":"3 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e7d6a049-9692-4fdb-8fb8-0bd3d305ca48.Table","label":"3 - Look Up Records➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e7d6a049-9692-4fdb-8fb8-0bd3d305ca48.Records","label":"3 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"069a9a42-7431-4444-9e03-7a092e939ee0.__dont_treat_as_error__","label":"2 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"069a9a42-7431-4444-9e03-7a092e939ee0.__action_status__","label":"2 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"069a9a42-7431-4444-9e03-7a092e939ee0.error_message","label":"2 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"069a9a42-7431-4444-9e03-7a092e939ee0.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"069a9a42-7431-4444-9e03-7a092e939ee0.Table","label":"2 - Look Up Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"069a9a42-7431-4444-9e03-7a092e939ee0.Record","label":"2 - Look Up Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"96824436-9100-4b25-a39e-62541795ecde.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"96824436-9100-4b25-a39e-62541795ecde.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"96824436-9100-4b25-a39e-62541795ecde.table_name","label":"14 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"96824436-9100-4b25-a39e-62541795ecde.record","label":"14 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c7ff6cc8-fcef-4c01-accb-bd437220a368.__dont_treat_as_error__","label":"12 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c7ff6cc8-fcef-4c01-accb-bd437220a368.__action_status__","label":"12 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c7ff6cc8-fcef-4c01-accb-bd437220a368.table_name","label":"12 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c7ff6cc8-fcef-4c01-accb-bd437220a368.record","label":"12 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85d5b929-7512-4ebc-a363-19bd26e11355.item.max_score","label":"6 - For Each➛Question Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"max_score"},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{}},{"name":"0ae7a9bd-a121-4fb6-a070-724c2eaeb2a4.__dont_treat_as_error__","label":"9 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0ae7a9bd-a121-4fb6-a070-724c2eaeb2a4.__action_status__","label":"9 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85d5b929-7512-4ebc-a363-19bd26e11355.item","label":"6 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"122ae5b8-5618-4274-8767-b13ca3e0b3e5.Records","label":"5 - Look Up Records➛Question Records","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"122ae5b8-5618-4274-8767-b13ca3e0b3e5.Table","label":"5 - Look Up Records➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"122ae5b8-5618-4274-8767-b13ca3e0b3e5.Count","label":"5 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"122ae5b8-5618-4274-8767-b13ca3e0b3e5.__action_status__","label":"5 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"122ae5b8-5618-4274-8767-b13ca3e0b3e5.__dont_treat_as_error__","label":"5 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c17fd6b4-5427-452f-9fe7-c6f091b20a03.Record","label":"2 - Look Up Record➛Template Record","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c17fd6b4-5427-452f-9fe7-c6f091b20a03.Table","label":"2 - Look Up Record➛Template Table","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c17fd6b4-5427-452f-9fe7-c6f091b20a03.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c17fd6b4-5427-452f-9fe7-c6f091b20a03.error_message","label":"2 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c17fd6b4-5427-452f-9fe7-c6f091b20a03.__action_status__","label":"2 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c17fd6b4-5427-452f-9fe7-c6f091b20a03.__dont_treat_as_error__","label":"2 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.template","label":"Trigger - Record Created or Updated➛Question Record➛Template","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_questions","column_name":"template"},{"name":"1ea4c431-9620-41f9-8530-4dc81c564add.Records","label":"7 - Look Up Records➛Question Records","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ea4c431-9620-41f9-8530-4dc81c564add.Table","label":"7 - Look Up Records➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ea4c431-9620-41f9-8530-4dc81c564add.Count","label":"7 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ea4c431-9620-41f9-8530-4dc81c564add.__action_status__","label":"7 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ea4c431-9620-41f9-8530-4dc81c564add.__dont_treat_as_error__","label":"7 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d4d8e45e-7e6e-47ed-bc19-914166f18d31.item","label":"8 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"flow_variable.total_bonus_points","label":"Flow Variables➛Total Bonus Points","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"585bc573-7f9d-4940-b226-d05c746d6f8f"}},{"name":"flow_variable.total_points","label":"Flow Variables➛Total Points","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"85629216-3ae3-4b1a-898f-69d4aa2bbbe7"}},{"name":"Created or Updated_1.current.category","label":"Trigger - Record Created or Updated➛Question Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"category","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Section","reference":false,"missing":false,"rawLabel":"Section","value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Questions","reference":false,"missing":false,"rawLabel":"Questions","value":"Questions","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Bonus Question","reference":false,"missing":false,"rawLabel":"Bonus Question","value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Sub Total","reference":false,"missing":false,"rawLabel":"Sub Total","value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"b84b4cbf-9219-4243-bf48-4a81459c7a25.__action_status__","label":"1 - Rally - Creation Workload Component➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"27298173-2c9a-458a-ae09-17ce04f36b12"}},{"name":"b84b4cbf-9219-4243-bf48-4a81459c7a25.__dont_treat_as_error__","label":"1 - Rally - Creation Workload Component➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"587a3394-4fc1-4392-b039-7d89f588dd72"}},{"name":"58b76807-89fa-42a3-b38d-1774673b77b3.__action_status__","label":"2 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"58b76807-89fa-42a3-b38d-1774673b77b3.__dont_treat_as_error__","label":"2 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.type","label":"Trigger - Record Created➛Question Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"type","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Yes/No","reference":false,"missing":false,"rawLabel":"Yes/No","value":"Yes/No","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Range","reference":false,"missing":false,"rawLabel":"Range","value":"Range","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Sub Total","reference":false,"missing":false,"rawLabel":"Sub Total","value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Section","reference":false,"missing":false,"rawLabel":"Section","value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"Created_1.current.category","label":"Trigger - Record Created➛Question Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"category","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"reference":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"image":"","selected":false,"label":"Section","reference":false,"missing":false,"rawLabel":"Section","value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Questions","reference":false,"missing":false,"rawLabel":"Questions","value":"Questions","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Bonus Question","reference":false,"missing":false,"rawLabel":"Bonus Question","value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_questions"}},{"used":false,"image":"","selected":false,"label":"Sub Total","reference":false,"missing":false,"rawLabel":"Sub Total","value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"bb3d229f-0223-4f50-bbe4-aa871ad86fb4.__action_status__","label":"15 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb3d229f-0223-4f50-bbe4-aa871ad86fb4.__dont_treat_as_error__","label":"15 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
-        <name>SecretShop: Calculate total &amp; bonus pts on Question insertion</name>
+        <name>Calculate total &amp; bonus pts on Question insertion</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</parent_flow>
+        <parent_flow display_value="Calculate total &amp; bonus pts on Question insertion">08dccea31b83dd5042b9ec29b04bcb08</parent_flow>
         <remote_trigger_id/>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -1699,7 +1699,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>8c2752e31bc3dd5042b9ec29b04bcb9e</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1708,7 +1708,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_variable_value action="delete_multiple" query="document_key=8c2752e31bc3dd5042b9ec29b04bcb9e"/>
@@ -1716,7 +1716,7 @@
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment>Calculates total bonus points and total points after each question is created and updates the template.</comment>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <name>Created</name>
         <remote_sys_id/>
         <sys_class_name>sys_hub_trigger_instance</sys_class_name>
@@ -1724,7 +1724,7 @@
         <sys_created_on>2022-11-15 03:01:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ec27d2e31bc3dd5042b9ec29b04bcb67</sys_id>
-        <sys_mod_count>85</sys_mod_count>
+        <sys_mod_count>88</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1732,7 +1732,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:51</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:39</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -1870,7 +1870,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</model>
+        <model display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</model>
         <model_id>8c2752e31bc3dd5042b9ec29b04bcb9e</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_8c2752e31bc3dd5042b9ec29b04bcb9e</name>
@@ -1894,7 +1894,7 @@
         <sys_created_on>2022-11-15 03:01:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>542752e31bc3dd5042b9ec29b04bcba3</sys_id>
-        <sys_mod_count>57</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1902,7 +1902,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:48</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:36</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -1955,7 +1955,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</model>
+        <model display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</model>
         <model_id>8c2752e31bc3dd5042b9ec29b04bcb9e</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_8c2752e31bc3dd5042b9ec29b04bcb9e</name>
@@ -1979,7 +1979,7 @@
         <sys_created_on>2022-11-15 03:01:37</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>982792e31bc3dd5042b9ec29b04bcbc8</sys_id>
-        <sys_mod_count>57</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1987,7 +1987,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:48</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:36</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -2011,7 +2011,7 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <order>14</order>
         <parent_ui_id>7539a75f-0bc3-43f8-ba57-93db14ff388b</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2019,7 +2019,7 @@
         <sys_created_on>2022-11-20 04:18:51</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>68c81c9d871f15d009bd64af8bbb3507</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2027,7 +2027,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>4a41bc07-509b-44ac-b2f3-ef1f0b080122</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=68c81c9d871f15d009bd64af8bbb3507"/>
@@ -2091,7 +2091,7 @@
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <order>15</order>
         <parent_ui_id>7539a75f-0bc3-43f8-ba57-93db14ff388b</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2099,7 +2099,7 @@
         <sys_created_on>2022-11-20 04:19:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7c0998dd871f15d009bd64af8bbb358d</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2107,7 +2107,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>bb3d229f-0223-4f50-bbe4-aa871ad86fb4</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7c0998dd871f15d009bd64af8bbb358d"/>
@@ -2133,7 +2133,7 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <order>4</order>
         <parent_ui_id>b29c2445-5b52-4dcf-8cf5-a6c39ee9248d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2141,7 +2141,7 @@
         <sys_created_on>2022-11-16 02:57:51</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7edfd33b1bcf519042b9ec29b04bcb06</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2149,7 +2149,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>aadcf519-8225-4555-a883-fac36d1c1b86</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7edfd33b1bcf519042b9ec29b04bcb06"/>
@@ -2213,7 +2213,7 @@
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2221,7 +2221,7 @@
         <sys_created_on>2022-11-16 02:47:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>927d17371bcf519042b9ec29b04bcbca</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2229,7 +2229,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:48</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>f0935740-b717-451a-8c84-be7f2544bbf0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=927d17371bcf519042b9ec29b04bcbca"/>
@@ -2281,7 +2281,7 @@
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <order>5</order>
         <parent_ui_id>b29c2445-5b52-4dcf-8cf5-a6c39ee9248d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2289,7 +2289,7 @@
         <sys_created_on>2022-11-16 21:59:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>be256bcc8713599009bd64af8bbb3506</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2297,7 +2297,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>a41a04be-376c-4acf-ac5e-33e24ee9e80f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=be256bcc8713599009bd64af8bbb3506"/>
@@ -2323,7 +2323,7 @@
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <order>10</order>
         <parent_ui_id>06f8d41f-a8e4-4d09-aa59-6e1210ef36cb</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2331,7 +2331,7 @@
         <sys_created_on>2022-11-16 21:59:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c3256bcc8713599009bd64af8bbb350d</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2339,7 +2339,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>93c85173-6cf1-4cb7-8b6b-fc2dc22dba76</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c3256bcc8713599009bd64af8bbb350d"/>
@@ -2365,7 +2365,7 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <order>9</order>
         <parent_ui_id>06f8d41f-a8e4-4d09-aa59-6e1210ef36cb</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2373,7 +2373,7 @@
         <sys_created_on>2022-11-16 02:57:51</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fadfd33b1bcf519042b9ec29b04bcb0c</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2381,7 +2381,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>82e6fc24-dec1-4e05-94b6-372e43f3efbd</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fadfd33b1bcf519042b9ec29b04bcb0c"/>
@@ -2441,14 +2441,14 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=8c2752e31bc3dd5042b9ec29b04bcb9e"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=8c2752e31bc3dd5042b9ec29b04bcb9e^sys_idNOT IN0b311415871f15d009bd64af8bbb35ea,127d57371bcf519042b9ec29b04bcb02,38812b8c87df199009bd64af8bbb35a5,527d57371bcf519042b9ec29b04bcb06,567d57371bcf519042b9ec29b04bcb0a,927d17371bcf519042b9ec29b04bcbf1,cb311415871f15d009bd64af8bbb35e6,fc812b8c87df199009bd64af8bbb3589"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">4a31d015871f15d009bd64af8bbb3522</block>
+        <block display_value="">7714d87c87ab5d5409bd64af8bbb35cc</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <flow_variable/>
         <flow_variables_assigned>max_subtotal</flow_variables_assigned>
         <inputs/>
@@ -2462,7 +2462,7 @@
         <sys_created_on>2022-11-20 03:45:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0b311415871f15d009bd64af8bbb35ea</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2470,7 +2470,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>78e8b674-2540-4514-b453-49ef942958e7</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2507,14 +2507,14 @@
         <sys_updated_on>2022-11-20 04:39:45</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">ba2d9bf31bcf519042b9ec29b04bcbec</block>
+        <block display_value="">7714d87c87ab5d5409bd64af8bbb358f</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <flow_variable/>
         <flow_variables_assigned>total_points</flow_variables_assigned>
         <inputs/>
@@ -2528,7 +2528,7 @@
         <sys_created_on>2022-11-16 02:47:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>127d57371bcf519042b9ec29b04bcb02</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2536,7 +2536,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>91976f6d-c91d-401a-9337-49851ec34983</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2573,14 +2573,14 @@
         <sys_updated_on>2022-11-16 02:54:37</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">0881a78c87df199009bd64af8bbb35f1</block>
+        <block display_value="">7714d87c87ab5d5409bd64af8bbb35a8</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2594,7 +2594,7 @@
         <sys_created_on>2022-11-16 21:43:34</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>38812b8c87df199009bd64af8bbb35a5</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2602,7 +2602,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>e58cb358-c465-4b59-8f21-e92df6509c16</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2612,14 +2612,14 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=38812b8c87df199009bd64af8bbb35a5"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=38812b8c87df199009bd64af8bbb35a5"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">3e2d9bf31bcf519042b9ec29b04bcbf0</block>
+        <block display_value="">3f14d87c87ab5d5409bd64af8bbb359b</block>
         <comment/>
         <connected_to>b29c2445-5b52-4dcf-8cf5-a6c39ee9248d</connected_to>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2634,7 +2634,7 @@
         <sys_created_on>2022-11-16 02:47:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>527d57371bcf519042b9ec29b04bcb06</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2642,7 +2642,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>06f8d41f-a8e4-4d09-aa59-6e1210ef36cb</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2691,14 +2691,14 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=527d57371bcf519042b9ec29b04bcb06"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=527d57371bcf519042b9ec29b04bcb06"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">b22d9bf31bcf519042b9ec29b04bcbf5</block>
+        <block display_value="">b714d87c87ab5d5409bd64af8bbb35a1</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <flow_variable/>
         <flow_variables_assigned>total_bonus_points</flow_variables_assigned>
         <inputs/>
@@ -2712,7 +2712,7 @@
         <sys_created_on>2022-11-16 02:47:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>567d57371bcf519042b9ec29b04bcb0a</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2720,7 +2720,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>d220304b-5a1b-423b-b729-c72db254f95b</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2757,14 +2757,14 @@
         <sys_updated_on>2022-11-16 02:54:37</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">fa2d9bf31bcf519042b9ec29b04bcbe6</block>
+        <block display_value="">3b14d87c87ab5d5409bd64af8bbb3588</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2779,7 +2779,7 @@
         <sys_created_on>2022-11-16 02:47:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>927d17371bcf519042b9ec29b04bcbf1</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2787,7 +2787,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>b29c2445-5b52-4dcf-8cf5-a6c39ee9248d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2836,14 +2836,14 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=927d17371bcf519042b9ec29b04bcbf1"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=927d17371bcf519042b9ec29b04bcbf1"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">ce31d015871f15d009bd64af8bbb351d</block>
+        <block display_value="">fb14d87c87ab5d5409bd64af8bbb35c6</block>
         <comment/>
         <connected_to>b29c2445-5b52-4dcf-8cf5-a6c39ee9248d</connected_to>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2858,7 +2858,7 @@
         <sys_created_on>2022-11-20 03:45:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cb311415871f15d009bd64af8bbb35e6</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2866,7 +2866,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>7539a75f-0bc3-43f8-ba57-93db14ff388b</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2915,14 +2915,14 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=cb311415871f15d009bd64af8bbb35e6"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=cb311415871f15d009bd64af8bbb35e6"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">8881a78c87df199009bd64af8bbb35d5</block>
+        <block display_value="">3714d87c87ab5d5409bd64af8bbb3596</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
+        <flow display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2936,7 +2936,7 @@
         <sys_created_on>2022-11-16 21:43:33</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fc812b8c87df199009bd64af8bbb3589</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2944,7 +2944,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-28 18:35:49</sys_updated_on>
+        <sys_updated_on>2022-12-01 00:57:37</sys_updated_on>
         <ui_id>de4cdd96-f3db-40cf-a7f2-e75ab7fa7c83</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3028,7 +3028,7 @@
         <label>Total Points</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</model>
+        <model display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</model>
         <model_id>8c2752e31bc3dd5042b9ec29b04bcb9e</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_8c2752e31bc3dd5042b9ec29b04bcb9e</name>
@@ -3113,7 +3113,7 @@
         <label>Total Bonus Points</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</model>
+        <model display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</model>
         <model_id>8c2752e31bc3dd5042b9ec29b04bcb9e</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_8c2752e31bc3dd5042b9ec29b04bcb9e</name>
@@ -3198,7 +3198,7 @@
         <label>Max SubTotal</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</model>
+        <model display_value="Calculate total &amp; bonus pts on Question insertion">8c2752e31bc3dd5042b9ec29b04bcb9e</model>
         <model_id>8c2752e31bc3dd5042b9ec29b04bcb9e</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_8c2752e31bc3dd5042b9ec29b04bcb9e</name>
@@ -3259,12 +3259,12 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_id>542792e31bc3dd5042b9ec29b04bcbcd</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_8c2752e31bc3dd5042b9ec29b04bcb9e_table_name_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
         <sys_updated_on>2022-11-15 03:01:37</sys_updated_on>
         <url/>
@@ -3284,12 +3284,12 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_id>902792e31bc3dd5042b9ec29b04bcbb0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Record</sys_name>
+        <sys_name/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_8c2752e31bc3dd5042b9ec29b04bcb9e_current_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
         <sys_updated_on>2022-11-15 03:01:37</sys_updated_on>
         <url/>
