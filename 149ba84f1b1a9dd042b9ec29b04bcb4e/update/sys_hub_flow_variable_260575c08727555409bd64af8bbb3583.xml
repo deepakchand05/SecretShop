@@ -38,7 +38,7 @@
         <label>totalPoints</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Recalucate Totals and SubTotals on Questions">0e0535c08727555409bd64af8bbb354e</model>
+        <model display_value="Recalculate Totals and SubTotals on Questions">0e0535c08727555409bd64af8bbb354e</model>
         <model_id>0e0535c08727555409bd64af8bbb354e</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_0e0535c08727555409bd64af8bbb354e</name>

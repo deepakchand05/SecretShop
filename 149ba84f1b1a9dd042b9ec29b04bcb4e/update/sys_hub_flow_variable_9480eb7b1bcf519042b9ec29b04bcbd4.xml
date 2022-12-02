@@ -38,7 +38,7 @@
         <label>Total Points</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Calculate total &amp; bonus pts on Question update">9480eb7b1bcf519042b9ec29b04bcbcb</model>
+        <model display_value="Calculate total &amp; bonus pts on Question update">9480eb7b1bcf519042b9ec29b04bcbcb</model>
         <model_id>9480eb7b1bcf519042b9ec29b04bcbcb</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_9480eb7b1bcf519042b9ec29b04bcbcb</name>

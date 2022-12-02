@@ -38,7 +38,7 @@
         <label>sectionSubToal</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="SecretShop: Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
+        <model display_value="Scoring Logic">4657381f1b8fd95042b9ec29b04bcbc5</model>
         <model_id>4657381f1b8fd95042b9ec29b04bcbc5</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_4657381f1b8fd95042b9ec29b04bcbc5</name>

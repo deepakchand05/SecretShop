@@ -38,7 +38,7 @@
         <label>totalBonusPoints</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SecretShop: Recalucate Totals and SubTotals on Questions">e579f8cc87e3155409bd64af8bbb351f</model>
+        <model display_value="Recalculate Totals and SubTotals on Questions">e579f8cc87e3155409bd64af8bbb351f</model>
         <model_id>e579f8cc87e3155409bd64af8bbb351f</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_e579f8cc87e3155409bd64af8bbb351f</name>

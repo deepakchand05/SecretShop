@@ -29,15 +29,15 @@
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-10-06 23:07:37</sys_created_on>
         <sys_id>149ba84f1b1a9dd042b9ec29b04bcb4e</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-01 00:41:45</sys_updated_on>
+        <sys_updated_on>2022-12-02 21:04:29</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.1.5</version>
+        <version>2.0.1</version>
     </sys_app>
 </record_update>
