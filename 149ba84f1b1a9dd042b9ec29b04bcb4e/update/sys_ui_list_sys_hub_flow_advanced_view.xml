@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sys_hub_flow" version="2" view="advanced_view">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="sys_hub_flow" element="NULL" name="sys_hub_flow" parent="NULL" relationship="NULL" sys_domain="global" view="9b248b9ce741230068c30b63c2f6a969">b905875187a3559409bd64af8bbb3531</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-12-03 03:07:13</sys_created_on>
+            <sys_id>b505875187a3559409bd64af8bbb3532</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-12-03 03:07:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>access</element>
+            <list_id display_value="sys_hub_flow" element="NULL" name="sys_hub_flow" parent="NULL" relationship="NULL" sys_domain="global" view="9b248b9ce741230068c30b63c2f6a969">b905875187a3559409bd64af8bbb3531</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-12-03 03:07:13</sys_created_on>
+            <sys_id>3905875187a3559409bd64af8bbb3532</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-12-03 03:07:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>acls</element>
+            <list_id display_value="sys_hub_flow" element="NULL" name="sys_hub_flow" parent="NULL" relationship="NULL" sys_domain="global" view="9b248b9ce741230068c30b63c2f6a969">b905875187a3559409bd64af8bbb3531</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-12-03 03:07:13</sys_created_on>
+            <sys_id>b905875187a3559409bd64af8bbb3532</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-12-03 03:07:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="sys_hub_flow" element="NULL" name="sys_hub_flow" parent="NULL" relationship="NULL" sys_domain="global" view="9b248b9ce741230068c30b63c2f6a969">b905875187a3559409bd64af8bbb3531</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-12-03 03:07:13</sys_created_on>
+            <sys_id>3d05875187a3559409bd64af8bbb3532</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-12-03 03:07:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>annotation</element>
+            <list_id display_value="sys_hub_flow" element="NULL" name="sys_hub_flow" parent="NULL" relationship="NULL" sys_domain="global" view="9b248b9ce741230068c30b63c2f6a969">b905875187a3559409bd64af8bbb3531</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-12-03 03:07:13</sys_created_on>
+            <sys_id>bd05875187a3559409bd64af8bbb3532</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-12-03 03:07:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>category</element>
+            <list_id display_value="sys_hub_flow" element="NULL" name="sys_hub_flow" parent="NULL" relationship="NULL" sys_domain="global" view="9b248b9ce741230068c30b63c2f6a969">b905875187a3559409bd64af8bbb3531</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-12-03 03:07:13</sys_created_on>
+            <sys_id>3105875187a3559409bd64af8bbb3533</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-12-03 03:07:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="sys_hub_flow" element="NULL" name="sys_hub_flow" parent="NULL" relationship="NULL" sys_domain="global" view="9b248b9ce741230068c30b63c2f6a969">b905875187a3559409bd64af8bbb3531</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-12-03 03:07:13</sys_created_on>
+            <sys_id>b105875187a3559409bd64af8bbb3533</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-12-03 03:07:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_hub_flow</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-12-03 03:07:13</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>b905875187a3559409bd64af8bbb3531</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_hub_flow</sys_name>
+            <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+            <sys_update_name>sys_ui_list_sys_hub_flow_advanced_view</sys_update_name>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-12-03 03:07:13</sys_updated_on>
+            <sys_user/>
+            <view display_value="Advanced view" name="advanced_view">9b248b9ce741230068c30b63c2f6a969</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -14,7 +14,7 @@
         <mobile_title>Scorecards</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_autg_kbb_secret_scorecards</name>
-        <order>100</order>
+        <order>200</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -27,8 +27,8 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>3e83f44b1b5a9dd042b9ec29b04bcbce</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Scorecards</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>All</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
@@ -36,9 +36,9 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_app_module_3e83f44b1b5a9dd042b9ec29b04bcbce</sys_update_name>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-10-07 20:15:31</sys_updated_on>
+        <sys_updated_on>2022-12-03 03:01:09</sys_updated_on>
         <timeline_page/>
-        <title>Scorecards</title>
+        <title>All</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
