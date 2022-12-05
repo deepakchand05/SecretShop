@@ -15,7 +15,7 @@
         <sys_update_name>sys_security_acl_role_fe4da4431b5a9dd042b9ec29b04bcb14</sys_update_name>
         <sys_updated_by>datluri-a</sys_updated_by>
         <sys_updated_on>2022-10-06 23:15:09</sys_updated_on>
-        <sys_user_role display_value="x_autg_kbb_secret.scorecard" name="x_autg_kbb_secret.scorecard">f6cbac8f1b1a9dd042b9ec29b04bcbc6</sys_user_role>
+        <sys_user_role display_value="x_autg_kbb_secret.scorecard_admin" name="x_autg_kbb_secret.scorecard_admin">f6cbac8f1b1a9dd042b9ec29b04bcbc6</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>
