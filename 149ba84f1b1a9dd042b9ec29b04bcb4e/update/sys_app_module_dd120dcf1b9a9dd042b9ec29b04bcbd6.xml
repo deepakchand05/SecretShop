@@ -18,7 +18,7 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_autg_kbb_secret.scorecard</roles>
+        <roles>x_autg_kbb_secret.template_admin,x_autg_kbb_secret.scorecards_user</roles>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -27,7 +27,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>dd120dcf1b9a9dd042b9ec29b04bcbd6</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Templates</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
@@ -36,7 +36,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_app_module_dd120dcf1b9a9dd042b9ec29b04bcbd6</sys_update_name>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-03 03:00:17</sys_updated_on>
+        <sys_updated_on>2022-12-06 00:18:06</sys_updated_on>
         <timeline_page/>
         <title>Templates</title>
         <uncancelable>false</uncancelable>

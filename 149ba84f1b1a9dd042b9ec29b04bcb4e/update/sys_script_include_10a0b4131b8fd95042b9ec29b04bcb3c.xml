@@ -420,7 +420,7 @@ secretshopUtilities.prototype = {
             //If formula on template is "Total Score"
             if (scoreType == this.scoreType) {
                 //WIP
-                // this.updatePointsReceived(current, answer, min, max);
+                 this.updatePointsReceived(current, answer, min, max);
                 //Question type is Yes/No
                 if (current.type == "Yes/No") {
                     this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() current.type ==  " + current.type + "   totalscore = " + totalscore);
@@ -470,7 +470,7 @@ secretshopUtilities.prototype = {
                 //Question type is Range
                 if (current.type == "Range") {
                     //WIP
-                    //this.updatePointsReceived(current, answer, min, max);
+                    this.updatePointsReceived(current, answer, min, max);
                     this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "   totalscore = " + totalscore);
                     this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "   totalscore = " + totalscore + "  Answer =" + answer);
                     if (totalscore < 0 && global.JSUtil.notNil(answer)) {
@@ -563,10 +563,10 @@ secretshopUtilities.prototype = {
                 if (current.type == 'Yes/No') {
                     if (answer == "Yes") {
                         pr.points_received = parseInt(max);
-                        pr.percent_points = Math.ceil((parseInt(max) / parseInt(max)) * 100);
+                        pr.percent_of_points = Math.ceil((parseInt(max) / parseInt(max)) * 100);
                     } else if (answer == "No") {
                         pr.points_received = parseInt(min);
-                        pr.percent_points = Math.ceil((parseInt(min) / parseInt(max)) * 100);
+                        pr.percent_of_points = Math.ceil((parseInt(min) / parseInt(max)) * 100);
                     } else if (global.JSUtil.nil(answer))
                         pr.points_received = 0;
                     else {
@@ -578,7 +578,7 @@ secretshopUtilities.prototype = {
                 } else if (current.type == "Range") {
                     if (global.JSUtil.notNil(answer)) {
                         pr.points_received = parseInt(answer);
-                        pr.percent_points = Math.ceil((parseInt(answer) / parseInt(pr.max_score)) * 100);
+                        pr.percent_of_points = Math.ceil((parseInt(answer) / parseInt(pr.max_score)) * 100);
                     }
 
                 } else {
@@ -631,7 +631,7 @@ secretshopUtilities.prototype = {
             ans.query();
             if (ans.next()) {
                 ans.answer = this.getAnswerSYSID(this.answerChoiceTable, result.subtotal.toString()).toString(); //this.dependentValue
-                ans.percent_points = result.percentOfPoints;
+                ans.percent_of_points = result.percentOfPoints;
                 ans.points_received = parseInt(result.subtotal);
 
                 this.gl.logInfo("secretshopUtilities: updateSectionSubtotal() = ans.answer  = " + ans.answer + "  = result.subtotal = " + result.subtotal + "   result.order = " + result.order + "   result.percentOfPoints  = " + result.percentOfPoints + " result.sysID  =" + result.sysID);
@@ -750,7 +750,7 @@ secretshopUtilities.prototype = {
         <sys_created_on>2022-11-14 00:56:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>10a0b4131b8fd95042b9ec29b04bcb3c</sys_id>
-        <sys_mod_count>175</sys_mod_count>
+        <sys_mod_count>178</sys_mod_count>
         <sys_name>secretshopUtilities</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
@@ -758,6 +758,6 @@ secretshopUtilities.prototype = {
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_script_include_10a0b4131b8fd95042b9ec29b04bcb3c</sys_update_name>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-05 15:46:33</sys_updated_on>
+        <sys_updated_on>2022-12-05 22:01:36</sys_updated_on>
     </sys_script_include>
 </record_update>
