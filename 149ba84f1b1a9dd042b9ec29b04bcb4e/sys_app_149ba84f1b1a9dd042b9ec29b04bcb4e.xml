@@ -22,16 +22,16 @@
         <scoped_administration>false</scoped_administration>
         <short_description>Kelly Blue Book Secret Shop Scorecard</short_description>
         <source>x_autg_kbb_secret</source>
-        <store_correlation_id>REPOAPP0000736731</store_correlation_id>
+        <store_correlation_id>REPOAPP0000736782</store_correlation_id>
         <store_url/>
         <sys_class_name>sys_app</sys_class_name>
         <sys_code/>
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-10-06 23:07:37</sys_created_on>
         <sys_id>149ba84f1b1a9dd042b9ec29b04bcb4e</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-07 03:48:59</sys_updated_on>
+        <sys_updated_on>2022-12-07 03:49:43</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
