@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_autg_kbb_secret.questionOrder</event_name>
+        <name>Question Order changed</name>
+        <order>100</order>
+        <script><![CDATA[//Update the subtotal of the respective section the newly inserted questions is inserted on.
+/*
+event.parm1 = previous object , event.parm2 = username
+*/
+
+var secretShop = new x_autg_kbb_secret.secretshopUtilities();
+secretShop.questionOrderUpdated(current,event.parm1,event.parm2);]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-12-07 00:32:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>89a7cfe287e791d409bd64af8bbb3596</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Question Order changed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sysevent_script_action_89a7cfe287e791d409bd64af8bbb3596</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-07 00:51:02</sys_updated_on>
+    </sysevent_script_action>
+</record_update>
