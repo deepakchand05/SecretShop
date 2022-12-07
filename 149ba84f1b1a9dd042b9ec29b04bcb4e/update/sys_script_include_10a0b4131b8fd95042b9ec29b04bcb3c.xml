@@ -743,12 +743,108 @@ secretshopUtilities.prototype = {
 
     },
 
+    //WIP
     questionOrderUpdated: function(currentObj, previousOrder, previousQMaxValue) {
         this.gl.logInfo("secretshopUtilities: questionOrderupdated() =  previousOrder  = " + previousOrder + "  currentObj.order = " + currentObj.order + "   previousQMaxValue = " + previousQMaxValue);
-		
-		//update previous section subtotal.
-		//update current/new section subtotal.
-		//Test before coding: check total value of the template
+
+        //update previous section subtotal.
+        //update current/new section subtotal.
+        //Check if order of the question pertains within the section, then no changes to be made.
+        var jsonObjCurrent = {},
+            jsonObjPrevious = {};
+
+        var currentOrder = currentObj.order,
+            currentQMaxValue = currentObj.max_score;
+
+        var cSectionOrder = 0,
+            cSubTotalOrder = 0,
+            cSubTotalMax;
+
+        var pSectionOrder = 0,
+            pSubTotalOrder = 0,
+            pSubTotalMax;
+
+        var cQuesOrder = new GlideRecord(this.questionTable);
+        cQuesOrder.orderBy('order');
+        cQuesOrder.addQuery("active", true);
+        cQuesOrder.addQuery("category", this.quesType);
+        cQuesOrder.addQuery("type", this.quesType);
+        cQuesOrder.addQuery('order', ">", currentQuesOrder);
+        cQuesOrder.addQuery("template", currentObj.template);
+        //ques.addQuery(encodedQuery);
+        cQuesOrder.query();
+        if (cQuesOrder.next()) {
+
+            this.gl.logDebug("secretshopUtilities: updateMaxSubTotalQuestion() subTotalOrder = " + cQuesOrder.order + "  cQuesOrder.number =  " + cQuesOrder.number + "    cQuesOrder.question  =  " + cQuesOrder.question);
+
+            if (cQuesOrder.type == "Sub Total" && cQuesOrder.order > currentQuesOrder) {
+                cSubTotalOrder = cQuesOrder.order;
+                cSectionOrder = cQuesOrder.subtotal_for_section.order;
+                cSubTotalMax = cQuesOrder.subtotal_max;
+
+                jsonObjCurrent.cSubTotalOrder = cSubTotalOrder;
+                jsonObjCurrent.cSectionOrder = cSectionOrder;
+                jsonObjCurrent.cSubTotalMax = cSubTotalMax;
+                jsonObjCurrent.cSubTotalSYSID = cQuesOrder.sys_id;
+                /*
+                                    this.gl.logDebug("secretshopUtilities: updateMaxSubTotalQuestion() cSubTotalOrder " + cSubTotalOrder + "  cSectionOrder =  " + cSectionOrder + "    cSubTotalMax  =  " + cSubTotalMax);
+                                    this.gl.logInfo("secretshopUtilities: updateMaxSubTotalQuestion() subTotalOrder " + subTotalOrder + "  sectionOrder =  " + sectionOrder + "    subTotalMax  =  " + subTotalMax);
+                                    if (cSubTotalMax == 0 || cSubTotalMax < 0) {
+                                        cSubTotalMax = 0;
+                                        cSubTotalMax = parseInt(cSubTotalMax) + parseInt(currentQMaxValue);
+                                    }
+                			*/
+
+
+            }
+        }
+
+
+
+
+        var pQuesOrder = new GlideRecord(this.questionTable);
+        pQuesOrder.orderBy('order');
+        pQuesOrder.addQuery("active", true);
+        pQuesOrder.addQuery("category", this.quesType);
+        pQuesOrder.addQuery("type", this.quesType);
+        pQuesOrder.addQuery('order', ">", previousOrder);
+        pQuesOrder.addQuery("template", currentObj.template);
+        //ques.addQuery(encodedQuery);
+        pQuesOrder.query();
+        if (pQuesOrder.next()) {
+
+            this.gl.logDebug("secretshopUtilities: updateMaxSubTotalQuestion() Previous subTotalOrder = " + pQuesOrder.order + "  pQuesOrder.number =  " + pQuesOrder.number + "    pQuesOrder.question  =  " + pQuesOrder.question);
+
+            if (pQuesOrder.type == "Sub Total" && pQuesOrder.order > previousOrder) {
+                pSubTotalOrder = pQuesOrder.order;
+                pSectionOrder = pQuesOrder.subtotal_for_section.order;
+                pSubTotalMax = pQuesOrder.subtotal_max;
+
+                jsonObjPrevious.cSubTotalOrder = pSubTotalOrder;
+                jsonObjPrevious.cSectionOrder = pSectionOrder;
+                jsonObjPrevious.cSubTotalMax = pSubTotalMax;
+                jsonObjPrevious.cSubTotalSYSID = pQuesOrder.sys_id;
+                /*
+                                    this.gl.logDebug("secretshopUtilities: updateMaxSubTotalQuestion() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+                                    this.gl.logInfo("secretshopUtilities: updateMaxSubTotalQuestion() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+                                    if (pSubTotalMax == 0 || pSubTotalMax < 0) {
+                                        pSubTotalMax = 0;
+                                        pSubTotalMax = parseInt(pSubTotalMax) + parseInt(previousQMaxValue);
+                                    }
+                			*/
+
+
+            }
+        }
+
+
+        if ((parseInt(jsonObjPrevious.cSubTotalOrder.toString()) == parseInt(jsonObjCurrent.cSubTotalOrder.toString())) && (parseInt(jsonObjPrevious.cSectionOrder.toString()) == parseInt(jsonObjCurrent.cSectionOrder.toString())) && (parseInt(jsonObjPrevious.cSubTotalMax.toString()) == parseInt(jsonObjCurrent.cSubTotalMax.toString()))) {
+
+            this.gl.logDebug("secretshopUtilities: questionOrderUpdated()  No change is required as question was re-ordered within the same section");
+            this.gl.logInfo("secretshopUtilities: questionOrderUpdated()  No change is required as question was re-ordered within the same section");
+        }
+
+
 
     },
 
@@ -768,7 +864,7 @@ secretshopUtilities.prototype = {
         <sys_created_on>2022-11-14 00:56:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>10a0b4131b8fd95042b9ec29b04bcb3c</sys_id>
-        <sys_mod_count>184</sys_mod_count>
+        <sys_mod_count>188</sys_mod_count>
         <sys_name>secretshopUtilities</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
@@ -776,6 +872,6 @@ secretshopUtilities.prototype = {
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_script_include_10a0b4131b8fd95042b9ec29b04bcb3c</sys_update_name>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-07 00:59:23</sys_updated_on>
+        <sys_updated_on>2022-12-07 03:48:18</sys_updated_on>
     </sys_script_include>
 </record_update>
