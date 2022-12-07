@@ -40,7 +40,10 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
     if (current.order.changes() && !current.max_score.changes()) {
-        gs.eventQueue("x_autg_kbb_secret.questionOrder", current, previous.order, previous.max_score);
+
+        var secretShop = new x_autg_kbb_secret.secretshopUtilities();
+        secretShop.questionOrderUpdated(current, previous.order, previous.max_score);
+        //  gs.eventQueue("x_autg_kbb_secret.questionOrder", current, previous.order, previous.max_score);
     }
 
 })(current, previous);]]></script>
@@ -50,7 +53,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>c9a1436e87a791d409bd64af8bbb3549</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Question order updated</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
@@ -59,7 +62,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_script_c9a1436e87a791d409bd64af8bbb3549</sys_update_name>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-07 06:41:11</sys_updated_on>
+        <sys_updated_on>2022-12-07 22:50:52</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
