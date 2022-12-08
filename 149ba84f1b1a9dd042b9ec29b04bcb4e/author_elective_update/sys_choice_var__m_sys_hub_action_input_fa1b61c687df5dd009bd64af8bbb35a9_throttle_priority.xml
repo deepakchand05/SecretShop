@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="throttle_priority" table="var__m_sys_hub_action_input_fa1b61c687df5dd009bd64af8bbb35a9" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>throttle_priority</element>
+            <name>var__m_sys_hub_action_input_fa1b61c687df5dd009bd64af8bbb35a9</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-12-08 16:08:19</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_name>throttle_priority</sys_name>
+            <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_hub_action_input_fa1b61c687df5dd009bd64af8bbb35a9_throttle_priority</sys_update_name>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>throttle_priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Low</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fa1b61c687df5dd009bd64af8bbb35a9</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-22 18:14:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <value>Low</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>throttle_priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Normal</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fa1b61c687df5dd009bd64af8bbb35a9</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-22 18:14:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <value>Normal</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>throttle_priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>High</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fa1b61c687df5dd009bd64af8bbb35a9</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-22 18:14:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <value>High</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -35,10 +35,14 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-	// Add your code here
-	gs.eventQueue("x_autg_kbb_secret.subtotalQInsert",current,current.template.sys_id,gs.getUserName());
+    // Add your code here
+    //gs.eventQueue("x_autg_kbb_secret.subtotalQInsert",current,current.template.sys_id,gs.getUserName());
+
+    var secretShop = new x_autg_kbb_secret.secretshopUtilities();
+    secretShop.newQuestionUpdateSubtotal(current, current.template.sys_id);
+
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>

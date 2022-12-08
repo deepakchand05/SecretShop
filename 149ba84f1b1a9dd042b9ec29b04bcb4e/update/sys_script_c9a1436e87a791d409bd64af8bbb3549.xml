@@ -40,7 +40,10 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
     if (current.order.changes() && !current.max_score.changes()) {
-        gs.eventQueue("x_autg_kbb_secret.questionOrder", current, previous.order, previous.max_score);
+
+        var secretShop = new x_autg_kbb_secret.secretshopUtilities();
+        secretShop.questionOrderUpdated(current, previous.order, previous.max_score);
+        //  gs.eventQueue("x_autg_kbb_secret.questionOrder", current, previous.order, previous.max_score);
     }
 
 })(current, previous);]]></script>
