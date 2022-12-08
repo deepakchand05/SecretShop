@@ -743,7 +743,7 @@ secretshopUtilities.prototype = {
 
     },
 
-    //WIP
+
     questionOrderUpdated: function(currentObj, previousOrder, previousQMaxValue) {
         this.gl.logInfo("secretshopUtilities: questionOrderupdated() =  previousOrder  = " + previousOrder + "  currentObj.order = " + currentObj.order + "   previousQMaxValue = " + previousQMaxValue);
 
@@ -763,21 +763,20 @@ secretshopUtilities.prototype = {
         var pSectionOrder = 0,
             pSubTotalOrder = 0,
             pSubTotalMax;
+        try {
+            var cQuesOrder = new GlideRecord(this.questionTable);
+            cQuesOrder.orderBy('order');
+            cQuesOrder.addQuery("active", true);
+            cQuesOrder.addQuery("category", this.quesType);
+            cQuesOrder.addQuery("type", this.quesType);
+            cQuesOrder.addQuery('order', ">", currentOrder);
+            cQuesOrder.addQuery("template", currentObj.template);
+            cQuesOrder.query();
+            if (cQuesOrder.next()) {
 
-        var cQuesOrder = new GlideRecord(this.questionTable);
-        cQuesOrder.orderBy('order');
-        cQuesOrder.addQuery("active", true);
-        cQuesOrder.addQuery("category", this.quesType);
-        cQuesOrder.addQuery("type", this.quesType);
-        cQuesOrder.addQuery('order', ">", currentQuesOrder);
-        cQuesOrder.addQuery("template", currentObj.template);
-        //ques.addQuery(encodedQuery);
-        cQuesOrder.query();
-        if (cQuesOrder.next()) {
+                this.gl.logDebug("secretshopUtilities: questionOrderUpdated() subTotalOrder = " + cQuesOrder.order + "  cQuesOrder.number =  " + cQuesOrder.number + "    cQuesOrder.question  =  " + cQuesOrder.question);
+                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() subTotalOrder = " + cQuesOrder.order + "  cQuesOrder.number =  " + cQuesOrder.number + "    cQuesOrder.question  =  " + cQuesOrder.question);
 
-            this.gl.logDebug("secretshopUtilities: updateMaxSubTotalQuestion() subTotalOrder = " + cQuesOrder.order + "  cQuesOrder.number =  " + cQuesOrder.number + "    cQuesOrder.question  =  " + cQuesOrder.question);
-
-            if (cQuesOrder.type == "Sub Total" && cQuesOrder.order > currentQuesOrder) {
                 cSubTotalOrder = cQuesOrder.order;
                 cSectionOrder = cQuesOrder.subtotal_for_section.order;
                 cSubTotalMax = cQuesOrder.subtotal_max;
@@ -786,36 +785,41 @@ secretshopUtilities.prototype = {
                 jsonObjCurrent.cSectionOrder = cSectionOrder;
                 jsonObjCurrent.cSubTotalMax = cSubTotalMax;
                 jsonObjCurrent.cSubTotalSYSID = cQuesOrder.sys_id;
-                /*
-                                    this.gl.logDebug("secretshopUtilities: updateMaxSubTotalQuestion() cSubTotalOrder " + cSubTotalOrder + "  cSectionOrder =  " + cSectionOrder + "    cSubTotalMax  =  " + cSubTotalMax);
-                                    this.gl.logInfo("secretshopUtilities: updateMaxSubTotalQuestion() subTotalOrder " + subTotalOrder + "  sectionOrder =  " + sectionOrder + "    subTotalMax  =  " + subTotalMax);
-                                    if (cSubTotalMax == 0 || cSubTotalMax < 0) {
-                                        cSubTotalMax = 0;
-                                        cSubTotalMax = parseInt(cSubTotalMax) + parseInt(currentQMaxValue);
-                                    }
-                			*/
+
+                this.gl.logDebug("secretshopUtilities: questionOrderUpdated() cSubTotalOrder " + cSubTotalOrder + "  cSectionOrder =  " + cSectionOrder + "    cSubTotalMax  =  " + cSubTotalMax);
+                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() cSubTotalOrder " + cSubTotalOrder + "  cSectionOrder =  " + cSectionOrder + "    cSubTotalMax  =  " + cSubTotalMax);
+
+
+                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() Before math cSubTotalMax " + cSubTotalMax + "  currentQMaxValue =  " + currentQMaxValue);
+
+                cSubTotalMax = parseInt(cSubTotalMax) + parseInt(currentQMaxValue);
+                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() After Math cSubTotalMax " + cSubTotalMax);
+
+                cQuesOrder.subtotal_max = cSubTotalMax;
+                cQuesOrder.update();
+
+
 
 
             }
-        }
 
 
 
 
-        var pQuesOrder = new GlideRecord(this.questionTable);
-        pQuesOrder.orderBy('order');
-        pQuesOrder.addQuery("active", true);
-        pQuesOrder.addQuery("category", this.quesType);
-        pQuesOrder.addQuery("type", this.quesType);
-        pQuesOrder.addQuery('order', ">", previousOrder);
-        pQuesOrder.addQuery("template", currentObj.template);
-        //ques.addQuery(encodedQuery);
-        pQuesOrder.query();
-        if (pQuesOrder.next()) {
+            var pQuesOrder = new GlideRecord(this.questionTable);
+            pQuesOrder.orderBy('order');
+            pQuesOrder.addQuery("active", true);
+            pQuesOrder.addQuery("category", this.quesType);
+            pQuesOrder.addQuery("type", this.quesType);
+            pQuesOrder.addQuery('order', ">", previousOrder);
+            pQuesOrder.addQuery("template", currentObj.template);
+            //ques.addQuery(encodedQuery);
+            pQuesOrder.query();
+            if (pQuesOrder.next()) {
 
-            this.gl.logDebug("secretshopUtilities: updateMaxSubTotalQuestion() Previous subTotalOrder = " + pQuesOrder.order + "  pQuesOrder.number =  " + pQuesOrder.number + "    pQuesOrder.question  =  " + pQuesOrder.question);
+                this.gl.logDebug("secretshopUtilities: questionOrderUpdated() Previous subTotalOrder = " + pQuesOrder.order + "  pQuesOrder.number =  " + pQuesOrder.number + "    pQuesOrder.question  =  " + pQuesOrder.question);
 
-            if (pQuesOrder.type == "Sub Total" && pQuesOrder.order > previousOrder) {
+
                 pSubTotalOrder = pQuesOrder.order;
                 pSectionOrder = pQuesOrder.subtotal_for_section.order;
                 pSubTotalMax = pQuesOrder.subtotal_max;
@@ -824,25 +828,38 @@ secretshopUtilities.prototype = {
                 jsonObjPrevious.cSectionOrder = pSectionOrder;
                 jsonObjPrevious.cSubTotalMax = pSubTotalMax;
                 jsonObjPrevious.cSubTotalSYSID = pQuesOrder.sys_id;
-                /*
-                                    this.gl.logDebug("secretshopUtilities: updateMaxSubTotalQuestion() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
-                                    this.gl.logInfo("secretshopUtilities: updateMaxSubTotalQuestion() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
-                                    if (pSubTotalMax == 0 || pSubTotalMax < 0) {
-                                        pSubTotalMax = 0;
-                                        pSubTotalMax = parseInt(pSubTotalMax) + parseInt(previousQMaxValue);
-                                    }
-                			*/
+
+                this.gl.logDebug("secretshopUtilities: questionOrderUpdated() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+
+                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() Before math pSubTotalMax " + pSubTotalMax + "  previousQMaxValue =  " + previousQMaxValue);
+
+                pSubTotalMax = parseInt(pSubTotalMax) - parseInt(previousQMaxValue);
+                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() After Math pSubTotalMax " + pSubTotalMax);
+
+                pQuesOrder.subtotal_max = pSubTotalMax;
+                pQuesOrder.update();
+
+
+
+
 
 
             }
+			this.gl.logInfo("secretshopUtilities: questionOrderUpdated()  jsonObjPrevious.cSubTotalOrder.toString() = " + jsonObjPrevious.cSubTotalOrder.toString());
+			//&& (parseInt(jsonObjPrevious.cSectionOrder.toString()) == parseInt(jsonObjCurrent.cSectionOrder.toString())) && (parseInt(jsonObjPrevious.cSubTotalMax.toString()) == parseInt(jsonObjCurrent.cSubTotalMax.toString()))
+            if ((parseInt(jsonObjPrevious.cSubTotalOrder.toString()) == parseInt(jsonObjCurrent.cSubTotalOrder.toString()) )) {
+
+                this.gl.logDebug("secretshopUtilities: questionOrderUpdated()  No change is required as question was re-ordered within the same section");
+                this.gl.logInfo("secretshopUtilities: questionOrderUpdated()  No change is required as question was re-ordered within the same section");
+            }
+        } catch (ex) {
+            this.gl.logInfo("secretshopUtilities: questionOrderUpdated()  Unable to find the change made could not recalculate subtotals");
+            this.gl.logDebug("secretshopUtilities: questionOrderUpdated() Unable to find the change made could not recalculate subtotals");
         }
 
 
-        if ((parseInt(jsonObjPrevious.cSubTotalOrder.toString()) == parseInt(jsonObjCurrent.cSubTotalOrder.toString())) && (parseInt(jsonObjPrevious.cSectionOrder.toString()) == parseInt(jsonObjCurrent.cSectionOrder.toString())) && (parseInt(jsonObjPrevious.cSubTotalMax.toString()) == parseInt(jsonObjCurrent.cSubTotalMax.toString()))) {
 
-            this.gl.logDebug("secretshopUtilities: questionOrderUpdated()  No change is required as question was re-ordered within the same section");
-            this.gl.logInfo("secretshopUtilities: questionOrderUpdated()  No change is required as question was re-ordered within the same section");
-        }
 
 
 
