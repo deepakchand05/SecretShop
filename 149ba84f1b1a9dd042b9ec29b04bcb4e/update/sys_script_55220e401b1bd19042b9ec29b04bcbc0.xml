@@ -50,7 +50,6 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>55220e401b1bd19042b9ec29b04bcbc0</sys_id>
-        <sys_mod_count>5</sys_mod_count>
         <sys_name>Prevent Duplicate Template Name</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
@@ -58,8 +57,6 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_script_55220e401b1bd19042b9ec29b04bcbc0</sys_update_name>
-        <sys_updated_by>skoka-a</sys_updated_by>
-        <sys_updated_on>2022-11-23 15:25:23</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

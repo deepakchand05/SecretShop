@@ -46,7 +46,7 @@
         <update_guid_history>5669d9a8fdaed91034c0366a1302c047:-1790273996</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 10-11-2022 2:18:48 PM">1669d9a81baed91042b9ec29b04bcb4a</sys_audit_delete>
+        <sys_audit_delete display_value="">1669d9a81baed91042b9ec29b04bcb4a</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-10-11 18:18:48</sys_created_on>
@@ -54,7 +54,6 @@
         <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
         <sys_id>091086b38969428681e141d16f56c924</sys_id>
         <sys_metadata>365959681baed91042b9ec29b04bcbdd</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>x_autg_kbb_secret_answers.snc_internal</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_parent display_value="x_autg_kbb_secret_answers">7e5959681baed91042b9ec29b04bcbdc</sys_parent>
@@ -64,7 +63,5 @@
         <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
         <sys_update_name>sys_security_acl_role_365959681baed91042b9ec29b04bcbdd</sys_update_name>
         <sys_update_version display_value="sys_security_acl_role_365959681baed91042b9ec29b04bcbdd">9669d9a81baed91042b9ec29b04bcb47</sys_update_version>
-        <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-10-11 18:18:48</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

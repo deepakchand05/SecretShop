@@ -82,17 +82,14 @@
         <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
         <sys_id>38876668a6ff45c891b1cb0d5b9aafd1</sys_id>
         <sys_metadata>26b2ba0f1b0f995042b9ec29b04bcb1f</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>When "Type" = Section or Sub Total</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
-        <sys_parent display_value="Answer">4656b84f1b5a9dd042b9ec29b04bcbfa</sys_parent>
+        <sys_parent display_value="">4656b84f1b5a9dd042b9ec29b04bcbfa</sys_parent>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
         <sys_update_name>sys_ui_policy_26b2ba0f1b0f995042b9ec29b04bcb1f</sys_update_name>
         <sys_update_version display_value="sys_ui_policy_26b2ba0f1b0f995042b9ec29b04bcb1f">7835fecf1b0f995042b9ec29b04bcb37</sys_update_version>
-        <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-13 15:56:44</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

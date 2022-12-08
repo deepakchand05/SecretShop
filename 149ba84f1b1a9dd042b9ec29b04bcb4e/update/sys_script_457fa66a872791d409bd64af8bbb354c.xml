@@ -38,10 +38,8 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-	//gs.eventQueue("x_autg_kbb_secret.subtotalQInsert",current,current.template.sys_id,gs.getUserName());
+	gs.eventQueue("x_autg_kbb_secret.subtotalQInsert",current,current.template.sys_id,gs.getUserName());
 
-	var secretShop = new x_autg_kbb_secret.secretshopUtilities();
-secretShop.newQuestionUpdateSubtotal(current,current.template.sys_id);
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
@@ -49,7 +47,6 @@ secretShop.newQuestionUpdateSubtotal(current,current.template.sys_id);
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>457fa66a872791d409bd64af8bbb354c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
         <sys_name>Update subtotal on Q insert</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
@@ -57,8 +54,6 @@ secretShop.newQuestionUpdateSubtotal(current,current.template.sys_id);
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_script_457fa66a872791d409bd64af8bbb354c</sys_update_name>
-        <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-07 22:51:35</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

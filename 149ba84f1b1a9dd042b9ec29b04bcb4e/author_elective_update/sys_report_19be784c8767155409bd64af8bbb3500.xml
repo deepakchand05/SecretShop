@@ -352,7 +352,7 @@
         <update_guid_history>8bbfc874d8ab5d5422baadd3e16ba327:0,384f80b0f7ab5d54e153369e98a318e3:-1290978899,6026d1c07baf155496de25aafa29329d:1797030903,4b4585ccbe2b1554eeeb616df5d77b94:1537301648,80e401c8252b15548ceea82f9b70642b:1423504174,51be348c696715540138ba181f5f1852:1537301648</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 12-02-2022 11:42:27 AM">4206bc998727d19409bd64af8bbb357d</sys_audit_delete>
+        <sys_audit_delete display_value="">4206bc998727d19409bd64af8bbb357d</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-12-02 16:42:27</sys_created_on>
@@ -360,17 +360,14 @@
         <sys_db_object display_value="" name="sys_report">sys_report</sys_db_object>
         <sys_id>3bcf70b3a3a04b889c2485d00bb45440</sys_id>
         <sys_metadata>19be784c8767155409bd64af8bbb3500</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Scorecard above 75%</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
-        <sys_parent display_value="Scorecard">cf82740b1b5a9dd042b9ec29b04bcbc8</sys_parent>
+        <sys_parent display_value="">cf82740b1b5a9dd042b9ec29b04bcbc8</sys_parent>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
         <sys_update_name>sys_report_19be784c8767155409bd64af8bbb3500</sys_update_name>
         <sys_update_version display_value="sys_report_19be784c8767155409bd64af8bbb3500">4fbfc87487ab5d5409bd64af8bbb3527</sys_update_version>
-        <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-02 16:42:27</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

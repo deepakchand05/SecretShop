@@ -55,7 +55,7 @@
         <update_guid_history>3c50cd4fbd9a9dd0b4d4b8dc7a84f023:-404386382,f683f44b155a9dd0611c817f64d34aa8:1816328625</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 10-06-2022 8:39:28 PM">7d90458f1b9a9dd042b9ec29b04bcbc8</sys_audit_delete>
+        <sys_audit_delete display_value="">7d90458f1b9a9dd042b9ec29b04bcbc8</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-10-07 00:39:28</sys_created_on>
@@ -63,7 +63,6 @@
         <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
         <sys_id>33c229a4de6047b594b38b10099bbf21</sys_id>
         <sys_metadata>7683f44b1b5a9dd042b9ec29b04bcba5</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Scorecards</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_parent/>
@@ -73,7 +72,5 @@
         <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
         <sys_update_name>sys_app_application_7683f44b1b5a9dd042b9ec29b04bcba5</sys_update_name>
         <sys_update_version display_value="sys_app_application_7683f44b1b5a9dd042b9ec29b04bcba5">7450cd4f1b9a9dd042b9ec29b04bcb24</sys_update_version>
-        <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-10-07 00:39:28</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

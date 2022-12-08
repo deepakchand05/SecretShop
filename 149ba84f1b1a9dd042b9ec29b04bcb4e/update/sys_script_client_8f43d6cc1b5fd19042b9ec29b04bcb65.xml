@@ -29,7 +29,6 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>8f43d6cc1b5fd19042b9ec29b04bcb65</sys_id>
-        <sys_mod_count>1</sys_mod_count>
         <sys_name>OnChange: Max Score should not be 0</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
@@ -37,8 +36,6 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_script_client_8f43d6cc1b5fd19042b9ec29b04bcb65</sys_update_name>
-        <sys_updated_by>skoka-a</sys_updated_by>
-        <sys_updated_on>2022-11-21 15:34:57</sys_updated_on>
         <table>x_autg_kbb_secret_questions</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

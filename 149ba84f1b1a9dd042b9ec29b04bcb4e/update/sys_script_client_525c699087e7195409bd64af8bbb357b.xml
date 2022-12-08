@@ -30,7 +30,6 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>525c699087e7195409bd64af8bbb357b</sys_id>
-        <sys_mod_count>7</sys_mod_count>
         <sys_name>On Load</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
@@ -38,8 +37,6 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_script_client_525c699087e7195409bd64af8bbb357b</sys_update_name>
-        <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-29 18:44:53</sys_updated_on>
         <table>x_autg_kbb_secret_scorecards</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

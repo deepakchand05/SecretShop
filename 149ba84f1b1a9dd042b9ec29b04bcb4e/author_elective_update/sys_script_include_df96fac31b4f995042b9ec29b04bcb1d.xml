@@ -99,7 +99,6 @@ answerchoice.prototype = {
         <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
         <sys_id>29cca2f879364e5a8bfc3a6a370320f9</sys_id>
         <sys_metadata>df96fac31b4f995042b9ec29b04bcb1d</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>answerchoice</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_parent/>
@@ -109,7 +108,5 @@ answerchoice.prototype = {
         <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
         <sys_update_name>sys_script_include_df96fac31b4f995042b9ec29b04bcb1d</sys_update_name>
         <sys_update_version display_value="sys_script_include_df96fac31b4f995042b9ec29b04bcb1d">add0f8131b8fd95042b9ec29b04bcb65</sys_update_version>
-        <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-14 00:57:17</sys_updated_on>
     </sys_metadata_delete>
 </record_update>
