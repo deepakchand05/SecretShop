@@ -260,6 +260,7 @@ secretshopUtilities.prototype = {
         var currentQuesOrder = current.order;
 
         this.gl.logDebug("secretshopUtilities: updateMaxSubTotalQuestion() current.number " + current.number + "  preQuesMax =  " + preQuesMax + "    newQuesMax  =  " + newQuesMax + "  tableName   = " + tableName + "  currentQuesOrder =   " + currentQuesOrder);
+        this.gl.logInfo("secretshopUtilities: updateMaxSubTotalQuestion() current.number " + current.number + "  preQuesMax =  " + preQuesMax + "    newQuesMax  =  " + newQuesMax + "  tableName   = " + tableName + "  currentQuesOrder =   " + currentQuesOrder);
         var sectionOrder = 0,
             subTotalOrder = 0,
             subTotalMax;
@@ -275,6 +276,7 @@ secretshopUtilities.prototype = {
         if (ques.next()) {
 
             this.gl.logDebug("secretshopUtilities: updateMaxSubTotalQuestion() subTotalOrder = " + ques.order + "  ques.number =  " + ques.number + "    ques.question  =  " + ques.question);
+            this.gl.logInfo("secretshopUtilities: updateMaxSubTotalQuestion() subTotalOrder = " + ques.order + "  ques.number =  " + ques.number + "    ques.question  =  " + ques.question);
             try {
                 if (ques.type == "Sub Total" && ques.order > currentQuesOrder) {
                     subTotalOrder = ques.order;
@@ -313,6 +315,10 @@ secretshopUtilities.prototype = {
 
 
 
+        } else {
+            this.gl.logWarning("secretshopUtilities: updateMaxSubTotalQuestion() Did not find the Section and sub-total this question belongs to. So no updates to SubTotals");
+            this.gl.logInfo("secretshopUtilities: updateMaxSubTotalQuestion() Did not find the Section and sub-total this question belongs to. So no updates to SubTotals");
+            this.gl.logDebug("secretshopUtilities: updateMaxSubTotalQuestion() Did not find the Section and sub-total this question belongs to. So no updates to SubTotals");
         }
 
     },
@@ -781,22 +787,32 @@ secretshopUtilities.prototype = {
                 cSectionOrder = cQuesOrder.subtotal_for_section.order;
                 cSubTotalMax = cQuesOrder.subtotal_max;
 
-                jsonObjCurrent.cSubTotalOrder = cSubTotalOrder;
-                jsonObjCurrent.cSectionOrder = cSectionOrder;
-                jsonObjCurrent.cSubTotalMax = cSubTotalMax;
-                jsonObjCurrent.cSubTotalSYSID = cQuesOrder.sys_id;
-
                 this.gl.logDebug("secretshopUtilities: questionOrderUpdated() cSubTotalOrder " + cSubTotalOrder + "  cSectionOrder =  " + cSectionOrder + "    cSubTotalMax  =  " + cSubTotalMax);
                 this.gl.logInfo("secretshopUtilities: questionOrderUpdated() cSubTotalOrder " + cSubTotalOrder + "  cSectionOrder =  " + cSectionOrder + "    cSubTotalMax  =  " + cSubTotalMax);
 
+                if (cSectionOrder > currentOrder) {
+                    // This question is ousite the section OR This question lies before the section begins. (Most likely this is in  front of the first  section)
+                    this.gl.logInfo("secretshopUtilities: questionOrderUpdated() This question is ousite the section OR This question lies before the section begins. (Most likely this is in  front of the first  section)");
 
-                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() Before math cSubTotalMax " + cSubTotalMax + "  currentQMaxValue =  " + currentQMaxValue);
+                    // No calculation is required
+                } else {
+                    jsonObjCurrent.cSubTotalOrder = cSubTotalOrder;
+                    jsonObjCurrent.cSectionOrder = cSectionOrder;
+                    jsonObjCurrent.cSubTotalMax = cSubTotalMax;
+                    jsonObjCurrent.cSubTotalSYSID = cQuesOrder.sys_id;
 
-                cSubTotalMax = parseInt(cSubTotalMax) + parseInt(currentQMaxValue);
-                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() After Math cSubTotalMax " + cSubTotalMax);
 
-                cQuesOrder.subtotal_max = cSubTotalMax;
-                cQuesOrder.update();
+
+
+                    this.gl.logInfo("secretshopUtilities: questionOrderUpdated() Before math cSubTotalMax " + cSubTotalMax + "  currentQMaxValue =  " + currentQMaxValue);
+
+                    cSubTotalMax = parseInt(cSubTotalMax) + parseInt(currentQMaxValue);
+                    this.gl.logInfo("secretshopUtilities: questionOrderUpdated() After Math cSubTotalMax " + cSubTotalMax);
+
+                    cQuesOrder.subtotal_max = cSubTotalMax;
+                    cQuesOrder.update();
+
+                }
 
 
 
@@ -818,6 +834,7 @@ secretshopUtilities.prototype = {
             if (pQuesOrder.next()) {
 
                 this.gl.logDebug("secretshopUtilities: questionOrderUpdated() Previous subTotalOrder = " + pQuesOrder.order + "  pQuesOrder.number =  " + pQuesOrder.number + "    pQuesOrder.question  =  " + pQuesOrder.question);
+                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() Previous subTotalOrder = " + pQuesOrder.order + "  pQuesOrder.number =  " + pQuesOrder.number + "    pQuesOrder.question  =  " + pQuesOrder.question);
 
 
                 pSubTotalOrder = pQuesOrder.order;
@@ -829,13 +846,26 @@ secretshopUtilities.prototype = {
                 jsonObjPrevious.cSubTotalMax = pSubTotalMax;
                 jsonObjPrevious.cSubTotalSYSID = pQuesOrder.sys_id;
 
+                if (previousOrder > pSectionOrder && previousOrder < pSubTotalOrder) {
+                    //question order is within the section
+                    this.gl.logInfo("secretshopUtilities: questionOrderUpdated() Before math pSubTotalMax " + pSubTotalMax + "  previousQMaxValue =  " + previousQMaxValue);
+
+                    pSubTotalMax = parseInt(pSubTotalMax) - parseInt(previousQMaxValue);
+                    this.gl.logInfo("secretshopUtilities: questionOrderUpdated() After Math pSubTotalMax " + pSubTotalMax);
+
+                    pQuesOrder.subtotal_max = pSubTotalMax;
+                } else if (previousOrder < pSectionOrder) {
+                    //it does not
+                    this.gl.logInfo("secretshopUtilities: questionOrderUpdated() pSubTotalOrder it does not fall under this section");
+                }
+
                 this.gl.logDebug("secretshopUtilities: questionOrderUpdated() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
                 this.gl.logInfo("secretshopUtilities: questionOrderUpdated() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
 
-                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() Before math pSubTotalMax " + pSubTotalMax + "  previousQMaxValue =  " + previousQMaxValue);
+                /*  this.gl.logInfo("secretshopUtilities: questionOrderUpdated() Before math pSubTotalMax " + pSubTotalMax + "  previousQMaxValue =  " + previousQMaxValue);
 
-                pSubTotalMax = parseInt(pSubTotalMax) - parseInt(previousQMaxValue);
-                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() After Math pSubTotalMax " + pSubTotalMax);
+                  pSubTotalMax = parseInt(pSubTotalMax) - parseInt(previousQMaxValue);
+                  this.gl.logInfo("secretshopUtilities: questionOrderUpdated() After Math pSubTotalMax " + pSubTotalMax);*/
 
                 pQuesOrder.subtotal_max = pSubTotalMax;
                 pQuesOrder.update();
@@ -845,10 +875,14 @@ secretshopUtilities.prototype = {
 
 
 
+            } else {
+                //Previous order is more than subtotal, mostly this question is outside the subtotal
+                //No calculation is needed.
+                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() Previous order is more than subtotal, mostly this question is outside the subtotal");
             }
-			this.gl.logInfo("secretshopUtilities: questionOrderUpdated()  jsonObjPrevious.cSubTotalOrder.toString() = " + jsonObjPrevious.cSubTotalOrder.toString());
-			//&& (parseInt(jsonObjPrevious.cSectionOrder.toString()) == parseInt(jsonObjCurrent.cSectionOrder.toString())) && (parseInt(jsonObjPrevious.cSubTotalMax.toString()) == parseInt(jsonObjCurrent.cSubTotalMax.toString()))
-            if ((parseInt(jsonObjPrevious.cSubTotalOrder.toString()) == parseInt(jsonObjCurrent.cSubTotalOrder.toString()) )) {
+            this.gl.logInfo("secretshopUtilities: questionOrderUpdated()  jsonObjPrevious.cSubTotalOrder.toString() = " + jsonObjPrevious.cSubTotalOrder.toString() + "  ||   jsonObjCurrent.cSubTotalOrder.toString() =  " + jsonObjCurrent.cSubTotalOrder.toString());
+            //&& (parseInt(jsonObjPrevious.cSectionOrder.toString()) == parseInt(jsonObjCurrent.cSectionOrder.toString())) && (parseInt(jsonObjPrevious.cSubTotalMax.toString()) == parseInt(jsonObjCurrent.cSubTotalMax.toString()))
+            if ((parseInt(jsonObjPrevious.cSubTotalOrder.toString()) == parseInt(jsonObjCurrent.cSubTotalOrder.toString()))) {
 
                 this.gl.logDebug("secretshopUtilities: questionOrderUpdated()  No change is required as question was re-ordered within the same section");
                 this.gl.logInfo("secretshopUtilities: questionOrderUpdated()  No change is required as question was re-ordered within the same section");
