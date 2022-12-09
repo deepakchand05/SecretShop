@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>This script hides the "type" field options on the Question record according to the selections made in the "category" field.</description>
+        <field>category</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Hide Type choices</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading) {
+
+        if (newValue == 'Section') {
+            g_form.setValue('type', 'Section');
+            g_form.removeOption('type', 'Range');
+            g_form.removeOption('type', 'Sub Total');
+            g_form.removeOption('type', 'Yes/No');
+        } else if (newValue == 'Questions' || newValue == 'Bonus Question') {
+
+            g_form.addOption('type', 'Yes/No', 'Yes/No', 1);
+            g_form.addOption('type', 'Range', 'Range', 2);
+            g_form.removeOption('type', 'Section');
+            g_form.removeOption('type', 'Sub Total');
+
+        } else if (newValue == 'Sub Total') {
+            g_form.setValue('type', 'Sub Total');
+            g_form.removeOption('type', 'Section');
+            g_form.removeOption('type', 'Yes/No');
+            g_form.removeOption('type', 'Range');
+        } else {
+
+
+            g_form.addOption('type', 'Yes/No', 'Yes/No', 1);
+            g_form.addOption('type', 'Range', 'Range', 2);
+            g_form.addOption('type', 'Sub Total', 'Sub Total', 3);
+            g_form.addOption('type', 'Section', 'Section', 4);
+
+
+
+        }
+
+
+
+    }
+    if (newValue != oldValue) {
+        if (newValue == 'Section') {
+            g_form.setValue('type', 'Section');
+            g_form.removeOption('type', 'Range');
+            g_form.removeOption('type', 'Sub Total');
+            g_form.removeOption('type', 'Yes/No');
+        } else if (newValue == 'Questions' || newValue == 'Bonus Question') {
+            g_form.clearValue('type');
+            g_form.addOption('type', 'Yes/No', 'Yes/No', 1);
+            g_form.addOption('type', 'Range', 'Range', 2);
+            g_form.removeOption('type', 'Section');
+            g_form.removeOption('type', 'Sub Total');
+        } else if (newValue == 'Sub Total') {
+            g_form.setValue('type', 'Sub Total');
+            g_form.removeOption('type', 'Section');
+            g_form.removeOption('type', 'Yes/No');
+            g_form.removeOption('type', 'Range');
+        } else {
+
+            g_form.clearValue('type');
+            g_form.addOption('type', 'Yes/No', 'Yes/No', 1);
+            g_form.addOption('type', 'Range', 'Range', 2);
+            g_form.addOption('type', 'Sub Total', 'Sub Total', 3);
+            g_form.addOption('type', 'Section', 'Section', 4);
+
+
+
+        }
+
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>nnunna-a</sys_created_by>
+        <sys_created_on>2022-12-09 06:17:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>b1e82e931bef551042b9ec29b04bcb59</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Hide Type choices</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_script_client_b1e82e931bef551042b9ec29b04bcb59</sys_update_name>
+        <sys_updated_by>nnunna-a</sys_updated_by>
+        <sys_updated_on>2022-12-09 10:09:53</sys_updated_on>
+        <table>x_autg_kbb_secret_questions</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</application>
+        <comments/>
+        <file_path/>
+        <instance_id>bcef3b732bcb784070acbb4f59da1588</instance_id>
+        <instance_name>coxautodev</instance_name>
+        <name>sys_script_client_b1e82e931bef551042b9ec29b04bcb59</name>
+        <order/>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;This script hides the "type" field options on the Question record according to the selections made in the "category" field.&lt;/description&gt;&lt;field&gt;category&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Hide Type choices&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading) {
+
+        if (newValue == 'Section') {
+            g_form.setValue('type', 'Section');
+            g_form.removeOption('type', 'Range');
+            g_form.removeOption('type', 'Sub Total');
+            g_form.removeOption('type', 'Yes/No');
+        } else if (newValue == 'Questions' || newValue == 'Bonus Question') {
+
+            g_form.addOption('type', 'Yes/No', 'Yes/No', 1);
+            g_form.addOption('type', 'Range', 'Range', 2);
+            g_form.removeOption('type', 'Section');
+            g_form.removeOption('type', 'Sub Total');
+
+        } else if (newValue == 'Sub Total') {
+            g_form.setValue('type', 'Sub Total');
+            g_form.removeOption('type', 'Section');
+            g_form.removeOption('type', 'Yes/No');
+            g_form.removeOption('type', 'Range');
+        } else {
+
+
+            g_form.addOption('type', 'Yes/No', 'Yes/No', 1);
+            g_form.addOption('type', 'Range', 'Range', 2);
+            g_form.addOption('type', 'Sub Total', 'Sub Total', 3);
+            g_form.addOption('type', 'Section', 'Section', 4);
+
+
+
+        }
+
+
+
+    }
+    if (newValue != oldValue) {
+        if (newValue == 'Section') {
+            g_form.setValue('type', 'Section');
+            g_form.removeOption('type', 'Range');
+            g_form.removeOption('type', 'Sub Total');
+            g_form.removeOption('type', 'Yes/No');
+        } else if (newValue == 'Questions' || newValue == 'Bonus Question') {
+            g_form.clearValue('type');
+            g_form.addOption('type', 'Yes/No', 'Yes/No', 1);
+            g_form.addOption('type', 'Range', 'Range', 2);
+            g_form.removeOption('type', 'Section');
+            g_form.removeOption('type', 'Sub Total');
+        } else if (newValue == 'Sub Total') {
+            g_form.setValue('type', 'Sub Total');
+            g_form.removeOption('type', 'Section');
+            g_form.removeOption('type', 'Yes/No');
+            g_form.removeOption('type', 'Range');
+        } else {
+
+            g_form.clearValue('type');
+            g_form.addOption('type', 'Yes/No', 'Yes/No', 1);
+            g_form.addOption('type', 'Range', 'Range', 2);
+            g_form.addOption('type', 'Sub Total', 'Sub Total', 3);
+            g_form.addOption('type', 'Section', 'Section', 4);
+
+
+
+        }
+
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nnunna-a&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-12-09 06:17:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;b1e82e931bef551042b9ec29b04bcb59&lt;/sys_id&gt;&lt;sys_mod_count&gt;27&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hide Type choices&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Secret Shop" source="x_autg_kbb_secret"&gt;149ba84f1b1a9dd042b9ec29b04bcb4e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Secret Shop"&gt;149ba84f1b1a9dd042b9ec29b04bcb4e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_b1e82e931bef551042b9ec29b04bcb59&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nnunna-a&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-12-09 10:09:53&lt;/sys_updated_on&gt;&lt;table&gt;x_autg_kbb_secret_questions&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1005954773</payload_hash>
+        <record_name>Hide Type choices</record_name>
+        <reverted_from/>
+        <source>71e7ea531bef551042b9ec29b04bcb09</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>nnunna-a</sys_created_by>
+        <sys_created_on>2022-12-09 10:09:53</sys_created_on>
+        <sys_id>445f571f1b6f951042b9ec29b04bcbf2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>184f65ce53a0000001</sys_recorded_at>
+        <sys_updated_by>nnunna-a</sys_updated_by>
+        <sys_updated_on>2022-12-09 10:12:23</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>c85f571fd56f9510cce16c2c1ee219f1</update_guid>
+        <update_guid_history>c85f571fd56f9510cce16c2c1ee219f1:-1005954773,cd7e1b57e26f95105403b3e18ce13893:-407715368,8b2e5bd3e56f951098b7b31eb080fd00:-1005954773,69edd313556f95106c418f1a815f124e:-1005954773,c374df97a6ab9510039a4545abae2f2a:-1813375603,c7a3d3d370ab9510c707f95309c7aa33:2090492093,ce131f1341ab9510574383d9a788232f:1287041738,dc035f13c8ab95101b18076e084eb713:2090492093,9ef297135eab951067eb8a0af66b8f72:1287041738,e3c2dfdfc76b9510519d3086a8c2b616:2090492093,78721b5f716b9510a6454ee266e8c84a:1287041738,df61135ba76b951007948ab46d3b3e13:2090492093,5880d313ec6b9510e01f79e40d54075a:1047992628,ce40d313086b95102a24206a59807050:-1806701423,4caf075b962b95101a6ed5c0ac9ba3cf:-352605580,6bde8f17fe2b9510e755b216c8b63ee3:37783888,787e875f0ae79510f11c66aaa6a9ed3c:1136392393,fbad031f13e79510176b53f8e7315f4e:60374039,9d9d031f23e79510e3fbf91b1046f8c6:1849880742,ca0dcbd78ee7951084612775c114fef8:1342637215,8cbc8757e5e79510f686caf5f4e9fb4b:1106567084,2ddbcf9fb4a79510f0a2109bc5cb2a0f:-670206811,900bc31b10a79510f77ed9706f69d25c:-407715368,0aea8bd71da79510a4386cd098d347a8:-1005954773,e45acb93c1a7951044bc88bdefb27129:-407715368,d70a8b5325a79510321e1ea420672ae0:1612716155,f62983db1a679510986e0b951954eab4:-1561834974,1bf8479749679510aa5838b8dc92c361:849471838,b075cb5be4279510a0dc976d689d96b4:802845869,15b4471b68279510bd065b2d8aba4798:1525053176,8cd24f57cf279510aa78728f8e3f45e5:921547581,fa514b5f1ce3951026cd65104419f5ef:-1202911529,b4b0cb1f9ee3951065643e82bbae391b:816935936,5a70c31febe39510dad7c37de4c6345e:1369987559,779fb2dbb6e39510757fde0619bf0b5b:830940037,348f3e9b22e3951056e11c0fc4da87ad:-931602213,c1cef29baee39510c112e60f3811f888:-1929320219,602eb61b1ae395108238f8f3600d6ede:199391910,651e3e1b99e3951003b0e7bb9ef1c5a3:1101119615,947a365bb6a395105a30aa4f35773b16:1646703636,44547e9b9923951086e38b72e7ce0f88:895824621,e6d2be1bb4239510d028a60cd9482286:-71263533,acd2b61b3d2395106676d6de8c832886:1967335410,b62172d77f23951085f961c431d917e6:1707937200,fb01b29f78ef5510a0954e98cc5b4744:1573403912,be0fe6db7eef551078ee8ed128e1cdc7:-2023484852,9e9eea9bfbef5510c5a1c2a36044d836:-354924798,1f1eae5b06ef55108b4ddc98df3d3de1:1933689366,9ebd2a1badef55107f7e4877b14f0109:728510707,810ca297a3ef5510f7b87b036751d665:-130300090,7d0a6ed3e9ef5510e936bb6270874c2a:-198022828</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>nnunna-a</sys_created_by>
+        <sys_created_on>2022-12-09 10:10:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>da08606af15e4bdfa6ffc61737f25921</sys_id>
+        <sys_metadata>b1e82e931bef551042b9ec29b04bcb59</sys_metadata>
+        <sys_name>Hide Type choices</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_parent display_value="Question">e3fdc5e81b1b1dd427967449cc4bcb9c</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
+        <sys_update_name>sys_script_client_b1e82e931bef551042b9ec29b04bcb59</sys_update_name>
+        <sys_update_version display_value="sys_script_client_b1e82e931bef551042b9ec29b04bcb59">445f571f1b6f951042b9ec29b04bcbf2</sys_update_version>
+    </sys_metadata_delete>
+</record_update>
