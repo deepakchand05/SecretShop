@@ -20,6 +20,8 @@
 	if(!g_form.isNewRecord()){
 		g_form.setReadOnly("category",true);
 		g_form.setReadOnly("type",true);
+		g_form.setReadOnly("order",true);
+		g_form.setReadOnly("subtotal_for_section",true);
 		
 	}
 
