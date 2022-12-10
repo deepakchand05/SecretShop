@@ -38,7 +38,7 @@ secretshopUtilities.prototype = {
             gr.addQuery('table', tableName);
             gr.query();
             while (gr.next()) {
-                this.gl.logDebug("secretshopUtilities: getAvaiableAnswers() = Inside while loop  gr.dependent_value=  " + gr.dependent_value + "   Choice =  " + gr.choice + "   Element = " + gr.element + "   Table = " + gr.table + "   Order =  " + gr.order);
+                this.gl.logDebug("secretshopUtilities: getAvaiableAnswers() = gr.dependent_value=  " + gr.dependent_value + "   Choice =  " + gr.choice + "   Element = " + gr.element + "   Table = " + gr.table + "   Order =  " + gr.order);
 
                 if (type == "Yes/No")
                     choiceList.push(gr.getUniqueValue());
@@ -240,9 +240,17 @@ secretshopUtilities.prototype = {
                 if (ques.type == "Yes/No" || ques.type == "Range") {
                     this.gl.logDebug("secretshopUtilities: calMaxSubTotalQuestion() Pre adding maxTotal =  " + maxTotal);
                     maxTotal = parseInt(maxTotal) + parseInt(ques.max_score);
+                    this.gl.logInfo("secretshopUtilities: calMaxSubTotalQuestion() Post adding maxTotal =  " + maxTotal);
+                    this.gl.logDebug("secretshopUtilities: calMaxSubTotalQuestion() maxTotal =  " + maxTotal);
+                } else {
+                    this.gl.logWarning("secretshopUtilities: calMaxSubTotalQuestion() Question type = undetermined ");
+                    this.gl.logDebug("secretshopUtilities: calMaxSubTotalQuestion() Question type = undetermined ");
+                    this.gl.logInfo("secretshopUtilities: calMaxSubTotalQuestion() Question type = undetermined ");
+
                 }
-                this.gl.logInfo("secretshopUtilities: calMaxSubTotalQuestion() maxTotal =  " + maxTotal);
-                this.gl.logDebug("secretshopUtilities: calMaxSubTotalQuestion() maxTotal =  " + maxTotal);
+
+
+
 
             }
             return parseInt(maxTotal);
@@ -316,6 +324,7 @@ secretshopUtilities.prototype = {
 
 
         } else {
+            this.gl.logErr("secretshopUtilities: updateMaxSubTotalQuestion() Did not find the Section and sub-total this question belongs to. So no updates to SubTotals");
             this.gl.logWarning("secretshopUtilities: updateMaxSubTotalQuestion() Did not find the Section and sub-total this question belongs to. So no updates to SubTotals");
             this.gl.logInfo("secretshopUtilities: updateMaxSubTotalQuestion() Did not find the Section and sub-total this question belongs to. So no updates to SubTotals");
             this.gl.logDebug("secretshopUtilities: updateMaxSubTotalQuestion() Did not find the Section and sub-total this question belongs to. So no updates to SubTotals");
@@ -354,7 +363,7 @@ secretshopUtilities.prototype = {
             this.gl.logInfo("secretshopUtilities: calculateSubTotalScorecard() subTotalOrder = " + ans.order + "  sectionOrder  " + sectionOrder + "    subTotalMax  =  " + subTotalMax);
 
             try {
-                //ans.addQuery("order", "BETWEEN", sectionOrder ^ subTotalOrder);
+
                 var count = 0;
                 var encodedQuery = "orderBETWEEN" + sectionOrder + "@" + subTotalOrder;
                 var gr = new GlideRecord(tableName);
@@ -475,8 +484,8 @@ secretshopUtilities.prototype = {
                 }
 
                 //Question type is Range
-                if (current.type == "Range") {
-                    //WIP
+                else if (current.type == "Range") {
+
                     this.updatePointsReceived(current, answer, min, max);
                     this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "   totalscore = " + totalscore);
                     this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "   totalscore = " + totalscore + "  Answer =" + answer);
@@ -537,6 +546,10 @@ secretshopUtilities.prototype = {
 
                     }
 
+                } else {
+                    this.gl.logWarning("secretshopUtilities: calculateFinalScoreFormula() = current.type == not determined ");
+                    this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = current.type == not determined ");
+                    this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = current.type == not determined ");
                 }
                 this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = Before final return in the function totalscore " + totalscore);
                 this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = Before final return in the function totalscore " + totalscore);
@@ -595,6 +608,11 @@ secretshopUtilities.prototype = {
                 }
 
                 pr.update();
+            } else {
+                this.gl.logWarning("secretshopUtilities: updatePointsReceived() could not find the record ");
+                this.gl.logInfo("secretshopUtilities: updatePointsReceived() could not find the record ");
+                this.gl.logDebug("secretshopUtilities: updatePointsReceived() could not find the record ");
+
             }
         } catch (ex) {
             this.gl.logErr("secretshopUtilities: updatePointsReceived() unable to identify question type ");
@@ -618,6 +636,11 @@ secretshopUtilities.prototype = {
                     this.gl.logDebug("secretshopUtilities: updatePercentageOfPointsScorecard()  Unable to calculate  percentage with insufficient data");
                 }
                 gr.update();
+
+            } else {
+                this.gl.logInfo("secretshopUtilities: updatePercentageOfPointsScorecard()  Could not find scorecard");
+                this.gl.logWarning("secretshopUtilities: updatePercentageOfPointsScorecard()  Could not find scorecard");
+                this.gl.logDebug("secretshopUtilities: updatePercentageOfPointsScorecard()  Could not find scorecard");
 
             }
         } catch (ex) {
@@ -667,6 +690,11 @@ secretshopUtilities.prototype = {
             gr.query();
             if (gr.next()) {
                 SYSID = gr.sys_id;
+
+            } else {
+                this.gl.logWarning("secretshopUtilities: getAnswerSYSID() =  Did not find the answer sys_id ");
+                this.gl.logInfo("secretshopUtilities: getAnswerSYSID() = Did not find the answer sys_id ");
+                this.gl.logDebug("secretshopUtilities: getAnswerSYSID() =  Did not find the answer sys_id ");
 
             }
             return SYSID.toString();
@@ -743,13 +771,16 @@ secretshopUtilities.prototype = {
 
         var previousValue = 0,
             newValue = obj.max_score;
+
+        this.gl.logInfo("secretshopUtilities: newQuestionUpdateSubtotal() =  newValue/question.max_score   " + newValue);
+        this.gl.logDebug("secretshopUtilities: newQuestionUpdateSubtotal() =  newValue/question.max_score   " + newValue);
         //this.questionTable
         //Use the below funciton to calculate the new subtotal
         this.updateMaxSubTotalQuestion(obj, previousValue, newValue, this.questionTable);
 
     },
 
-
+    //WIP Improve code
     questionOrderUpdated: function(currentObj, previousOrder, previousQMaxValue) {
         this.gl.logInfo("secretshopUtilities: questionOrderupdated() =  previousOrder  = " + previousOrder + "  currentObj.order = " + currentObj.order + "   previousQMaxValue = " + previousQMaxValue);
 
@@ -817,6 +848,11 @@ secretshopUtilities.prototype = {
 
 
 
+            } else {
+                this.gl.logInfo("secretshopUtilities: questionOrderUpdated() Unable to find Questions current section & subtotal orders");
+                this.gl.logDebug("secretshopUtilities: questionOrderUpdated() Unable to find Questions current section & subtotal orders");
+                this.gl.logWarning("secretshopUtilities: questionOrderUpdated() Unable to find Questions current section & subtotal orders");
+
             }
 
 
@@ -879,6 +915,8 @@ secretshopUtilities.prototype = {
                 //Previous order is more than subtotal, mostly this question is outside the subtotal
                 //No calculation is needed.
                 this.gl.logInfo("secretshopUtilities: questionOrderUpdated() Previous order is more than subtotal, mostly this question is outside the subtotal");
+                this.gl.logDegug("secretshopUtilities: questionOrderUpdated() Previous order is more than subtotal, mostly this question is outside the subtotal");
+                this.gl.logWarning("secretshopUtilities: questionOrderUpdated() Previous order is more than subtotal, mostly this question is outside the subtotal");
             }
             this.gl.logInfo("secretshopUtilities: questionOrderUpdated()  jsonObjPrevious.cSubTotalOrder.toString() = " + jsonObjPrevious.cSubTotalOrder.toString() + "  ||   jsonObjCurrent.cSubTotalOrder.toString() =  " + jsonObjCurrent.cSubTotalOrder.toString());
             //&& (parseInt(jsonObjPrevious.cSectionOrder.toString()) == parseInt(jsonObjCurrent.cSectionOrder.toString())) && (parseInt(jsonObjPrevious.cSubTotalMax.toString()) == parseInt(jsonObjCurrent.cSubTotalMax.toString()))
