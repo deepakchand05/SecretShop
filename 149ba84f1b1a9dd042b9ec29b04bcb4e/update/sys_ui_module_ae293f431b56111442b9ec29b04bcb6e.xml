@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
     <sys_ui_module action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <application display_value="Secret Shop">9b767c4f1b5a9dd042b9ec29b04bcbd5</application>
         <filter/>
         <name>Questions</name>

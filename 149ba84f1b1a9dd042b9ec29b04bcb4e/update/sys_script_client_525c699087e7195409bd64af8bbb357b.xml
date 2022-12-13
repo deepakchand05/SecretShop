@@ -10,7 +10,7 @@
         <global>true</global>
         <isolate_script>false</isolate_script>
         <messages/>
-        <name>On Load</name>
+        <name>On Load: Hide sections</name>
         <order/>
         <script><![CDATA[function onLoad() {
 
@@ -30,7 +30,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>525c699087e7195409bd64af8bbb357b</sys_id>
-        <sys_name>On Load</sys_name>
+        <sys_name>On Load: Hide sections</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>

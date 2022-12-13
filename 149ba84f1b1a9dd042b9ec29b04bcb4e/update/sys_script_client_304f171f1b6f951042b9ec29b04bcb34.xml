@@ -82,7 +82,7 @@
         <sys_update_name>sys_script_client_304f171f1b6f951042b9ec29b04bcb34</sys_update_name>
         <table>x_autg_kbb_secret_questions</table>
         <type>onChange</type>
-        <ui_type>0</ui_type>
+        <ui_type>10</ui_type>
         <view/>
     </sys_script_client>
 </record_update>

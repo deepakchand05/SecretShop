@@ -2,25 +2,24 @@
     <sys_ui_module action="INSERT_OR_UPDATE">
         <active>true</active>
         <application display_value="Secret Shop">9b767c4f1b5a9dd042b9ec29b04bcbd5</application>
-        <filter table="x_autg_kbb_secret_scorecards">^ORDERBYDESCsys_created_on<item endquery="false" field="" goto="false" newquery="false" operator="ORDERBYDESC" or="false" value="sys_created_on"/>
-        </filter>
-        <name>Scorecards</name>
-        <order>400</order>
-        <path/>
+        <filter/>
+        <name>Create New(Scorecard)</name>
+        <order>250</order>
+        <path>/form/x_autg_kbb_secret_scorecards/-1</path>
         <path_relative_to_root>false</path_relative_to_root>
         <roles>x_autg_kbb_secret.scorecards_user</roles>
         <sys_class_name>sys_ui_module</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-10-06 23:42:28</sys_created_on>
+        <sys_created_on>2022-12-11 05:01:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>ba83f44b1b5a9dd042b9ec29b04bcbd5</sys_id>
-        <sys_name>Scorecards</sys_name>
+        <sys_id>914a640c1b339d1042b9ec29b04bcbf8</sys_id>
+        <sys_name>Create New(Scorecard)</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
-        <sys_update_name>sys_ui_module_ba83f44b1b5a9dd042b9ec29b04bcbd5</sys_update_name>
+        <sys_update_name>sys_ui_module_914a640c1b339d1042b9ec29b04bcbf8</sys_update_name>
         <table>x_autg_kbb_secret_scorecards</table>
         <uncancelable>false</uncancelable>
         <view_name/>
