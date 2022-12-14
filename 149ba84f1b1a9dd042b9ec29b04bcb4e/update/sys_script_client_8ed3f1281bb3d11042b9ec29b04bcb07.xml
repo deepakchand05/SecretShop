@@ -39,8 +39,14 @@
 
     }
     if (newValue == 'Published') {
-         validationQuestionOrders();
-       // alert("Please verify if all Question/Bonus questions are  within a Section and Subtotal");
+        validationQuestionOrders();
+        // alert("Please ensure all Questions are ordered between a Section and a Sub Total.");
+
+        var gm = new GlideDialogWindow("glide_confirm_standard", true, 600,100);
+        gm.setTitle("Check Question Order");
+        gm.setPreference("title", "Please ensure all Questions are ordered between a Section and a Sub Total.");
+        gm.setPreference("warning", "true");
+        gm.render();
     }
 
 }]]></script>

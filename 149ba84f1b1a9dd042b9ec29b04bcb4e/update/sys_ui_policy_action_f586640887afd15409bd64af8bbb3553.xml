@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
     <sys_ui_policy_action action="INSERT_OR_UPDATE">
         <cleared>false</cleared>
-        <disabled>ignore</disabled>
+        <disabled>true</disabled>
         <field>subtotal_max</field>
         <mandatory>ignore</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
@@ -17,6 +17,6 @@
         <sys_update_name>sys_ui_policy_action_f586640887afd15409bd64af8bbb3553</sys_update_name>
         <table>x_autg_kbb_secret_questions</table>
         <ui_policy display_value="When Type and Category is &quot;Subtotal&quot;">f85664c487afd15409bd64af8bbb3588</ui_policy>
-        <visible>true</visible>
+        <visible>false</visible>
     </sys_ui_policy_action>
 </record_update>
