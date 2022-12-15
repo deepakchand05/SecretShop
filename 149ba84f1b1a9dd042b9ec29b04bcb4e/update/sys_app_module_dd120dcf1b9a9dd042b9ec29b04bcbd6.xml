@@ -18,7 +18,7 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_autg_kbb_secret.template_admin,x_autg_kbb_secret.scorecards_user</roles>
+        <roles>x_autg_kbb_secret.template_admin</roles>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>

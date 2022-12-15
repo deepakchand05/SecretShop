@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
     <sys_user_role_contains action="INSERT_OR_UPDATE">
-        <contains display_value="x_autg_kbb_secret.template_admin" name="x_autg_kbb_secret.template_admin">398127298727199409bd64af8bbb356e</contains>
-        <role display_value="x_autg_kbb_secret.scorecard_admin" name="x_autg_kbb_secret.scorecard_admin">f6cbac8f1b1a9dd042b9ec29b04bcbc6</role>
+        <contains display_value="x_autg_kbb_secret.scorecard_admin" name="x_autg_kbb_secret.scorecard_admin">f6cbac8f1b1a9dd042b9ec29b04bcbc6</contains>
+        <role display_value="x_autg_kbb_secret.template_admin" name="x_autg_kbb_secret.template_admin">398127298727199409bd64af8bbb356e</role>
         <sys_class_name>sys_user_role_contains</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-12-03 23:52:20</sys_created_on>
+        <sys_created_on>2022-12-15 19:58:39</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>c1026f298727199409bd64af8bbb3548</sys_id>
-        <sys_name>x_autg_kbb_secret.template_admin.x_autg_kbb_secret.scorecard_admin</sys_name>
+        <sys_id>fe9f5ce11b7f9d1042b9ec29b04bcbb9</sys_id>
+        <sys_name>x_autg_kbb_secret.scorecard_admin.x_autg_kbb_secret.template_admin</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
-        <sys_update_name>sys_user_role_contains_c1026f298727199409bd64af8bbb3548</sys_update_name>
+        <sys_update_name>sys_user_role_contains_fe9f5ce11b7f9d1042b9ec29b04bcbb9</sys_update_name>
     </sys_user_role_contains>
 </record_update>
