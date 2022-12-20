@@ -4,15 +4,11 @@
         <admin_overrides>true</admin_overrides>
         <advanced>true</advanced>
         <condition/>
-        <description/>
+        <description>Allow list_edit for type in x_autg_kbb_secret_questions, for users with role x_autg_kbb_secret.template_admin, and if the ACL script returns true.</description>
         <name>x_autg_kbb_secret_questions.type</name>
         <operation display_value="list_edit">54f535270a0a0b8c007c67009ab2bdc0</operation>
         <script><![CDATA[if (!current.isNewRecord()) {
-    if (current.type == "Section" || current.type == "Sub Total") {
-        answer = false;
-    } else {
-        answer = true;
-    }
+    answer = false;
 } else {
     answer = true;
 }]]></script>

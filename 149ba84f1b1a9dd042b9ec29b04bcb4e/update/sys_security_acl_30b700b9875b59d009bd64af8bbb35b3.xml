@@ -8,7 +8,7 @@
         <description>Allow write for min_score in x_autg_kbb_secret_questions, for users with role x_autg_kbb_secret.template_admin, and if the ACL script returns true, and if the ACL condition (template.stateINDraft^EQ) evaluates to true.</description>
         <name>x_autg_kbb_secret_questions.min_score</name>
         <operation display_value="write">write</operation>
-        <script><![CDATA[if (current.state == 'Draft') {
+        <script><![CDATA[if (current.state == 'Draft' || current.state =='') {
     answer = true;
 } else {
     answer = false;
