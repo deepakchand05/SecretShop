@@ -39,7 +39,7 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-	gs.eventQueue("x_autg_kbb_secret.version.change",current,current.version,previous.version);
+	gs.eventQueue("x_autg_kbb_secret.version.change",current,gs.getProperty("instance_name"),previous.version);
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>

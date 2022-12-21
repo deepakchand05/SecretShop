@@ -58,7 +58,7 @@
         <send_self>false</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Secret Shop application's version has changed to ${version} from ${event.parm2}</subject>
+        <subject>${event.parm1}: Secret Shop application's version has changed to ${version} from ${event.parm2}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
