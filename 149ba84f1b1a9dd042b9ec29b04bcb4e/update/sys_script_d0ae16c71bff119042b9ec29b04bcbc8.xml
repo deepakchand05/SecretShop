@@ -39,7 +39,7 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-	gs.eventQueue("x_autg_kbb_secret.version.change",current,current.version,null);
+	gs.eventQueue("x_autg_kbb_secret.version.change",current,current.version,previous.version);
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -56,6 +56,6 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_script_d0ae16c71bff119042b9ec29b04bcbc8</sys_update_name>
         <template/>
-        <when>before</when>
+        <when>after</when>
     </sys_script>
 </record_update>
