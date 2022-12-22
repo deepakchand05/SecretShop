@@ -40,7 +40,7 @@
         <list_field/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Secret Shop application's version has changed to ${version} from ${event.parm2}</p>
+        <message_html><![CDATA[<p>Secret Shop application's version has changed from <strong>${event.parm2}</strong> to <strong>${version}</strong></p>
 <p>&nbsp;</p>
 <p>${mail_script:secret_shop_instance_name}</p>]]></message_html>
         <message_list/>
@@ -58,7 +58,7 @@
         <send_self>false</send_self>
         <sms_alternate/>
         <style/>
-        <subject>${event.parm1}: Secret Shop application's version has changed to ${version} from ${event.parm2}</subject>
+        <subject>${event.parm1}: Secret Shop application's version has changed from ${event.parm2} to ${version}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
