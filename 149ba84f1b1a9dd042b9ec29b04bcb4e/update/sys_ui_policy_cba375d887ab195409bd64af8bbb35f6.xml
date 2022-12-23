@@ -16,21 +16,21 @@
 
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-	/*var sections = g_form.getSections();
+    /*var sections = g_form.getSections();
     sections[2].style.display = 'none';
 	*/
-	g_form.setSectionDisplay("scorecard_hidden",false);
+    g_form.setSectionDisplay("scorecard_hidden", false);
 
 }]]></script_true>
         <set_values/>
-        <short_description>OnLoad - Hide sections</short_description>
+        <short_description>OnLoad - Hide sections on Scorecard</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-11-29 18:38:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>cba375d887ab195409bd64af8bbb35f6</sys_id>
-        <sys_name>OnLoad - Hide sections</sys_name>
+        <sys_name>OnLoad - Hide sections on Scorecard</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
