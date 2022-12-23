@@ -29,6 +29,7 @@ secretshopUtilities.prototype = {
         this.scorecardTable = 'x_autg_kbb_secret_scorecards'; //Scorecard Tablename
         this.questionTable = 'x_autg_kbb_secret_questions'; //Question Tablename
         this.scoreType = 'Total Score';
+        this.monthlyScoring = "30Day Scorecard";
         this.section = 'Section';
         this.typeSection = 'Section';
     },
@@ -638,6 +639,12 @@ secretshopUtilities.prototype = {
                 this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = Before final return in the function totalscore " + totalscore);
                 this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = Before final return in the function totalscore " + totalscore);
                 return totalscore;
+            } else if (scoreType == this.monthlyScoring) {
+                this.gl.logWarning("secretshopUtilities: calculateFinalScoreFormula() = inside monthlyScoring  scoreType");
+                this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = inside monthlyScoring  scoreType");
+                this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = inside monthlyScoring   scoreType");
+
+                this._monthlyScoring();
             }
             //In future add more "else if" conditions based on new formulas created on template.
             else {
@@ -657,7 +664,7 @@ secretshopUtilities.prototype = {
     },
 
     /*
-    //calculate points received and percent of points for answers
+    //calculate points received and percent of points for each answer
 	
 	@param answer{string}
     @param min{integer}
@@ -1259,6 +1266,26 @@ secretshopUtilities.prototype = {
 
 
 
+
+    //WIP
+    /*
+    Calculate 30Day scorecard totals
+    Week 1 Totals
+    Week 2-4 Totals
+    Average of all totals
+    */
+
+    _monthlyScoring: function() {
+		/*
+		check question type
+		update each answer with points received  and  % of points
+		check, where the question belong? (Week 1 or between week 2 and week 4)
+		Cal Week 1 total
+		Cal week 2 - 4 total
+		Cal avg total of the scorecard
+		*/
+
+    },
 
 
 
