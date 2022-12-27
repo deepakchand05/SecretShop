@@ -432,7 +432,7 @@ secretshopUtilities.prototype = {
         if (ans.next()) {
 
             subTotalOrder = ans.order; //Capture subtotal order
-            sectionOrder = parseInt(ans.subtotal_for_section);
+            sectionOrder = ans.subtotal_for_section; //removed parseInt
             subTotalMax = ans.subtotal_max;
             subTotalSYSID = ans.getUniqueValue();
             this.gl.logDebug("secretshopUtilities: calculateSubTotalScorecard() subTotalOrder = " + ans.order + "  sectionOrder  " + sectionOrder + "    subTotalMax  =  " + subTotalMax);
@@ -453,6 +453,11 @@ secretshopUtilities.prototype = {
                         subTotal = parseInt(gr.answer.choice) + subTotal;
                         this.gl.logInfo("secretshopUtilities: calculateSubTotalScorecard() Range  subTotal = " + subTotal);
                         this.gl.logDebug("secretshopUtilities: calculateSubTotalScorecard() Range  subTotal = " + subTotal);
+                    } else if (global.JSUtil.nil(gr.answer) && gr.type == 'Range') {
+                        this.gl.logWarning("secretshopUtilities: calculateSubTotalScorecard()  answer is empty for Type Range ");
+                        this.gl.logInfo("secretshopUtilities: calculateSubTotalScorecard() answer is empty for Type Range ");
+                        this.gl.logDebug("secretshopUtilities: calculateSubTotalScorecard() answer is empty for Type Range ");
+
                     }
                     //add all use cases, previous and all...
                     else if (global.JSUtil.notNil(gr.answer) && gr.type == 'Yes/No') {
@@ -469,6 +474,13 @@ secretshopUtilities.prototype = {
                             this.gl.logInfo("secretshopUtilities: calculateSubTotalScorecard() Could not identify is answer choice was YES or NO " + gr.answer.choice);
                             this.gl.logDebug("secretshopUtilities: calculateSubTotalScorecard() Could not identify is answer choice was YES or NO " + gr.answer.choice);
                         }
+                    }
+                    //If anser is empty || Null || undefined
+                    else if (global.JSUtil.nil(gr.answer) && gr.type == 'Yes/No') {
+                        this.gl.logWarning("secretshopUtilities: calculateSubTotalScorecard()  answer is empty for Type YES or NO ");
+                        this.gl.logInfo("secretshopUtilities: calculateSubTotalScorecard() answer is empty for Type Range ");
+                        this.gl.logDebug("secretshopUtilities: calculateSubTotalScorecard() answer is empty for Type Range ");
+
                     } else {
                         this.gl.logWarning("secretshopUtilities: calculateSubTotalScorecard() Unable to identify the action made, Please retry...");
                         this.gl.logInfo("secretshopUtilities: calculateSubTotalScorecard() Unable to identify the action made, Please retry...");
@@ -644,7 +656,7 @@ secretshopUtilities.prototype = {
                 this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = inside monthlyScoring  scoreType");
                 this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = inside monthlyScoring   scoreType");
 
-                this._monthlyScoring();
+                //  this._monthlyScoring();
             }
             //In future add more "else if" conditions based on new formulas created on template.
             else {
@@ -1276,14 +1288,14 @@ secretshopUtilities.prototype = {
     */
 
     _monthlyScoring: function() {
-		/*
-		check question type
-		update each answer with points received  and  % of points
-		check, where the question belong? (Week 1 or between week 2 and week 4)
-		Cal Week 1 total
-		Cal week 2 - 4 total
-		Cal avg total of the scorecard
-		*/
+        /*
+        check question type
+        update each answer with points received  and  % of points
+        check, where the question belong? (Week 1 or between week 2 and week 4)
+        Cal Week 1 total
+        Cal week 2 - 4 total
+        Cal avg total of the scorecard
+        */
 
     },
 

@@ -12,7 +12,7 @@
         <model_id/>
         <model_table/>
         <on_load>true</on_load>
-        <order>100</order>
+        <order>50</order>
         <reverse_if_false>true</reverse_if_false>
         <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
@@ -21,6 +21,7 @@
         <script_true><![CDATA[function onCondition() {
 	if(!g_form.isNewRecord()){
 		g_form.setReadOnly("max_score",true);
+		g_form.setReadOnly("min_score",true);
 		
 	}
 
