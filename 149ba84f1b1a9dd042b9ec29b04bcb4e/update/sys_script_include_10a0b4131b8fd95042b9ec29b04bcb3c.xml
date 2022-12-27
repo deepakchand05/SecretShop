@@ -432,10 +432,10 @@ secretshopUtilities.prototype = {
         if (ans.next()) {
 
             subTotalOrder = ans.order; //Capture subtotal order
-            sectionOrder = ans.subtotal_for_section; //removed parseInt
+            sectionOrder = parseInt(ans.subtotal_for_section.replace(",", ''));
             subTotalMax = ans.subtotal_max;
             subTotalSYSID = ans.getUniqueValue();
-            this.gl.logDebug("secretshopUtilities: calculateSubTotalScorecard() subTotalOrder = " + ans.order + "  sectionOrder  " + sectionOrder + "    subTotalMax  =  " + subTotalMax);
+            this.gl.logDebug("secretshopUtilities: calculateSubTotalScorecard() subTotalOrder = " + ans.order + "  sectionOrder = " + sectionOrder + "    subTotalMax  =  " + subTotalMax);
             this.gl.logInfo("secretshopUtilities: calculateSubTotalScorecard() subTotalOrder = " + ans.order + "  sectionOrder  " + sectionOrder + "    subTotalMax  =  " + subTotalMax);
 
             try {
