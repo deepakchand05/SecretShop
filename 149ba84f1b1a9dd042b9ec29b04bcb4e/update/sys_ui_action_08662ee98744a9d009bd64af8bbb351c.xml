@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>show_flow_scorecard</action_name>
+        <action_name>show_flow_question</action_name>
         <active>true</active>
         <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
@@ -27,7 +27,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Show Flows - Scorecard</name>
+        <name>Show Flows - Question</name>
         <onclick>showFlows()</onclick>
         <order>100</order>
         <script><![CDATA[function showFlows() {
@@ -52,18 +52,18 @@
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-12-05 18:49:28</sys_created_on>
+        <sys_created_on>2022-12-28 16:03:10</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>b87f205287275d9409bd64af8bbb3577</sys_id>
-        <sys_name>Show Flows - Scorecard</sys_name>
+        <sys_id>08662ee98744a9d009bd64af8bbb351c</sys_id>
+        <sys_name>Show Flows - Question</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
-        <sys_update_name>sys_ui_action_b87f205287275d9409bd64af8bbb3577</sys_update_name>
-        <table>x_autg_kbb_secret_scorecards</table>
+        <sys_update_name>sys_ui_action_08662ee98744a9d009bd64af8bbb351c</sys_update_name>
+        <table>x_autg_kbb_secret_questions</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>
