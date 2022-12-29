@@ -317,7 +317,7 @@ secretshopUtilities.prototype = {
     },
 
     /*
-    //Update maxSubTotal when questions update
+    //Update maxSubTotal when questions max score is updated
 	
 	@param preQuesMax{integer}
 	@param newQuesMax{integer}
@@ -340,7 +340,6 @@ secretshopUtilities.prototype = {
         ques.addQuery("type", this.quesType);
         ques.addQuery('order', ">", currentQuesOrder);
         ques.addQuery("template", current.template);
-        //ques.addQuery(encodedQuery);
         ques.query();
         if (ques.next()) {
 
@@ -941,7 +940,7 @@ secretshopUtilities.prototype = {
 
     },
 
-    //WIP Improve code
+
     /*
     //When questions order is updated this function gets triggered via BR
 	@param currentObj{object} current instance of the  question record
@@ -1176,6 +1175,7 @@ secretshopUtilities.prototype = {
 
     },
 
+    //WIP
     /*
     This function validates if each question is within a section
     
@@ -1299,8 +1299,120 @@ secretshopUtilities.prototype = {
 
     },
 
+    //WIP
+    /*
+    Calculate parent subtotal value. This code can handle one level of nested section.
+    */
+    _parentSubtotalCalQuestion: function(current, newValue, oldValue, tableName) {
+        // this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() tableName " + tableName + "  current.template =  " + current.template + "    current.order  =  " + current.order);
+        //Initialize parent subtotal values
+        var pSectionOrder = 0,
+            pSubTotalOrder = 0,
+            pSubTotalMax;
+        var updatedSubTotalMax = 0;
+        //Child subtotal values
+        var csectionOrder = current.subtotal_for_section.order,
+            cSubtotalOrder = current.order,
+            cSubtotalMax = current.subtotal_max;
+        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() csectionOrder " + csectionOrder + "  cSubtotalOrder =  " + cSubtotalOrder + "    cSubtotalMax  =  " + cSubtotalMax);
+        foundParentSubtotal: {
+            var gr = new GlideRecord(tableName);
+            gr.orderBy('order');
+            gr.addQuery("active", true);
+            gr.addQuery("category", this.quesType); //subtotal
+            gr.addQuery("template", current.template);
+            gr.addQuery('order', ">", cSubtotalOrder); //Child Subtotal Order
+            gr.query();
+            while (gr.next()) {
+                try {
+
+                    pSectionOrder = gr.subtotal_for_section.order;
+                    pSubTotalOrder = gr.order;
+                    pSubTotalMax = gr.subtotal_max;
+                    if (pSectionOrder < csectionOrder && cSubtotalOrder < pSubTotalOrder) {
+                        //Parent section order should be lower than child section order  AND  parent subtotal order should be greater than child subtotal order
+                        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+                        updatedSubTotalMax = (pSubTotalMax - oldValue) + newValue;
+                        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() updatedSubTotalMax  =  " + updatedSubTotalMax);
+
+                        break foundParentSubtotal;
+
+                    } else {
+                        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() Do nothing - This is not the parent section/subtotal  || pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+
+                    }
+                } catch (ex) {
+
+                    this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue" + ex);
+
+                }
 
 
+            }
+        }
+    },
+
+
+
+
+    //WIP
+    /*
+    Calculate parent subtotal value. This code can handle one level of nested section.
+    */
+    _parentSubtotalCalScorecard: function(current, newValue, oldValue, tableName) {
+        // this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() tableName " + tableName + "  current.template =  " + current.template + "    current.order  =  " + current.order);
+        //Initialize parent subtotal values
+        var pSectionOrder = 0,
+            pSubTotalOrder = 0,
+            pSubTotalMax,
+            pPointsReceived = 0,
+            pPercentofPoints = 0;
+        var updatedSubTotalMax = 0;
+        //Child subtotal values
+        var csectionOrder = parseInt(current.subtotal_for_section),
+            cSubtotalOrder = current.order,
+            cSubtotalMax = current.subtotal_max;
+        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() csectionOrder " + csectionOrder + "  cSubtotalOrder =  " + cSubtotalOrder + "    cSubtotalMax  =  " + cSubtotalMax);
+        foundParentSubtotal: {
+            var gr = new GlideRecord(tableName);
+            gr.orderBy('order');
+            gr.addQuery("active", true);
+            gr.addQuery("category", this.quesType); //subtotal
+            gr.addQuery("template", current.template);
+            gr.addQuery("scorecard", current.scorecard);
+            gr.addQuery('order', ">", cSubtotalOrder); //Child Subtotal Order
+            gr.query();
+            while (gr.next()) {
+                try {
+
+                    pSectionOrder = gr.subtotal_for_section.order;
+                    pSubTotalOrder = gr.order;
+                    pSubTotalMax = gr.subtotal_max;
+                    if (pSectionOrder < csectionOrder && cSubtotalOrder < pSubTotalOrder) {
+                        //Parent section order should be lower than child section order  AND  parent subtotal order should be greater than child subtotal order
+                        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+                        updatedSubTotalMax = (pSubTotalMax - oldValue) + newValue;
+                        pPointsReceived = parseInt(updatedSubTotalMax);
+                        pPercentofPoints = Math.ceil(parseInt(updatedSubTotalMax / pSubTotalMax) / 100);
+                        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() updatedSubTotalMax  =  " + updatedSubTotalMax + "    pPointsReceived = " + pPointsReceived + "  pPercentofPoints = " + pPercentofPoints);
+                        //calculate points received and percent of points for each parent subtotal
+
+                        break foundParentSubtotal;
+
+                    } else {
+                        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() Do nothing - This is not the parent section/subtotal  || pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+
+                    }
+                } catch (ex) {
+
+                    this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue" + ex);
+
+                }
+
+
+            }
+        }
+    },
 
 
 
