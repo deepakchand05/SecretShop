@@ -10,13 +10,13 @@
         <copied_from_name/>
         <description>This flow calculates the total score that a scorecard scored.</description>
         <internal_name>secretshop_scoring_logic</internal_name>
-        <label_cache>[{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.table_name","label":"11 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.record","label":"11 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.log","label":"11 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.error_message","label":"11 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.status","label":"11 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"flow_variable.subtotalpercentage","label":"Flow Variables➛subTotalPercentage","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2db66c16-078a-417c-bae3-c32901f37acd"}},{"name":"flow_variable.sectionsubtoal","label":"Flow Variables➛sectionSubToal","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f269e92b-f7cc-47b5-a39c-befdaa9c1975"}},{"name":"d0b6ed03-5f5c-420f-bcc0-25a394d05033.__dont_treat_as_error__","label":"6 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d0b6ed03-5f5c-420f-bcc0-25a394d05033.__action_status__","label":"6 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.table_name","label":"4 - Update Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.record","label":"4 - Update Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.table_name","label":"4 - Update Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.record","label":"4 - Update Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.table_name","label":"4 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.record","label":"4 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.previous_value","label":"Flow Variables➛previous value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7fb9822e-4e97-4711-80ba-6dd5ee83a5c7"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_value","label":"1➛FDChangeDetails➛Current Display Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.table_name","label":"11 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.record","label":"11 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.totalscore","label":"Flow Variables➛totalScore","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8225da5e-27b5-42b4-be1d-bf5f5d2e9f6b"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.previous_display_value","label":"1➛FDChangeDetails➛Previous Display Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Updated_1.current.min_score","label":"Trigger - Record Updated➛Answer Record➛Minimum Score","reference":"","reference_display":"Minimum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_answers","column_name":"min_score"},{"name":"Updated_1.current.max_score","label":"Trigger - Record Updated➛Answer Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_answers","column_name":"max_score"},{"name":"Updated_1.current.category","label":"Trigger - Record Updated➛Answer Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_answers","column_name":"category","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"label":"Section","used":false,"rawLabel":"Section","selected":false,"missing":false,"image":"","reference":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Question","used":false,"rawLabel":"Question","selected":false,"missing":false,"image":"","reference":false,"value":"Question","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Bonus Question","used":false,"rawLabel":"Bonus Question","selected":false,"missing":false,"image":"","reference":false,"value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Sub Total","used":false,"rawLabel":"Sub Total","selected":false,"missing":false,"image":"","reference":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_answers"}}]},{"name":"Updated_1.current.type","label":"Trigger - Record Updated➛Answer Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_answers","column_name":"type","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"label":"Yes/No","used":false,"rawLabel":"Yes/No","selected":false,"missing":false,"image":"","reference":false,"value":"Yes/No","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Range","used":false,"rawLabel":"Range","selected":false,"missing":false,"image":"","reference":false,"value":"Range","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Sub Total","used":false,"rawLabel":"Sub Total","selected":false,"missing":false,"image":"","reference":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Section","used":false,"rawLabel":"Section","selected":false,"missing":false,"image":"","reference":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_answers"}}]},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.status","label":"1 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.error_message","label":"1 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.log","label":"1 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.record","label":"7 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.table_name","label":"7 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.scorecard","label":"Trigger - Record Updated➛Answer Record➛Scorecard","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_answers","column_name":"scorecard"},{"name":"Updated_1.changed_fields","label":"Trigger - Record Updated➛Changed Fields","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item","label":"1 - For Each➛FDChangeDetails","reference_display":"FDChangeDetails","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.previous_value","label":"1➛FDChangeDetails➛Previous Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_value","label":"1➛FDChangeDetails➛Current Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"6d798485-3539-4bc3-a88a-e67d845f479b.__action_status__","label":"3 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6d798485-3539-4bc3-a88a-e67d845f479b.__dont_treat_as_error__","label":"3 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85a34793-20d4-4c57-83af-9bb422292743.__action_status__","label":"6 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"85a34793-20d4-4c57-83af-9bb422292743.__dont_treat_as_error__","label":"6 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"39e3cb05-04f9-4e58-81e8-d7170a886a8c.__action_status__","label":"10 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"39e3cb05-04f9-4e58-81e8-d7170a886a8c.__dont_treat_as_error__","label":"10 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.percentagepointssubtotal","label":"Flow Variables➛percentagePointsSubTotal","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2db66c16-078a-417c-bae3-c32901f37acd"}}]</label_cache>
+        <label_cache>[{"name":"flow_variable.percentagepointssubtotal","label":"Flow Variables➛percentagePointsSubTotal","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2db66c16-078a-417c-bae3-c32901f37acd"}},{"name":"39e3cb05-04f9-4e58-81e8-d7170a886a8c.__dont_treat_as_error__","label":"10 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"39e3cb05-04f9-4e58-81e8-d7170a886a8c.__action_status__","label":"10 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85a34793-20d4-4c57-83af-9bb422292743.__dont_treat_as_error__","label":"6 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"85a34793-20d4-4c57-83af-9bb422292743.__action_status__","label":"6 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"6d798485-3539-4bc3-a88a-e67d845f479b.__dont_treat_as_error__","label":"3 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6d798485-3539-4bc3-a88a-e67d845f479b.__action_status__","label":"3 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_value","label":"1➛FDChangeDetails➛Current Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.previous_value","label":"1➛FDChangeDetails➛Previous Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item","label":"1 - For Each➛FDChangeDetails","reference_display":"FDChangeDetails","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Updated_1.changed_fields","label":"Trigger - Record Updated➛Changed Fields","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"Updated_1.current.scorecard","label":"Trigger - Record Updated➛Answer Record➛Scorecard","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_answers","column_name":"scorecard"},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.table_name","label":"7 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.record","label":"7 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.log","label":"1 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.error_message","label":"1 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.status","label":"1 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"Updated_1.current.type","label":"Trigger - Record Updated➛Answer Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_answers","column_name":"type","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"label":"Yes/No","used":false,"rawLabel":"Yes/No","selected":false,"missing":false,"image":"","reference":false,"value":"Yes/No","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Range","used":false,"rawLabel":"Range","selected":false,"missing":false,"image":"","reference":false,"value":"Range","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Sub Total","used":false,"rawLabel":"Sub Total","selected":false,"missing":false,"image":"","reference":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Section","used":false,"rawLabel":"Section","selected":false,"missing":false,"image":"","reference":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_answers"}}]},{"name":"Updated_1.current.category","label":"Trigger - Record Updated➛Answer Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_answers","column_name":"category","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"label":"Section","used":false,"rawLabel":"Section","selected":false,"missing":false,"image":"","reference":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Question","used":false,"rawLabel":"Question","selected":false,"missing":false,"image":"","reference":false,"value":"Question","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Bonus Question","used":false,"rawLabel":"Bonus Question","selected":false,"missing":false,"image":"","reference":false,"value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Sub Total","used":false,"rawLabel":"Sub Total","selected":false,"missing":false,"image":"","reference":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_answers"}}]},{"name":"Updated_1.current.max_score","label":"Trigger - Record Updated➛Answer Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_answers","column_name":"max_score"},{"name":"Updated_1.current.min_score","label":"Trigger - Record Updated➛Answer Record➛Minimum Score","reference":"","reference_display":"Minimum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_answers","column_name":"min_score"},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.previous_display_value","label":"1➛FDChangeDetails➛Previous Display Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"flow_variable.totalscore","label":"Flow Variables➛totalScore","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8225da5e-27b5-42b4-be1d-bf5f5d2e9f6b"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.record","label":"11 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.table_name","label":"11 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_value","label":"1➛FDChangeDetails➛Current Display Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"flow_variable.previous_value","label":"Flow Variables➛previous value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7fb9822e-4e97-4711-80ba-6dd5ee83a5c7"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.record","label":"4 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.table_name","label":"4 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.record","label":"4 - Update Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.table_name","label":"4 - Update Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.record","label":"4 - Update Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.table_name","label":"4 - Update Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"d0b6ed03-5f5c-420f-bcc0-25a394d05033.__action_status__","label":"6 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d0b6ed03-5f5c-420f-bcc0-25a394d05033.__dont_treat_as_error__","label":"6 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.sectionsubtoal","label":"Flow Variables➛sectionSubToal","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f269e92b-f7cc-47b5-a39c-befdaa9c1975"}},{"name":"flow_variable.subtotalpercentage","label":"Flow Variables➛subTotalPercentage","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2db66c16-078a-417c-bae3-c32901f37acd"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.status","label":"11 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.error_message","label":"11 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.log","label":"11 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.record","label":"11 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.table_name","label":"11 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
         <master_snapshot>038659af1b0f9d5042b9ec29b04bcb75</master_snapshot>
         <name>Scoring Logic</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>d03ce2a98708a9d009bd64af8bbb35a0</remote_trigger_id>
+        <remote_trigger_id>37050ac2870c211409bd64af8bbb359b</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -41,8 +41,9 @@
     <sys_variable_value action="delete_multiple" query="document_key=4657381f1b8fd95042b9ec29b04bcbc5"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_autg_kbb_secret_answers">answerVALCHANGES^scorecard.stateINDraft,In Progress<item endquery="false" field="answer" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        <condition table="x_autg_kbb_secret_answers">answerVALCHANGES^scorecard.stateINDraft,In Progress^category!=Sub Total<item endquery="false" field="answer" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
             <item display_value="Draft,In Progress" endquery="false" field="scorecard.state" goto="false" newquery="false" operator="IN" or="false" value="Draft,In Progress"/>
+            <item display_value="Sub Total" endquery="false" field="category" goto="false" newquery="false" operator="!=" or="false" value="Sub Total"/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
@@ -55,10 +56,10 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-12-28 16:28:34</sys_created_on>
+        <sys_created_on>2022-12-30 02:54:34</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>d03ce2a98708a9d009bd64af8bbb35a0</sys_id>
+        <sys_id>37050ac2870c211409bd64af8bbb359b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
@@ -68,7 +69,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:34</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:34</sys_updated_on>
         <table>x_autg_kbb_secret_answers</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
@@ -77,14 +78,14 @@
         <identifier>4657381f1b8fd95042b9ec29b04bcbc5</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-12-28 16:28:34</sys_created_on>
-        <sys_id>9c3ce2a98708a9d009bd64af8bbb35a0</sys_id>
+        <sys_created_on>2022-12-30 02:54:34</sys_created_on>
+        <sys_id>ff050ac2870c211409bd64af8bbb359b</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:34</sys_updated_on>
-        <trigger display_value="">d03ce2a98708a9d009bd64af8bbb35a0</trigger>
+        <sys_updated_on>2022-12-30 02:54:34</sys_updated_on>
+        <trigger display_value="">37050ac2870c211409bd64af8bbb359b</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=4657381f1b8fd95042b9ec29b04bcbc5^sys_idNOT IN9c3ce2a98708a9d009bd64af8bbb35a0"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=4657381f1b8fd95042b9ec29b04bcbc5^sys_idNOT INff050ac2870c211409bd64af8bbb359b"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=4657381f1b8fd95042b9ec29b04bcbc5^sys_idNOT INafa7f05f1b8fd95042b9ec29b04bcb84"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -97,7 +98,7 @@
         <sys_created_on>2022-11-14 01:26:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>afa7f05f1b8fd95042b9ec29b04bcb84</sys_id>
-        <sys_mod_count>156</sys_mod_count>
+        <sys_mod_count>158</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -105,7 +106,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:35</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:34</sys_updated_on>
         <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -148,10 +149,10 @@
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-11-14 01:26:06</sys_created_on>
         <sys_id>afa7f05f1b8fd95042b9ec29b04bcb85</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-16 22:24:52</sys_updated_on>
-        <value>answerVALCHANGES^scorecard.stateINDraft,In Progress</value>
+        <sys_updated_on>2022-12-30 02:54:26</sys_updated_on>
+        <value>answerVALCHANGES^scorecard.stateINDraft,In Progress^category!=Sub Total</value>
         <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -255,7 +256,7 @@
         <sys_created_on>2022-11-14 01:26:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>27a7f05f1b8fd95042b9ec29b04bcb7f</sys_id>
-        <sys_mod_count>101</sys_mod_count>
+        <sys_mod_count>103</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -263,7 +264,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:34</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -342,7 +343,7 @@
         <sys_created_on>2022-11-14 01:26:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2fa7f05f1b8fd95042b9ec29b04bcb50</sys_id>
-        <sys_mod_count>101</sys_mod_count>
+        <sys_mod_count>103</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -350,7 +351,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:34</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -470,7 +471,7 @@
         <sys_created_on>2022-11-16 22:24:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>16faa3c88793599009bd64af8bbb3549</sys_id>
-        <sys_mod_count>380</sys_mod_count>
+        <sys_mod_count>386</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -478,7 +479,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-12-29 05:01:40</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:57:08</sys_updated_on>
         <ui_id>6d798485-3539-4bc3-a88a-e67d845f479b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=16faa3c88793599009bd64af8bbb3549"/>
@@ -514,7 +515,7 @@ Current Value = ﻿{{23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_v
         <sys_created_on>2022-12-05 23:58:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3186f1d687e79d9409bd64af8bbb3547</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -522,7 +523,7 @@ Current Value = ﻿{{23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_v
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-12-29 05:01:40</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:57:08</sys_updated_on>
         <ui_id>39e3cb05-04f9-4e58-81e8-d7170a886a8c</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3186f1d687e79d9409bd64af8bbb3547"/>
@@ -559,7 +560,7 @@ Total Score = {{flow_variable.totalscore}}
         <sys_created_on>2022-11-14 02:23:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>41b4455f1bcfd95042b9ec29b04bcb42</sys_id>
-        <sys_mod_count>398</sys_mod_count>
+        <sys_mod_count>404</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -567,7 +568,7 @@ Total Score = {{flow_variable.totalscore}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-12-29 05:01:40</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:57:08</sys_updated_on>
         <ui_id>c428e5ef-bea2-46a9-8d34-fbb771111435</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=41b4455f1bcfd95042b9ec29b04bcb42"/>
@@ -666,7 +667,7 @@ Total Score = {{flow_variable.totalscore}}
         <sys_created_on>2022-11-21 23:38:40</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>73cba9bd8753d9d009bd64af8bbb35db</sys_id>
-        <sys_mod_count>212</sys_mod_count>
+        <sys_mod_count>218</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -674,7 +675,7 @@ Total Score = {{flow_variable.totalscore}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-12-29 05:01:40</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:57:08</sys_updated_on>
         <ui_id>d0b6ed03-5f5c-420f-bcc0-25a394d05033</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=73cba9bd8753d9d009bd64af8bbb35db"/>
@@ -712,7 +713,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-18 02:43:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fcbf612c871b5d9009bd64af8bbb35d3</sys_id>
-        <sys_mod_count>270</sys_mod_count>
+        <sys_mod_count>276</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -720,7 +721,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-12-29 05:01:40</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:57:08</sys_updated_on>
         <ui_id>1dd1d994-f7f9-47c7-8301-244e21d4327a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fcbf612c871b5d9009bd64af8bbb35d3"/>
@@ -815,7 +816,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-16 22:24:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>06faa3c88793599009bd64af8bbb3530</sys_id>
-        <sys_mod_count>147</sys_mod_count>
+        <sys_mod_count>149</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -823,7 +824,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:35</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:34</sys_updated_on>
         <ui_id>23bd6d12-c7be-41eb-9a51-ca8b2646f5da</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -867,7 +868,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-16 22:40:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>348ee3c887d3599009bd64af8bbb357d</sys_id>
-        <sys_mod_count>150</sys_mod_count>
+        <sys_mod_count>152</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -875,7 +876,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:35</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:35</sys_updated_on>
         <ui_id>d9cfdb39-e76a-461b-9f4d-91bce7080e61</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -946,7 +947,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-16 22:40:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7c8ee3c887d3599009bd64af8bbb355b</sys_id>
-        <sys_mod_count>148</sys_mod_count>
+        <sys_mod_count>150</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -954,7 +955,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:35</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:35</sys_updated_on>
         <ui_id>f9f11da2-47f0-428b-9ae8-e84a513e5749</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1026,7 +1027,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-16 22:24:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>defaa3c88793599009bd64af8bbb3534</sys_id>
-        <sys_mod_count>149</sys_mod_count>
+        <sys_mod_count>151</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1034,7 +1035,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:35</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:34</sys_updated_on>
         <ui_id>65b93f04-1503-4493-ad3b-0851e068706c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1115,7 +1116,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-16 22:40:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fc8ee3c887d3599009bd64af8bbb3556</sys_id>
-        <sys_mod_count>145</sys_mod_count>
+        <sys_mod_count>147</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1123,7 +1124,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:35</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:34</sys_updated_on>
         <ui_id>50b4859c-8a69-4c37-b523-bccf6557b6d7</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1194,7 +1195,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-16 22:40:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fc8ee3c887d3599009bd64af8bbb3578</sys_id>
-        <sys_mod_count>147</sys_mod_count>
+        <sys_mod_count>149</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1202,7 +1203,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:35</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:35</sys_updated_on>
         <ui_id>15b11897-0877-425b-a358-5f3266bfaa50</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2032,14 +2033,14 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"6b8699af1b0f9d5042b9ec29b04bcbda","name":"plan","plan_signature":null}}</plan>
         <plan_id>4657381f1b8fd95042b9ec29b04bcbc5</plan_id>
-        <snapshot>7388d57987082dd009bd64af8bbb3576</snapshot>
+        <snapshot>dda58246870c211409bd64af8bbb3525</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-11-14 22:19:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>6b8699af1b0f9d5042b9ec29b04bcbda</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>51</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2048,8 +2049,8 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:34</sys_updated_on>
-        <trigger display_value="">d03ce2a98708a9d009bd64af8bbb35a0</trigger>
+        <sys_updated_on>2022-12-30 02:54:34</sys_updated_on>
+        <trigger display_value="">37050ac2870c211409bd64af8bbb359b</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=4657381f1b8fd95042b9ec29b04bcbc5"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -2063,7 +2064,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <copied_from_name/>
         <description>This flow calculates the total score that a scorecard scored.</description>
         <internal_name>secretshop_scoring_logic</internal_name>
-        <label_cache>[{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.table_name","label":"11 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.record","label":"11 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.log","label":"11 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.error_message","label":"11 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.status","label":"11 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"flow_variable.subtotalpercentage","label":"Flow Variables➛subTotalPercentage","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2db66c16-078a-417c-bae3-c32901f37acd"}},{"name":"flow_variable.sectionsubtoal","label":"Flow Variables➛sectionSubToal","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f269e92b-f7cc-47b5-a39c-befdaa9c1975"}},{"name":"d0b6ed03-5f5c-420f-bcc0-25a394d05033.__dont_treat_as_error__","label":"6 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d0b6ed03-5f5c-420f-bcc0-25a394d05033.__action_status__","label":"6 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.table_name","label":"4 - Update Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.record","label":"4 - Update Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.table_name","label":"4 - Update Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.record","label":"4 - Update Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.table_name","label":"4 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.record","label":"4 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.previous_value","label":"Flow Variables➛previous value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7fb9822e-4e97-4711-80ba-6dd5ee83a5c7"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_value","label":"1➛FDChangeDetails➛Current Display Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.table_name","label":"11 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.record","label":"11 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.totalscore","label":"Flow Variables➛totalScore","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8225da5e-27b5-42b4-be1d-bf5f5d2e9f6b"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.previous_display_value","label":"1➛FDChangeDetails➛Previous Display Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Updated_1.current.min_score","label":"Trigger - Record Updated➛Answer Record➛Minimum Score","reference":"","reference_display":"Minimum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_answers","column_name":"min_score"},{"name":"Updated_1.current.max_score","label":"Trigger - Record Updated➛Answer Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_answers","column_name":"max_score"},{"name":"Updated_1.current.category","label":"Trigger - Record Updated➛Answer Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_answers","column_name":"category","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"label":"Section","used":false,"rawLabel":"Section","selected":false,"missing":false,"image":"","reference":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Question","used":false,"rawLabel":"Question","selected":false,"missing":false,"image":"","reference":false,"value":"Question","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Bonus Question","used":false,"rawLabel":"Bonus Question","selected":false,"missing":false,"image":"","reference":false,"value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Sub Total","used":false,"rawLabel":"Sub Total","selected":false,"missing":false,"image":"","reference":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_answers"}}]},{"name":"Updated_1.current.type","label":"Trigger - Record Updated➛Answer Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_answers","column_name":"type","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"label":"Yes/No","used":false,"rawLabel":"Yes/No","selected":false,"missing":false,"image":"","reference":false,"value":"Yes/No","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Range","used":false,"rawLabel":"Range","selected":false,"missing":false,"image":"","reference":false,"value":"Range","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Sub Total","used":false,"rawLabel":"Sub Total","selected":false,"missing":false,"image":"","reference":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Section","used":false,"rawLabel":"Section","selected":false,"missing":false,"image":"","reference":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_answers"}}]},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.status","label":"1 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.error_message","label":"1 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.log","label":"1 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.record","label":"7 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.table_name","label":"7 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.scorecard","label":"Trigger - Record Updated➛Answer Record➛Scorecard","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_answers","column_name":"scorecard"},{"name":"Updated_1.changed_fields","label":"Trigger - Record Updated➛Changed Fields","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item","label":"1 - For Each➛FDChangeDetails","reference_display":"FDChangeDetails","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.previous_value","label":"1➛FDChangeDetails➛Previous Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_value","label":"1➛FDChangeDetails➛Current Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"6d798485-3539-4bc3-a88a-e67d845f479b.__action_status__","label":"3 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6d798485-3539-4bc3-a88a-e67d845f479b.__dont_treat_as_error__","label":"3 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85a34793-20d4-4c57-83af-9bb422292743.__action_status__","label":"6 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"85a34793-20d4-4c57-83af-9bb422292743.__dont_treat_as_error__","label":"6 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"39e3cb05-04f9-4e58-81e8-d7170a886a8c.__action_status__","label":"10 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"39e3cb05-04f9-4e58-81e8-d7170a886a8c.__dont_treat_as_error__","label":"10 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.percentagepointssubtotal","label":"Flow Variables➛percentagePointsSubTotal","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2db66c16-078a-417c-bae3-c32901f37acd"}}]</label_cache>
+        <label_cache>[{"name":"flow_variable.percentagepointssubtotal","label":"Flow Variables➛percentagePointsSubTotal","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2db66c16-078a-417c-bae3-c32901f37acd"}},{"name":"39e3cb05-04f9-4e58-81e8-d7170a886a8c.__dont_treat_as_error__","label":"10 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"39e3cb05-04f9-4e58-81e8-d7170a886a8c.__action_status__","label":"10 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85a34793-20d4-4c57-83af-9bb422292743.__dont_treat_as_error__","label":"6 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"85a34793-20d4-4c57-83af-9bb422292743.__action_status__","label":"6 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"6d798485-3539-4bc3-a88a-e67d845f479b.__dont_treat_as_error__","label":"3 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6d798485-3539-4bc3-a88a-e67d845f479b.__action_status__","label":"3 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_value","label":"1➛FDChangeDetails➛Current Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.previous_value","label":"1➛FDChangeDetails➛Previous Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item","label":"1 - For Each➛FDChangeDetails","reference_display":"FDChangeDetails","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Updated_1.changed_fields","label":"Trigger - Record Updated➛Changed Fields","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"Updated_1.current.scorecard","label":"Trigger - Record Updated➛Answer Record➛Scorecard","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_answers","column_name":"scorecard"},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.table_name","label":"7 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c428e5ef-bea2-46a9-8d34-fbb771111435.record","label":"7 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.log","label":"1 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.error_message","label":"1 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"8a17ceac-d34d-4a86-82f4-8fa8035f3133.status","label":"1 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"Updated_1.current.type","label":"Trigger - Record Updated➛Answer Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_answers","column_name":"type","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"label":"Yes/No","used":false,"rawLabel":"Yes/No","selected":false,"missing":false,"image":"","reference":false,"value":"Yes/No","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Range","used":false,"rawLabel":"Range","selected":false,"missing":false,"image":"","reference":false,"value":"Range","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Sub Total","used":false,"rawLabel":"Sub Total","selected":false,"missing":false,"image":"","reference":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Section","used":false,"rawLabel":"Section","selected":false,"missing":false,"image":"","reference":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_answers"}}]},{"name":"Updated_1.current.category","label":"Trigger - Record Updated➛Answer Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_answers","column_name":"category","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"label":"Section","used":false,"rawLabel":"Section","selected":false,"missing":false,"image":"","reference":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Question","used":false,"rawLabel":"Question","selected":false,"missing":false,"image":"","reference":false,"value":"Question","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Bonus Question","used":false,"rawLabel":"Bonus Question","selected":false,"missing":false,"image":"","reference":false,"value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_answers"}},{"label":"Sub Total","used":false,"rawLabel":"Sub Total","selected":false,"missing":false,"image":"","reference":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_answers"}}]},{"name":"Updated_1.current.max_score","label":"Trigger - Record Updated➛Answer Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_answers","column_name":"max_score"},{"name":"Updated_1.current.min_score","label":"Trigger - Record Updated➛Answer Record➛Minimum Score","reference":"","reference_display":"Minimum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_answers","column_name":"min_score"},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.previous_display_value","label":"1➛FDChangeDetails➛Previous Display Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"flow_variable.totalscore","label":"Flow Variables➛totalScore","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8225da5e-27b5-42b4-be1d-bf5f5d2e9f6b"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.record","label":"11 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.table_name","label":"11 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1dd1d994-f7f9-47c7-8301-244e21d4327a.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_value","label":"1➛FDChangeDetails➛Current Display Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"flow_variable.previous_value","label":"Flow Variables➛previous value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7fb9822e-4e97-4711-80ba-6dd5ee83a5c7"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.record","label":"4 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.table_name","label":"4 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8e6ebba5-b473-4435-89fc-973c7747db9f.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.record","label":"4 - Update Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.table_name","label":"4 - Update Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2b0cd8de-9ba7-41b2-b475-899969746bee.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.record","label":"4 - Update Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.table_name","label":"4 - Update Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"a8f70ecb-58e5-4a3f-8c0d-c9b82b22d2f2.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"d0b6ed03-5f5c-420f-bcc0-25a394d05033.__action_status__","label":"6 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d0b6ed03-5f5c-420f-bcc0-25a394d05033.__dont_treat_as_error__","label":"6 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.sectionsubtoal","label":"Flow Variables➛sectionSubToal","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f269e92b-f7cc-47b5-a39c-befdaa9c1975"}},{"name":"flow_variable.subtotalpercentage","label":"Flow Variables➛subTotalPercentage","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2db66c16-078a-417c-bae3-c32901f37acd"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.status","label":"11 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.error_message","label":"11 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.log","label":"11 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"241b5e21-6396-431a-9863-36d01c13562a.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.record","label":"11 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.table_name","label":"11 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"f8a57ecd-30d6-4ef0-b223-fb66135bd17d.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
         <master>true</master>
         <name>Scoring Logic</name>
         <natlang/>
@@ -2080,7 +2081,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>038659af1b0f9d5042b9ec29b04bcb75</sys_id>
-        <sys_mod_count>51</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2089,7 +2090,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:33</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:32</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_variable_value action="delete_multiple" query="document_key=038659af1b0f9d5042b9ec29b04bcb75"/>
@@ -2105,7 +2106,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-14 22:19:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>678699af1b0f9d5042b9ec29b04bcbaf</sys_id>
-        <sys_mod_count>154</sys_mod_count>
+        <sys_mod_count>157</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2113,7 +2114,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:34</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:34</sys_updated_on>
         <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -2170,10 +2171,10 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-11-14 22:19:29</sys_created_on>
         <sys_id>a38699af1b0f9d5042b9ec29b04bcbb1</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-11-16 22:24:55</sys_updated_on>
-        <value>answerVALCHANGES^scorecard.stateINDraft,In Progress</value>
+        <sys_updated_on>2022-12-30 02:54:31</sys_updated_on>
+        <value>answerVALCHANGES^scorecard.stateINDraft,In Progress^category!=Sub Total</value>
         <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=678699af1b0f9d5042b9ec29b04bcbaf"/>
@@ -2263,7 +2264,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-14 22:19:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1b8699af1b0f9d5042b9ec29b04bcb99</sys_id>
-        <sys_mod_count>101</sys_mod_count>
+        <sys_mod_count>103</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2271,7 +2272,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:32</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:31</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -2437,7 +2438,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-14 22:19:27</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9f8659af1b0f9d5042b9ec29b04bcb79</sys_id>
-        <sys_mod_count>101</sys_mod_count>
+        <sys_mod_count>103</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2445,7 +2446,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:32</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:31</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -2478,7 +2479,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-12-05 23:58:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3a8635d687e79d9409bd64af8bbb35d6</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2486,7 +2487,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:33</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:32</sys_updated_on>
         <ui_id>39e3cb05-04f9-4e58-81e8-d7170a886a8c</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3a8635d687e79d9409bd64af8bbb35d6"/>
@@ -2523,7 +2524,7 @@ Total Score = {{flow_variable.totalscore}}
         <sys_created_on>2022-11-18 02:43:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3dbf252c871b5d9009bd64af8bbb350b</sys_id>
-        <sys_mod_count>140</sys_mod_count>
+        <sys_mod_count>144</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2531,7 +2532,7 @@ Total Score = {{flow_variable.totalscore}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:33</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:32</sys_updated_on>
         <ui_id>1dd1d994-f7f9-47c7-8301-244e21d4327a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3dbf252c871b5d9009bd64af8bbb350b"/>
@@ -2616,7 +2617,7 @@ Total Score = {{flow_variable.totalscore}}
         <sys_created_on>2022-11-16 22:24:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3efae3c88793599009bd64af8bbb3581</sys_id>
-        <sys_mod_count>204</sys_mod_count>
+        <sys_mod_count>208</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2624,7 +2625,7 @@ Total Score = {{flow_variable.totalscore}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:33</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:32</sys_updated_on>
         <ui_id>6d798485-3539-4bc3-a88a-e67d845f479b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3efae3c88793599009bd64af8bbb3581"/>
@@ -2660,7 +2661,7 @@ Current Value = ﻿{{23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_v
         <sys_created_on>2022-11-21 23:39:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>85eba1fd8753d9d009bd64af8bbb3512</sys_id>
-        <sys_mod_count>112</sys_mod_count>
+        <sys_mod_count>116</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2668,7 +2669,7 @@ Current Value = ﻿{{23bd6d12-c7be-41eb-9a51-ca8b2646f5da.item.current_display_v
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:33</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:32</sys_updated_on>
         <ui_id>d0b6ed03-5f5c-420f-bcc0-25a394d05033</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=85eba1fd8753d9d009bd64af8bbb3512"/>
@@ -2706,7 +2707,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-14 22:19:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a38699af1b0f9d5042b9ec29b04bcbab</sys_id>
-        <sys_mod_count>206</sys_mod_count>
+        <sys_mod_count>210</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2714,7 +2715,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:33</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:32</sys_updated_on>
         <ui_id>c428e5ef-bea2-46a9-8d34-fbb771111435</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a38699af1b0f9d5042b9ec29b04bcbab"/>
@@ -2823,7 +2824,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-16 22:40:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>358e67c887d3599009bd64af8bbb3565</sys_id>
-        <sys_mod_count>104</sys_mod_count>
+        <sys_mod_count>106</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2831,7 +2832,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:33</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:32</sys_updated_on>
         <ui_id>15b11897-0877-425b-a358-5f3266bfaa50</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2902,7 +2903,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-16 22:24:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7afae3c88793599009bd64af8bbb3586</sys_id>
-        <sys_mod_count>104</sys_mod_count>
+        <sys_mod_count>106</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2910,7 +2911,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:33</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:32</sys_updated_on>
         <ui_id>23bd6d12-c7be-41eb-9a51-ca8b2646f5da</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2955,7 +2956,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-16 22:40:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7d8e67c887d3599009bd64af8bbb3543</sys_id>
-        <sys_mod_count>102</sys_mod_count>
+        <sys_mod_count>104</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2963,7 +2964,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:33</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:32</sys_updated_on>
         <ui_id>50b4859c-8a69-4c37-b523-bccf6557b6d7</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3034,7 +3035,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-16 22:24:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7efae3c88793599009bd64af8bbb3596</sys_id>
-        <sys_mod_count>106</sys_mod_count>
+        <sys_mod_count>108</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3042,7 +3043,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:33</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:32</sys_updated_on>
         <ui_id>65b93f04-1503-4493-ad3b-0851e068706c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3122,7 +3123,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-16 22:40:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f18e67c887d3599009bd64af8bbb35b4</sys_id>
-        <sys_mod_count>106</sys_mod_count>
+        <sys_mod_count>108</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3130,7 +3131,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:33</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:32</sys_updated_on>
         <ui_id>d9cfdb39-e76a-461b-9f4d-91bce7080e61</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3201,7 +3202,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_created_on>2022-11-16 22:40:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fd8e67c887d3599009bd64af8bbb3560</sys_id>
-        <sys_mod_count>104</sys_mod_count>
+        <sys_mod_count>106</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3209,7 +3210,7 @@ SubTotal = {{flow_variable.sectionsubtoal}}
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-28 16:28:33</sys_updated_on>
+        <sys_updated_on>2022-12-30 02:54:32</sys_updated_on>
         <ui_id>f9f11da2-47f0-428b-9ae8-e84a513e5749</ui_id>
         <workflow_inputs/>
         <workflow_reference/>

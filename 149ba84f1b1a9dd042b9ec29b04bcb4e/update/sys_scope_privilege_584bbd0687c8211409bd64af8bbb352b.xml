@@ -2,7 +2,7 @@
     <sys_scope_privilege action="INSERT_OR_UPDATE">
         <operation>execute</operation>
         <source_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</source_scope>
-        <status>requested</status>
+        <status>allowed</status>
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-12-30 02:11:44</sys_created_on>

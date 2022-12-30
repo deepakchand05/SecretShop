@@ -396,8 +396,8 @@ secretshopUtilities.prototype = {
     /*
         //This function calculates SubTotal for each sections in the scorecards
     	
-    	@param answer{string}
-        @param previousValue{string}
+    	@param answer{string} current answer
+        @param previousValue{string} previous answer
     	@param c_order{integer} current order of the question
     	
     	Invokes the function: updateSectionSubtotal()
@@ -514,6 +514,8 @@ secretshopUtilities.prototype = {
         this.gl.logDebug("secretshopUtilities: calculateSubTotalScorecard() new global.JSON().encode(obj)  = " + new global.JSON().encode(obj));
         this.updateSectionSubtotal(tableName, new global.JSON().encode(obj));
         //gs.info("secretshopUtilities: calculateSubTotalScorecard() new global.JSON().stringify(obj) =  data.order =  " + data.order + " data.subtotal = " + data.subtotal);
+
+
         return new global.JSON().encode(obj);
 
     },
@@ -797,18 +799,33 @@ secretshopUtilities.prototype = {
 	*/
     updateSectionSubtotal: function(tableName, obj) {
         try {
+            var oldSubtotal = 0;
             var result = global.JSON.parse(obj);
             this.gl.logInfo("secretshopUtilities: updateSectionSubtotal() = tableName  = " + tableName + "  = result.subtotal = " + result.subtotal + "   result.order = " + result.order + "   result.percentOfPoints  = " + result.percentOfPoints + " result.sysID  =" + result.sysID);
             var ans = new GlideRecord(tableName);
             ans.addQuery("sys_id", result.sysID);
             ans.query();
             if (ans.next()) {
+                if (global.JSUtil.nil(ans.answer.choice)) {
+                    oldSubtotal = 0;
+
+                } else {
+                    oldSubtotal = parseInt(ans.answer.choice);
+                }
+
                 ans.answer = this.getAnswerSYSID(this.answerChoiceTable, result.subtotal.toString()).toString(); //this.dependentValue
                 ans.percent_of_points = result.percentOfPoints;
                 ans.points_received = parseInt(result.subtotal);
 
                 this.gl.logInfo("secretshopUtilities: updateSectionSubtotal() = ans.answer  = " + ans.answer + "  = result.subtotal = " + result.subtotal + "   result.order = " + result.order + "   result.percentOfPoints  = " + result.percentOfPoints + " result.sysID  =" + result.sysID);
+
+
                 ans.update();
+                this.gl.logInfo("secretshopUtilities: updateSectionSubtotal() = parseInt(result.subtotal) or newValue  = " + parseInt(result.subtotal) + "  = oldSubtotal = " + oldSubtotal + "   tableName = " + tableName);
+
+                this._parentSubtotalCalScorecard(ans, parseInt(result.subtotal), oldSubtotal, tableName);
+
+
             } else {
                 this.gl.logInfo("secretshopUtilities: updateSectionSubtotal() = Unable to find the record");
                 this.gl.logWarning("secretshopUtilities: updateSectionSubtotal() = Unable to find the record");
@@ -1383,7 +1400,7 @@ secretshopUtilities.prototype = {
             cSubtotalOrder = current.order,
             cSubtotal = newValue;
         this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() csectionOrder " + csectionOrder + "  cSubtotalOrder =  " + cSubtotalOrder + "    cSubtotal  =  " + cSubtotal);
-        foundParentSubtotal: {
+        foundParentSubtotalScorecard: {
             var gr = new GlideRecord(tableName);
             gr.orderBy('order');
             gr.addQuery("category", this.quesType); //subtotal
@@ -1413,13 +1430,14 @@ secretshopUtilities.prototype = {
                         pPercentofPoints = Math.ceil((pPointsReceived / pSubTotalMax) * 100);
                         this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() updatedParentSubTotal  =  " + updatedParentSubTotal + "    pPointsReceived = " + pPointsReceived + "  pPercentofPoints = " + pPercentofPoints);
                         //calculate points received and percent of points for each parent subtotal
-                        gr.answer = updatedParentSubTotal;
+                      //  gr.answer = updatedParentSubTotal; 
+						gr.answer =this.getAnswerSYSID(this.answerChoiceTable, updatedParentSubTotal.toString()).toString();
                         gr.points_received = pPointsReceived;
                         gr.percent_of_points = pPercentofPoints;
-						gr.setWorkflow(false);
+                        //gr.setWorkflow(false); Does not work in scoped application or does not stop the flow from running.
                         gr.update();
 
-                        break foundParentSubtotal;
+                        break foundParentSubtotalScorecard;
 
                     } else {
                         this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() Do nothing - This is not the parent section/subtotal  || pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
