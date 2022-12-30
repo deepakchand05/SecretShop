@@ -118,7 +118,8 @@ secretshopUtilities.prototype = {
 	@return {array} of sysIDs
 	*/
     showAvailSections: function(current, template, tableName) {
-        this.gl.logDebug("secretshopUtilities: showAvailSections() =  current = {0}    template =  {1}  Table = {2} ", current, template, tableName);
+        // this.gl.logDebug("secretshopUtilities: showAvailSections() =  current = {0}    template =  {1}  Table = {2} ", current, template, tableName);
+        this.gl.logDebug("secretshopUtilities: showAvailSections() =     template =  " + template + " Table =  " + tableName);
 
         try {
             var choiceList = [];
@@ -1299,7 +1300,7 @@ secretshopUtilities.prototype = {
 
     },
 
-    //WIP
+    //WIP - Pending Testing
     /*
     Calculate parent subtotal value. This code can handle one level of nested section.
     */
@@ -1334,22 +1335,30 @@ secretshopUtilities.prototype = {
                         this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
                         updatedSubTotalMax = (pSubTotalMax - oldValue) + newValue;
                         this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() updatedSubTotalMax  =  " + updatedSubTotalMax);
+                        gr.subtotal_max = updatedSubTotalMax;
+                        gr.update();
 
                         break foundParentSubtotal;
 
                     } else {
                         this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() Do nothing - This is not the parent section/subtotal  || pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+                        this.gl.logDebug("secretshopUtilities: _parentSubtotalCalQuestion() Do nothing - This is not the parent section/subtotal  || pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
 
                     }
                 } catch (ex) {
 
                     this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue" + ex);
 
+                    this.gl.logWarning("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue" + ex);
+                    this.gl.logErr("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue" + ex);
+                    this.gl.logDebug("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue" + ex);
+
                 }
 
 
             }
         }
+        return updatedSubTotalMax;
     },
 
 
@@ -1360,23 +1369,23 @@ secretshopUtilities.prototype = {
     Calculate parent subtotal value. This code can handle one level of nested section.
     */
     _parentSubtotalCalScorecard: function(current, newValue, oldValue, tableName) {
-        // this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() tableName " + tableName + "  current.template =  " + current.template + "    current.order  =  " + current.order);
+        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() tableName " + tableName + "  newValue =  " + newValue + "    oldValue  =  " + oldValue);
         //Initialize parent subtotal values
         var pSectionOrder = 0,
             pSubTotalOrder = 0,
+            pSubTotal = 0,
             pSubTotalMax,
             pPointsReceived = 0,
             pPercentofPoints = 0;
-        var updatedSubTotalMax = 0;
+        var updatedParentSubTotal = 0;
         //Child subtotal values
         var csectionOrder = parseInt(current.subtotal_for_section),
             cSubtotalOrder = current.order,
-            cSubtotalMax = current.subtotal_max;
-        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() csectionOrder " + csectionOrder + "  cSubtotalOrder =  " + cSubtotalOrder + "    cSubtotalMax  =  " + cSubtotalMax);
+            cSubtotal = newValue;
+        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() csectionOrder " + csectionOrder + "  cSubtotalOrder =  " + cSubtotalOrder + "    cSubtotal  =  " + cSubtotal);
         foundParentSubtotal: {
             var gr = new GlideRecord(tableName);
             gr.orderBy('order');
-            gr.addQuery("active", true);
             gr.addQuery("category", this.quesType); //subtotal
             gr.addQuery("template", current.template);
             gr.addQuery("scorecard", current.scorecard);
@@ -1385,33 +1394,50 @@ secretshopUtilities.prototype = {
             while (gr.next()) {
                 try {
 
-                    pSectionOrder = gr.subtotal_for_section.order;
+                    pSectionOrder = gr.subtotal_for_section;
                     pSubTotalOrder = gr.order;
+                    if (global.JSUtil.nil(gr.answer.choice)) {
+                        pSubTotal = 0;
+
+                    } else {
+                        pSubTotal = parseInt(gr.answer.choice);
+                    }
                     pSubTotalMax = gr.subtotal_max;
+                    //this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() pSubTotal  =  " + pSubTotal   +  "   gr.answer.choice =  " + gr.answer.choice);
+
                     if (pSectionOrder < csectionOrder && cSubtotalOrder < pSubTotalOrder) {
                         //Parent section order should be lower than child section order  AND  parent subtotal order should be greater than child subtotal order
-                        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
-                        updatedSubTotalMax = (pSubTotalMax - oldValue) + newValue;
-                        pPointsReceived = parseInt(updatedSubTotalMax);
-                        pPercentofPoints = Math.ceil(parseInt(updatedSubTotalMax / pSubTotalMax) / 100);
-                        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() updatedSubTotalMax  =  " + updatedSubTotalMax + "    pPointsReceived = " + pPointsReceived + "  pPercentofPoints = " + pPercentofPoints);
+                        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "   Current pSubTotal  =  " + pSubTotal + "    pSubTotalMax =  " + pSubTotalMax);
+                        updatedParentSubTotal = (pSubTotal - oldValue) + newValue;
+                        pPointsReceived = parseInt(updatedParentSubTotal);
+                        pPercentofPoints = Math.ceil((pPointsReceived / pSubTotalMax) * 100);
+                        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() updatedParentSubTotal  =  " + updatedParentSubTotal + "    pPointsReceived = " + pPointsReceived + "  pPercentofPoints = " + pPercentofPoints);
                         //calculate points received and percent of points for each parent subtotal
+                        gr.answer = updatedParentSubTotal;
+                        gr.points_received = pPointsReceived;
+                        gr.percent_of_points = pPercentofPoints;
+						gr.setWorkflow(false);
+                        gr.update();
 
                         break foundParentSubtotal;
 
                     } else {
-                        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() Do nothing - This is not the parent section/subtotal  || pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+                        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() Do nothing - This is not the parent section/subtotal  || pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
 
                     }
                 } catch (ex) {
 
-                    this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue" + ex);
+                    this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() Unable to identofy the issue" + ex);
+                    this.gl.logWarning("secretshopUtilities: _parentSubtotalCalScorecard() Unable to identofy the issue" + ex);
+                    this.gl.logErr("secretshopUtilities: _parentSubtotalCalScorecard() Unable to identofy the issue" + ex);
+                    this.gl.logDebug("secretshopUtilities: _parentSubtotalCalScorecard() Unable to identofy the issue" + ex);
 
                 }
 
 
             }
         }
+        return updatedParentSubTotal;
     },
 
 
