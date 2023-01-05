@@ -1195,7 +1195,8 @@ secretshopUtilities.prototype = {
 
     //WIP
     /*
-    This function validates if each question is within a section
+    This function validates if each question is within a section.
+	This funciton is not effective when a template contains parent sections.
     
     @param sysID{string} sysid of the template
     */
@@ -1210,6 +1211,7 @@ secretshopUtilities.prototype = {
             questionOrder = 0;
         try {
             var subtotals = new GlideRecord(this.questionTable);
+            subtotals.orderBy("order");
             subtotals.addQuery("active", true);
             subtotals.addQuery("category", "Sub Total");
             subtotals.addQuery("template", sysID);
@@ -1251,35 +1253,40 @@ secretshopUtilities.prototype = {
         gr.addQuery("template", sysID);
         gr.query();
         var count = 0;
-        questionOutOfScope:
+        questionOutOfScope: {
             while (gr.next()) {
-                count++; {
+                count++;
 
-                    this.gl.logInfo("secretshopUtilities: validationQuestionOrder() Check if each question is within a section  data.length  =" + data.length);
-                    nextQuestion:
-                        for (var j = 0; j < data.length; j++) {
+                // this.gl.logInfo("secretshopUtilities: validationQuestionOrder() Check if each question is within a section  data.length  =" + data.length);
+                nextSection: {
 
-                            this.gl.logInfo("secretshopUtilities: validationQuestionOrder() parseInt(data[j].subTotalOrder)  =" + parseInt(data[j].subTotalOrder) + " j = " + j + "    parseInt(data[j].sectionOrder) = " + parseInt(data[j].sectionOrder) + " -----> gr.question = " + gr.question + "   gr.order = " + gr.order + "  Count  = " + count);
-                            if (parseInt(data[j].subTotalOrder) > gr.order && parseInt(data[j].sectionOrder) < gr.order) {
-                                valid = true;
-                                this.gl.logInfo("secretshopUtilities: validationQuestionOrder() Question is within a section. No action is required --->  gr.question = " + gr.question + "   gr.order = " + gr.order + " Section Order =  " + parseInt(data[j].sectionOrder) + "  Subtotal =" + parseInt(data[j].subTotalOrder) + "  Count  = " + count);
-                                break nextQuestion;
-                            } else {
-                                questionName = gr.question;
-                                questionOrder = gr.order;
-                                valid = false;
-                                this.gl.logInfo("secretshopUtilities: validationQuestionOrder() Question not within a section  ----> questionName = " + questionName + "  questionOrder = " + questionOrder + "  valid  = " + valid + " Section Order =  " + parseInt(data[j].sectionOrder) + "  Subtotal =" + parseInt(data[j].subTotalOrder) + "  Count  = " + count);
+                    for (var j = 0; j < data.length; j++) {
 
-                                break questionOutOfScope;
-                                //break;
-                                //return ;
-                            }
+                        this.gl.logInfo("secretshopUtilities: validationQuestionOrder() parseInt(data[j].subTotalOrder)  =" + parseInt(data[j].subTotalOrder) + " j = " + j + "    parseInt(data[j].sectionOrder) = " + parseInt(data[j].sectionOrder) + " -----> gr.question = " + gr.question + "   gr.order = " + gr.order + "  Count  = " + count);
+                        if (parseInt(data[j].subTotalOrder) > gr.order && parseInt(data[j].sectionOrder) < gr.order) {
+                            valid = true;
+                            this.gl.logInfo("secretshopUtilities: validationQuestionOrder() Question is within a section. No action is required --->  gr.question = " + gr.question + "   gr.order = " + gr.order + " Section Order =  " + parseInt(data[j].sectionOrder) + "  Subtotal =" + parseInt(data[j].subTotalOrder) + "  Count  = " + count);
+                            break nextSection;
+                        } else if (gr.order > parseInt(data[j].subTotalOrder) && gr.order > parseInt(data[j + 1].sectionOrder)) {
+                            this.gl.logInfo("secretshopUtilities: validationQuestionOrder() Question is  in the next section so move to code to check next sections questions. No action is required --->  gr.question = " + gr.question + "   gr.order = " + gr.order + " ||  Section Order =  " + parseInt(data[j].sectionOrder) + " ||  Subtotal =" + parseInt(data[j].subTotalOrder) + " ||  Next Section Order =  " + parseInt(data[j + 1].sectionOrder) + "  Count  = " + count);
+                            break nextSection;
+                        } else {
+                            questionName = gr.question;
+                            questionOrder = gr.order;
+                            valid = false;
+                            this.gl.logInfo("secretshopUtilities: validationQuestionOrder() Question not within a section  ----> questionName = " + questionName + "  questionOrder = " + questionOrder + "  valid  = " + valid + " Section Order =  " + parseInt(data[j].sectionOrder) + "  Subtotal Order=" + parseInt(data[j].subTotalOrder) + "  Count  = " + count);
+
+                            break questionOutOfScope;
 
                         }
-
-
+                    }
                 }
+
+
+
+
             }
+        }
 
         if (valid == false) {
             this.gl.logInfo("secretshopUtilities: validationQuestionOrder() Question Out of scope  ----> questionName = " + questionName + "  questionOrder = " + questionOrder + " Section Order =  " + parseInt(data[j].sectionOrder) + "  Subtotal =" + parseInt(data[j].subTotalOrder));
@@ -1297,32 +1304,15 @@ secretshopUtilities.prototype = {
 
 
 
-    //WIP
-    /*
-    Calculate 30Day scorecard totals
-    Week 1 Totals
-    Week 2-4 Totals
-    Average of all totals
-    */
-
-    _monthlyScoring: function() {
-        /*
-        check question type
-        update each answer with points received  and  % of points
-        check, where the question belong? (Week 1 or between week 2 and week 4)
-        Cal Week 1 total
-        Cal week 2 - 4 total
-        Cal avg total of the scorecard
-        */
-
-    },
-
-    //WIP - Pending Testing
     /*
     Calculate parent subtotal value. This code can handle one level of nested section.
+	@param current{integer} child subtotal object
+	@param newValue{integer} new subtotal value
+	@param oldValue{integer} old Subtotal value
+	@param tableName{string} table name - Questions
+	@return updates the record(Question) parent subtotal Max
     */
     _parentSubtotalCalQuestion: function(current, newValue, oldValue, tableName) {
-        // this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() tableName " + tableName + "  current.template =  " + current.template + "    current.order  =  " + current.order);
         //Initialize parent subtotal values
         var pSectionOrder = 0,
             pSubTotalOrder = 0,
@@ -1332,7 +1322,8 @@ secretshopUtilities.prototype = {
         var csectionOrder = current.subtotal_for_section.order,
             cSubtotalOrder = current.order,
             cSubtotalMax = current.subtotal_max;
-        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() csectionOrder " + csectionOrder + "  cSubtotalOrder =  " + cSubtotalOrder + "    cSubtotalMax  =  " + cSubtotalMax);
+        //this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() csectionOrder " + csectionOrder + "  cSubtotalOrder =  " + cSubtotalOrder + "    cSubtotalMax  =  " + cSubtotalMax);
+        this.gl.logDebug("secretshopUtilities: _parentSubtotalCalQuestion() csectionOrder " + csectionOrder + "  cSubtotalOrder =  " + cSubtotalOrder + "    cSubtotalMax  =  " + cSubtotalMax);
         foundParentSubtotal: {
             var gr = new GlideRecord(tableName);
             gr.orderBy('order');
@@ -1344,14 +1335,17 @@ secretshopUtilities.prototype = {
             while (gr.next()) {
                 try {
 
-                    pSectionOrder = gr.subtotal_for_section.order;
+                    pSectionOrder = parseInt(gr.subtotal_for_section.order.replace(",", ''));
                     pSubTotalOrder = gr.order;
                     pSubTotalMax = gr.subtotal_max;
                     if (pSectionOrder < csectionOrder && cSubtotalOrder < pSubTotalOrder) {
                         //Parent section order should be lower than child section order  AND  parent subtotal order should be greater than child subtotal order
-                        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+                        //this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+                        this.gl.logDebug("secretshopUtilities: _parentSubtotalCalQuestion() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+
                         updatedSubTotalMax = (pSubTotalMax - oldValue) + newValue;
                         this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() updatedSubTotalMax  =  " + updatedSubTotalMax);
+                        this.gl.logDebug("secretshopUtilities: _parentSubtotalCalQuestion() updatedSubTotalMax  =  " + updatedSubTotalMax);
                         gr.subtotal_max = updatedSubTotalMax;
                         gr.update();
 
@@ -1359,16 +1353,16 @@ secretshopUtilities.prototype = {
 
                     } else {
                         this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() Do nothing - This is not the parent section/subtotal  || pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+                        this.gl.logWarning("secretshopUtilities: _parentSubtotalCalQuestion() Do nothing - This is not the parent section/subtotal  || pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
                         this.gl.logDebug("secretshopUtilities: _parentSubtotalCalQuestion() Do nothing - This is not the parent section/subtotal  || pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
 
                     }
                 } catch (ex) {
 
-                    this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue" + ex);
-
-                    this.gl.logWarning("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue" + ex);
-                    this.gl.logErr("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue" + ex);
-                    this.gl.logDebug("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue" + ex);
+                    this.gl.logInfo("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue = " + ex);
+                    this.gl.logWarning("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue = " + ex);
+                    this.gl.logErr("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue = " + ex);
+                    this.gl.logDebug("secretshopUtilities: _parentSubtotalCalQuestion() Unable to identofy the issue = " + ex);
 
                 }
 
@@ -1381,12 +1375,18 @@ secretshopUtilities.prototype = {
 
 
 
-    //WIP
+
     /*
     Calculate parent subtotal value. This code can handle one level of nested section.
+	@param current{object} Child subtotal object
+	@param newValue{integer} new subtotal
+	@param oldValue{integer} old Subtotal
+	@param tableName table name - Answers
+	@return updates the record(answers) parent subtotal, points received, percentage of points on parent subtotal
     */
     _parentSubtotalCalScorecard: function(current, newValue, oldValue, tableName) {
-        this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() tableName " + tableName + "  newValue =  " + newValue + "    oldValue  =  " + oldValue);
+        // this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() tableName " + tableName + "  newValue =  " + newValue + "    oldValue  =  " + oldValue);
+        this.gl.logDebug("secretshopUtilities: _parentSubtotalCalScorecard() tableName " + tableName + "  newValue =  " + newValue + "    oldValue  =  " + oldValue);
         //Initialize parent subtotal values
         var pSectionOrder = 0,
             pSubTotalOrder = 0,
@@ -1396,10 +1396,11 @@ secretshopUtilities.prototype = {
             pPercentofPoints = 0;
         var updatedParentSubTotal = 0;
         //Child subtotal values
-        var csectionOrder = parseInt(current.subtotal_for_section),
+        var csectionOrder = parseInt(current.subtotal_for_section.replace(",", '')),
             cSubtotalOrder = current.order,
             cSubtotal = newValue;
         this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() csectionOrder " + csectionOrder + "  cSubtotalOrder =  " + cSubtotalOrder + "    cSubtotal  =  " + cSubtotal);
+        this.gl.logDebug("secretshopUtilities: _parentSubtotalCalScorecard() csectionOrder " + csectionOrder + "  cSubtotalOrder =  " + cSubtotalOrder + "    cSubtotal  =  " + cSubtotal);
         foundParentSubtotalScorecard: {
             var gr = new GlideRecord(tableName);
             gr.orderBy('order');
@@ -1411,7 +1412,7 @@ secretshopUtilities.prototype = {
             while (gr.next()) {
                 try {
 
-                    pSectionOrder = gr.subtotal_for_section;
+                    pSectionOrder = parseInt(gr.subtotal_for_section.replace(",", ''));
                     pSubTotalOrder = gr.order;
                     if (global.JSUtil.nil(gr.answer.choice)) {
                         pSubTotal = 0;
@@ -1420,18 +1421,19 @@ secretshopUtilities.prototype = {
                         pSubTotal = parseInt(gr.answer.choice);
                     }
                     pSubTotalMax = gr.subtotal_max;
-                    //this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() pSubTotal  =  " + pSubTotal   +  "   gr.answer.choice =  " + gr.answer.choice);
 
                     if (pSectionOrder < csectionOrder && cSubtotalOrder < pSubTotalOrder) {
                         //Parent section order should be lower than child section order  AND  parent subtotal order should be greater than child subtotal order
                         this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "   Current pSubTotal  =  " + pSubTotal + "    pSubTotalMax =  " + pSubTotalMax);
+                        this.gl.logDebug("secretshopUtilities: _parentSubtotalCalScorecard() pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "   Current pSubTotal  =  " + pSubTotal + "    pSubTotalMax =  " + pSubTotalMax);
                         updatedParentSubTotal = (pSubTotal - oldValue) + newValue;
                         pPointsReceived = parseInt(updatedParentSubTotal);
                         pPercentofPoints = Math.ceil((pPointsReceived / pSubTotalMax) * 100);
                         this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() updatedParentSubTotal  =  " + updatedParentSubTotal + "    pPointsReceived = " + pPointsReceived + "  pPercentofPoints = " + pPercentofPoints);
+                        this.gl.logDebug("secretshopUtilities: _parentSubtotalCalScorecard() updatedParentSubTotal  =  " + updatedParentSubTotal + "    pPointsReceived = " + pPointsReceived + "  pPercentofPoints = " + pPercentofPoints);
                         //calculate points received and percent of points for each parent subtotal
-                      //  gr.answer = updatedParentSubTotal; 
-						gr.answer =this.getAnswerSYSID(this.answerChoiceTable, updatedParentSubTotal.toString()).toString();
+
+                        gr.answer = this.getAnswerSYSID(this.answerChoiceTable, updatedParentSubTotal.toString()).toString();
                         gr.points_received = pPointsReceived;
                         gr.percent_of_points = pPercentofPoints;
                         //gr.setWorkflow(false); Does not work in scoped application or does not stop the flow from running.
@@ -1441,14 +1443,16 @@ secretshopUtilities.prototype = {
 
                     } else {
                         this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() Do nothing - This is not the parent section/subtotal  || pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+                        this.gl.logWarning("secretshopUtilities: _parentSubtotalCalScorecard() Do nothing - This is not the parent section/subtotal  || pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
+                        this.gl.logDebug("secretshopUtilities: _parentSubtotalCalScorecard() Do nothing - This is not the parent section/subtotal  || pSubTotalOrder " + pSubTotalOrder + "  pSectionOrder =  " + pSectionOrder + "    pSubTotalMax  =  " + pSubTotalMax);
 
                     }
                 } catch (ex) {
 
-                    this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() Unable to identofy the issue" + ex);
-                    this.gl.logWarning("secretshopUtilities: _parentSubtotalCalScorecard() Unable to identofy the issue" + ex);
-                    this.gl.logErr("secretshopUtilities: _parentSubtotalCalScorecard() Unable to identofy the issue" + ex);
-                    this.gl.logDebug("secretshopUtilities: _parentSubtotalCalScorecard() Unable to identofy the issue" + ex);
+                    this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() Unable to identofy the issue = " + ex);
+                    this.gl.logWarning("secretshopUtilities: _parentSubtotalCalScorecard() Unable to identofy the issue = " + ex);
+                    this.gl.logErr("secretshopUtilities: _parentSubtotalCalScorecard() Unable to identofy the issue = " + ex);
+                    this.gl.logDebug("secretshopUtilities: _parentSubtotalCalScorecard() Unable to identofy the issue = " + ex);
 
                 }
 

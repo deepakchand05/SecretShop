@@ -39,15 +39,17 @@
 
     }
     if (newValue == 'Published') {
-        validationQuestionOrders();
+        //validationQuestionOrders();
         // alert("Please ensure all Questions are ordered between a Section and a Sub Total.");
 
-        var gm = new GlideModal("glide_confirm_standard", true, 600,100);
+        var gm = new GlideModal("glide_confirm_standard", true, 600, 100);
         gm.setTitle("Check Question Order");
         gm.setPreference("title", "Please ensure all Questions are ordered between a Section and a Sub Total.");
         gm.setPreference("warning", "true");
         gm.render();
+
     }
+
 
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
