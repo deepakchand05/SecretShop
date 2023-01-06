@@ -538,7 +538,7 @@ secretshopUtilities.prototype = {
                 this.updatePointsReceived(current, answer, min, max);
                 //Question type is Yes/No
                 if (current.type == "Yes/No") {
-                    this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() current.type ==  " + current.type + "   totalscore = " + totalscore);
+                    //this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() current.type ==  " + current.type + "   totalscore = " + totalscore);
                     this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() current.type ==  " + current.type + "   totalscore = " + totalscore);
                     if (totalscore < 0 && global.JSUtil.notNil(answer))
                         totalscore = 0;
@@ -586,7 +586,7 @@ secretshopUtilities.prototype = {
                 else if (current.type == "Range") {
 
                     this.updatePointsReceived(current, answer, min, max);
-                    this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "   totalscore = " + totalscore);
+                    // this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "   totalscore = " + totalscore);
                     this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "   totalscore = " + totalscore + "  Answer =" + answer);
                     if (totalscore < 0 && global.JSUtil.notNil(answer)) {
 
@@ -594,7 +594,7 @@ secretshopUtilities.prototype = {
                         previousValue = 0;
                         totalscore = parseInt(parseInt(totalscore) + parseInt(answer));
                         this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = totalscore < 0 && global.JSUtil.notNil(answer) ==  " + "  totalscore  == " + totalscore);
-                        this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = totalscore < 0 && global.JSUtil.notNil(answer) ==  " + "  totalscore  == " + totalscore);
+                        //  this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = totalscore < 0 && global.JSUtil.notNil(answer) ==  " + "  totalscore  == " + totalscore);
                         return totalscore;
                     }
                     if (parseInt(answer) == 0) {
@@ -606,30 +606,30 @@ secretshopUtilities.prototype = {
 
                     if (global.JSUtil.notNil(totalscore) && global.JSUtil.notNil(previousValue) && parseInt(answer) != 0 && global.JSUtil.notNil(answer)) {
                         this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "  global.JSUtil.notNil(totalscore) && global.JSUtil.notNil(previousValue) && parseInt(answer) != 0  " + "  totalscore = 0   == " + totalscore);
-                        this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "  global.JSUtil.notNil(totalscore) && global.JSUtil.notNil(previousValue) && parseInt(answer) != 0  " + "  totalscore = 0   == " + totalscore);
+                        // this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "  global.JSUtil.notNil(totalscore) && global.JSUtil.notNil(previousValue) && parseInt(answer) != 0  " + "  totalscore = 0   == " + totalscore);
                         totalscore = (parseInt(totalscore) - parseInt(previousValue)) + parseInt(answer);
-                        this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = global.JSUtil.notNil(totalscore) && global.JSUtil.notNil(previousValue) && parseInt(answer) != 0 && global.JSUtil.notNil(answer) " + "  totalscore == " + totalscore);
+                        //  this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = global.JSUtil.notNil(totalscore) && global.JSUtil.notNil(previousValue) && parseInt(answer) != 0 && global.JSUtil.notNil(answer) " + "  totalscore == " + totalscore);
                         this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = global.JSUtil.notNil(totalscore) && global.JSUtil.notNil(previousValue) && parseInt(answer) != 0 && global.JSUtil.notNil(answer) " + "  totalscore == " + totalscore);
                         return totalscore;
                     } else if (global.JSUtil.notNil(totalscore) && (global.JSUtil.nil(previousValue) || previousValue == 0) && parseInt(answer) != 0 && global.JSUtil.notNil(answer)) {
                         this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "  global.JSUtil.notNil(totalscore) && global.JSUtil.nil(previousValue) && parseInt(answer) != 0     " + "  totalscore = 0   == " + totalscore);
-                        this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "  global.JSUtil.notNil(totalscore) && global.JSUtil.nil(previousValue) && parseInt(answer) != 0     " + "  totalscore = 0   == " + totalscore);
+                        //   this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "  global.JSUtil.notNil(totalscore) && global.JSUtil.nil(previousValue) && parseInt(answer) != 0     " + "  totalscore = 0   == " + totalscore);
 
                         totalscore = parseInt(totalscore) + parseInt(answer);
 
-                        this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = global.JSUtil.notNil(totalscore) && (global.JSUtil.nil(previousValue) || previousValue == 0) && parseInt(answer) != 0 && global.JSUtil.notNil(answer)     " + "  totalscore  == " + totalscore);
+                        // this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = global.JSUtil.notNil(totalscore) && (global.JSUtil.nil(previousValue) || previousValue == 0) && parseInt(answer) != 0 && global.JSUtil.notNil(answer)     " + "  totalscore  == " + totalscore);
                         this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = global.JSUtil.notNil(totalscore) && (global.JSUtil.nil(previousValue) || previousValue == 0) && parseInt(answer) != 0 && global.JSUtil.notNil(answer)     " + "  totalscore  == " + totalscore);
                         return totalscore;
                     }
                     //may be can be removed. Check later.
                     else if (global.JSUtil.notNil(totalscore) && (global.JSUtil.nil(previousValue) || previousValue == 0) && parseInt(answer) != 0) {
                         this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "  global.JSUtil.notNil(totalscore) && global.JSUtil.nil(previousValue) && parseInt(answer) != 0     " + "  totalscore = 0   == " + totalscore);
-                        this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "  global.JSUtil.notNil(totalscore) && global.JSUtil.nil(previousValue) && parseInt(answer) != 0     " + "  totalscore = 0   == " + totalscore);
+                        //   this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = current.type ==  " + current.type + "  global.JSUtil.notNil(totalscore) && global.JSUtil.nil(previousValue) && parseInt(answer) != 0     " + "  totalscore = 0   == " + totalscore);
 
                         totalscore = parseInt(totalscore) + parseInt(answer);
 
                         this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = global.JSUtil.notNil(totalscore) && (global.JSUtil.nil(previousValue) || previousValue == 0) && parseInt(answer) != 0     " + "  totalscore  == " + totalscore);
-                        this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = global.JSUtil.notNil(totalscore) && (global.JSUtil.nil(previousValue) || previousValue == 0) && parseInt(answer) != 0     " + "  totalscore  == " + totalscore);
+                        // this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = global.JSUtil.notNil(totalscore) && (global.JSUtil.nil(previousValue) || previousValue == 0) && parseInt(answer) != 0     " + "  totalscore  == " + totalscore);
 
                         return totalscore;
                     } else if (global.JSUtil.nil(answer)) {
@@ -658,7 +658,6 @@ secretshopUtilities.prototype = {
                 this.gl.logInfo("secretshopUtilities: calculateFinalScoreFormula() = inside monthlyScoring  scoreType");
                 this.gl.logDebug("secretshopUtilities: calculateFinalScoreFormula() = inside monthlyScoring   scoreType");
 
-                //  this._monthlyScoring();
             }
             //In future add more "else if" conditions based on new formulas created on template.
             else {
@@ -802,6 +801,7 @@ secretshopUtilities.prototype = {
             var oldSubtotal = 0;
             var result = global.JSON.parse(obj);
             this.gl.logInfo("secretshopUtilities: updateSectionSubtotal() = tableName  = " + tableName + "  = result.subtotal = " + result.subtotal + "   result.order = " + result.order + "   result.percentOfPoints  = " + result.percentOfPoints + " result.sysID  =" + result.sysID);
+            this.gl.logDebug("secretshopUtilities: updateSectionSubtotal() = tableName  = " + tableName + "  = result.subtotal = " + result.subtotal + "   result.order = " + result.order + "   result.percentOfPoints  = " + result.percentOfPoints + " result.sysID  =" + result.sysID);
             var ans = new GlideRecord(tableName);
             ans.addQuery("sys_id", result.sysID);
             ans.query();
@@ -818,10 +818,11 @@ secretshopUtilities.prototype = {
                 ans.points_received = parseInt(result.subtotal);
 
                 this.gl.logInfo("secretshopUtilities: updateSectionSubtotal() = ans.answer  = " + ans.answer + "  = result.subtotal = " + result.subtotal + "   result.order = " + result.order + "   result.percentOfPoints  = " + result.percentOfPoints + " result.sysID  =" + result.sysID);
-
+                this.gl.logDebug("secretshopUtilities: updateSectionSubtotal() = ans.answer  = " + ans.answer + "  = result.subtotal = " + result.subtotal + "   result.order = " + result.order + "   result.percentOfPoints  = " + result.percentOfPoints + " result.sysID  =" + result.sysID);
 
                 ans.update();
                 this.gl.logInfo("secretshopUtilities: updateSectionSubtotal() = parseInt(result.subtotal) or newValue  = " + parseInt(result.subtotal) + "  = oldSubtotal = " + oldSubtotal + "   tableName = " + tableName);
+                this.gl.logDebug("secretshopUtilities: updateSectionSubtotal() = parseInt(result.subtotal) or newValue  = " + parseInt(result.subtotal) + "  = oldSubtotal = " + oldSubtotal + "   tableName = " + tableName);
 
                 this._parentSubtotalCalScorecard(ans, parseInt(result.subtotal), oldSubtotal, tableName);
 
@@ -855,7 +856,7 @@ secretshopUtilities.prototype = {
             gr.query();
             if (gr.next()) {
                 SYSID = gr.sys_id;
-
+                this.gl.logDebug("secretshopUtilities: getAnswerSYSID() =  SYSID =  " + SYSID);
             } else {
                 this.gl.logWarning("secretshopUtilities: getAnswerSYSID() =  Did not find the answer sys_id ");
                 this.gl.logInfo("secretshopUtilities: getAnswerSYSID() = Did not find the answer sys_id ");
@@ -891,6 +892,7 @@ secretshopUtilities.prototype = {
             var preQuesMax = 0,
                 newQuesMax = current.max_score;
             this.gl.logInfo("secretshopUtilities: questionStateChanges() =  tableName = " + tableName + "   totalScore = " + totalScore + "   totalBonusScore = " + totalBonusScore);
+            this.gl.logDebug("secretshopUtilities: questionStateChanges() =  tableName = " + tableName + "   totalScore = " + totalScore + "   totalBonusScore = " + totalBonusScore);
             var ques = new GlideRecord(tableName);
 
             if (current.state == "Retired" && current.category == "Questions") {
@@ -898,6 +900,7 @@ secretshopUtilities.prototype = {
                 preQuesMax = current.max_score;
                 newQuesMax = 0;
                 this.gl.logInfo("secretshopUtilities: questionStateChanges() =  totalScore = " + totalScore + "   preQuesMax = " + preQuesMax + "  newQuesMax  =  " + newQuesMax);
+                this.gl.logDebug("secretshopUtilities: questionStateChanges() =  totalScore = " + totalScore + "   preQuesMax = " + preQuesMax + "  newQuesMax  =  " + newQuesMax);
                 this.updateMaxSubTotalQuestion(current, preQuesMax, newQuesMax, tableName);
 
                 return totalScore;
@@ -906,6 +909,7 @@ secretshopUtilities.prototype = {
                 preQuesMax = current.max_score;
                 newQuesMax = 0;
                 this.gl.logInfo("secretshopUtilities: questionStateChanges() =  totalBonusScore = " + totalBonusScore + "   preQuesMax = " + preQuesMax + "  newQuesMax  =  " + newQuesMax);
+                this.gl.logDebug("secretshopUtilities: questionStateChanges() =  totalBonusScore = " + totalBonusScore + "   preQuesMax = " + preQuesMax + "  newQuesMax  =  " + newQuesMax);
                 this.updateMaxSubTotalQuestion(current, preQuesMax, newQuesMax, tableName);
 
                 return totalBonusScore;
@@ -980,7 +984,9 @@ secretshopUtilities.prototype = {
             currentQMaxValue = currentObj.max_score;
 
         this.gl.logInfo("secretshopUtilities: questionOrderUpdated() cQNotINaSection = " + cQNotINaSection + "  pQNotINaSection =  " + pQNotINaSection + "    currentOrder  =  " + currentOrder + "   currentQMaxValue = " + currentQMaxValue);
-        this.gl.logInfo("secretshopUtilities: questionOrderUpdated() typeof(cQNotINaSection) = " + typeof cQNotINaSection + "  pQNotINaSection =  " + typeof pQNotINaSection + "    currentOrder  =  " + currentOrder + "   currentQMaxValue = " + currentQMaxValue);
+        // this.gl.logInfo("secretshopUtilities: questionOrderUpdated() typeof(cQNotINaSection) = " + typeof cQNotINaSection + "  pQNotINaSection =  " + typeof pQNotINaSection + "    currentOrder  =  " + currentOrder + "   currentQMaxValue = " + currentQMaxValue);
+        this.gl.logDebug("secretshopUtilities: questionOrderUpdated() cQNotINaSection = " + cQNotINaSection + "  pQNotINaSection =  " + pQNotINaSection + "    currentOrder  =  " + currentOrder + "   currentQMaxValue = " + currentQMaxValue);
+        // this.gl.logDebug("secretshopUtilities: questionOrderUpdated() typeof(cQNotINaSection) = " + typeof cQNotINaSection + "  pQNotINaSection =  " + typeof pQNotINaSection + "    currentOrder  =  " + currentOrder + "   currentQMaxValue = " + currentQMaxValue);
         var cSectionOrder = 0,
             cSubTotalOrder = 0,
             cSubTotalMax;
@@ -1070,6 +1076,8 @@ secretshopUtilities.prototype = {
 
 
             this.gl.logInfo("secretshopUtilities: questionOrderUpdated() Before pQuesOrder GlideRecord  = cQNotINaSection = " + cQNotINaSection + "   ||  jsonObjCurrent.cQNotINaSection  = " + jsonObjCurrent.cQNotINaSection);
+            this.gl.logDebug("secretshopUtilities: questionOrderUpdated() Before pQuesOrder GlideRecord  = cQNotINaSection = " + cQNotINaSection + "   ||  jsonObjCurrent.cQNotINaSection  = " + jsonObjCurrent.cQNotINaSection);
+
 
             var pQuesOrder = new GlideRecord(this.questionTable);
             pQuesOrder.orderBy('order');
@@ -1144,6 +1152,7 @@ secretshopUtilities.prototype = {
                 jsonObjPrevious.cSubTotalOrder = 0;
                 jsonObjPrevious.cSectionOrder = 0;
                 this.gl.logInfo("secretshopUtilities: questionOrderUpdated() pQNotINaSection = " + pQNotINaSection);
+                this.gl.logDebug("secretshopUtilities: questionOrderUpdated() pQNotINaSection = " + pQNotINaSection);
                 this.gl.logInfo("secretshopUtilities: questionOrderUpdated() Previous order is more than subtotal, mostly this question is outside the subtotal");
                 this.gl.logDebug("secretshopUtilities: questionOrderUpdated() Previous order is more than subtotal, mostly this question is outside the subtotal");
                 this.gl.logWarning("secretshopUtilities: questionOrderUpdated() Previous order is more than subtotal, mostly this question is outside the subtotal");
@@ -1153,6 +1162,7 @@ secretshopUtilities.prototype = {
 
 
             this.gl.logInfo("secretshopUtilities: questionOrderUpdated()  jsonObjPrevious.cSubTotalOrder.toString() = " + jsonObjPrevious.cSubTotalOrder + "  ||   jsonObjCurrent.cSubTotalOrder.toString() =  " + jsonObjCurrent.cSubTotalOrder);
+            this.gl.logDebug("secretshopUtilities: questionOrderUpdated()  jsonObjPrevious.cSubTotalOrder.toString() = " + jsonObjPrevious.cSubTotalOrder + "  ||   jsonObjCurrent.cSubTotalOrder.toString() =  " + jsonObjCurrent.cSubTotalOrder);
 
             if ((parseInt(jsonObjPrevious.cSubTotalOrder.toString()) == parseInt(jsonObjCurrent.cSubTotalOrder.toString()))) {
 
@@ -1305,7 +1315,7 @@ secretshopUtilities.prototype = {
 
 
     /*
-    Calculate parent subtotal value. This code can handle one level of nested section.
+    Calculate parent subtotal value. This code can handle one level of nested section. (Template changes)
 	@param current{integer} child subtotal object
 	@param newValue{integer} new subtotal value
 	@param oldValue{integer} old Subtotal value
@@ -1377,7 +1387,7 @@ secretshopUtilities.prototype = {
 
 
     /*
-    Calculate parent subtotal value. This code can handle one level of nested section.
+    Calculate parent subtotal value. This code can handle one level of nested section. (Scorecard Changes)
 	@param current{object} Child subtotal object
 	@param newValue{integer} new subtotal
 	@param oldValue{integer} old Subtotal
@@ -1399,6 +1409,7 @@ secretshopUtilities.prototype = {
         var csectionOrder = parseInt(current.subtotal_for_section.replace(",", '')),
             cSubtotalOrder = current.order,
             cSubtotal = newValue;
+        //parseInt(current.subtotal_for_section.replace(",", ''))
         this.gl.logInfo("secretshopUtilities: _parentSubtotalCalScorecard() csectionOrder " + csectionOrder + "  cSubtotalOrder =  " + cSubtotalOrder + "    cSubtotal  =  " + cSubtotal);
         this.gl.logDebug("secretshopUtilities: _parentSubtotalCalScorecard() csectionOrder " + csectionOrder + "  cSubtotalOrder =  " + cSubtotalOrder + "    cSubtotal  =  " + cSubtotal);
         foundParentSubtotalScorecard: {
