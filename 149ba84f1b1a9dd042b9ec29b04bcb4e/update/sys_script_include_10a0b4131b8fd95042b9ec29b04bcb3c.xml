@@ -21,6 +21,7 @@ var secretshopUtilities = Class.create();
 secretshopUtilities.prototype = {
     initialize: function() {
         this.gl = new global.GSLog("x_autg_kbb_secret.com.cai.sn.secretshopUtilities.log", "secretshopUtilities");
+		this.gl.includeTimestamp();
         this.ansType = 'Sub Total';
         this.quesType = "Sub Total";
         this.dependentValue = 'Sub Total';
@@ -1482,11 +1483,14 @@ secretshopUtilities.prototype = {
         <sys_created_on>2022-11-14 00:56:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>10a0b4131b8fd95042b9ec29b04bcb3c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>secretshopUtilities</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_script_include_10a0b4131b8fd95042b9ec29b04bcb3c</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2023-02-05 22:46:19</sys_updated_on>
     </sys_script_include>
 </record_update>
