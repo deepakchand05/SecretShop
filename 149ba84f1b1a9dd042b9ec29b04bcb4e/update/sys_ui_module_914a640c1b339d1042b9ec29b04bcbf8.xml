@@ -14,12 +14,15 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>914a640c1b339d1042b9ec29b04bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Create New(Scorecard)</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_ui_module_914a640c1b339d1042b9ec29b04bcbf8</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-13 21:07:24</sys_updated_on>
         <table>x_autg_kbb_secret_scorecards</table>
         <uncancelable>false</uncancelable>
         <view_name/>

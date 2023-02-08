@@ -198,6 +198,7 @@
         <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
         <sys_id>da08606af15e4bdfa6ffc61737f25921</sys_id>
         <sys_metadata>b1e82e931bef551042b9ec29b04bcb59</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Hide Type choices</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_parent display_value="Question">e3fdc5e81b1b1dd427967449cc4bcb9c</sys_parent>
@@ -207,5 +208,7 @@
         <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
         <sys_update_name>sys_script_client_b1e82e931bef551042b9ec29b04bcb59</sys_update_name>
         <sys_update_version display_value="sys_script_client_b1e82e931bef551042b9ec29b04bcb59">445f571f1b6f951042b9ec29b04bcbf2</sys_update_version>
+        <sys_updated_by>nnunna-a</sys_updated_by>
+        <sys_updated_on>2022-12-09 10:10:57</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

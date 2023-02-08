@@ -42,6 +42,7 @@ answer;]]></new_condition>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>dba94e041bdbd19042b9ec29b04bcb0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>x_autg_kbb_secret_templates</sys_name>
         <sys_overrides display_value="">global</sys_overrides>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
@@ -49,5 +50,7 @@ answer;]]></new_condition>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_ui_list_control_dba94e041bdbd19042b9ec29b04bcb0b</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-08 15:37:24</sys_updated_on>
     </sys_ui_list_control>
 </record_update>

@@ -54,6 +54,7 @@
         <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
         <sys_id>062c998ab33c4376817a96a887a93279</sys_id>
         <sys_metadata>e769c439879b59d009bd64af8bbb35af</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>x_autg_kbb_secret_questions.subtotal_max.snc_internal</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_parent display_value="x_autg_kbb_secret_questions.subtotal_max">54298c75879b59d009bd64af8bbb3537</sys_parent>
@@ -63,5 +64,7 @@
         <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
         <sys_update_name>sys_security_acl_role_e769c439879b59d009bd64af8bbb35af</sys_update_name>
         <sys_update_version display_value="sys_security_acl_role_e769c439879b59d009bd64af8bbb35af">8c4d67871be3151042b9ec29b04bcbcd</sys_update_version>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-08 16:32:18</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

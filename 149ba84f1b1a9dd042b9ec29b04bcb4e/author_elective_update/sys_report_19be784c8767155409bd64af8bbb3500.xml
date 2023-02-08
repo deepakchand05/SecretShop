@@ -360,6 +360,7 @@
         <sys_db_object display_value="" name="sys_report">sys_report</sys_db_object>
         <sys_id>3bcf70b3a3a04b889c2485d00bb45440</sys_id>
         <sys_metadata>19be784c8767155409bd64af8bbb3500</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Scorecard above 75%</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_parent display_value="">cf82740b1b5a9dd042b9ec29b04bcbc8</sys_parent>
@@ -369,5 +370,7 @@
         <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
         <sys_update_name>sys_report_19be784c8767155409bd64af8bbb3500</sys_update_name>
         <sys_update_version display_value="sys_report_19be784c8767155409bd64af8bbb3500">4fbfc87487ab5d5409bd64af8bbb3527</sys_update_version>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-02 16:42:27</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

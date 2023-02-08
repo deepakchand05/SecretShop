@@ -22,12 +22,15 @@
         <sys_created_on>2022-11-21 16:27:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>beb8c8b1879b59d009bd64af8bbb3582</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>x_autg_kbb_secret_questions.question</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_security_acl_beb8c8b1879b59d009bd64af8bbb3582</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-14 01:26:08</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

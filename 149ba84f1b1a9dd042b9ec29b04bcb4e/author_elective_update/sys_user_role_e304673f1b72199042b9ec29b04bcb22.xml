@@ -62,6 +62,7 @@
         <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
         <sys_id>3eb2f922de7b4ed8be0c9f85af881904</sys_id>
         <sys_metadata>e304673f1b72199042b9ec29b04bcb22</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>x_autg_kbb_secret.answer_choices_user</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_parent/>
@@ -71,5 +72,7 @@
         <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
         <sys_update_name>sys_user_role_e304673f1b72199042b9ec29b04bcb22</sys_update_name>
         <sys_update_version display_value="sys_user_role_e304673f1b72199042b9ec29b04bcb22">6b04673f1b72199042b9ec29b04bcb26</sys_update_version>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-08 22:07:52</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

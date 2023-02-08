@@ -80,6 +80,7 @@
         <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
         <sys_id>803d229c5c89455391c27c6a8d7cdbb9</sys_id>
         <sys_metadata>cce9cf9887d3d99009bd64af8bbb355c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Make Active Read only</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_parent display_value="">6d4d24431b5a9dd042b9ec29b04bcb78</sys_parent>
@@ -89,5 +90,7 @@
         <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
         <sys_update_name>sys_ui_policy_cce9cf9887d3d99009bd64af8bbb355c</sys_update_name>
         <sys_update_version display_value="sys_ui_policy_cce9cf9887d3d99009bd64af8bbb355c">a7be97d8875bd99009bd64af8bbb35cb</sys_update_version>
+        <sys_updated_by>skoka-a</sys_updated_by>
+        <sys_updated_on>2022-11-17 16:15:03</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

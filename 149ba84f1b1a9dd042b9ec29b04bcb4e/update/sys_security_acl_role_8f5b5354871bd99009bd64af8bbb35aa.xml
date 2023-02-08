@@ -5,6 +5,7 @@
         <sys_created_on>2022-11-17 15:55:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8f5b5354871bd99009bd64af8bbb35aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>x_autg_kbb_secret_questions.*.snc_internal</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy>read</sys_policy>
@@ -12,6 +13,8 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_security_acl display_value="x_autg_kbb_secret_questions.state">6a7a9790871bd99009bd64af8bbb35e3</sys_security_acl>
         <sys_update_name>sys_security_acl_role_8f5b5354871bd99009bd64af8bbb35aa</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-08 15:37:24</sys_updated_on>
         <sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role>
         <transaction_id>0f5bd790871bd99009bd64af8bbb35d3</transaction_id>
     </sys_security_acl_role>
