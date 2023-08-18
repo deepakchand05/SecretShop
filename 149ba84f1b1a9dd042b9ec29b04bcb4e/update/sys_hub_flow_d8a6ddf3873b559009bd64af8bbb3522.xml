@@ -1889,7 +1889,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>60a6ddf3873b559009bd64af8bbb356b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
@@ -1914,7 +1914,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>64a6ddf3873b559009bd64af8bbb356e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
@@ -1939,7 +1939,7 @@ PercentageOfPointsSubTotal =  ﻿{{flow_variable.subtotalpercentage}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>aca6ddf3873b559009bd64af8bbb3571</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Changed Fields</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>

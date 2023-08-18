@@ -60,6 +60,7 @@
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-11-23 01:18:34</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
+        <sys_id>894c8f4a8753ddd009bd64af8bbb35bd</sys_id>
         <sys_name>pointsReceived</sys_name>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
         <sys_policy/>

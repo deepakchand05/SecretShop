@@ -46,7 +46,7 @@
         <update_guid_history>00bb28dff4e35510da036afa48214786:-141169282</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 12-09-2022 5:13:23 PM">39e446ef1be7591042b9ec29b04bcb3a</sys_audit_delete>
+        <sys_audit_delete display_value="">39e446ef1be7591042b9ec29b04bcb3a</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-12-09 22:13:23</sys_created_on>
