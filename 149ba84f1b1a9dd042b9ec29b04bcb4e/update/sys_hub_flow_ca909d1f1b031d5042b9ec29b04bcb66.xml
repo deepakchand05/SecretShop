@@ -10,13 +10,13 @@
         <copied_from_name/>
         <description>This flow creates answer records for each scorecard created.</description>
         <internal_name>secretshop_answer_records_creation</internal_name>
-        <label_cache>[{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_for_section.question","label":"3 - For Each➛Question Record➛SubTotal for Section➛Question","reference":"","reference_display":"Question","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_questions","column_name":"question"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_max","label":"3 - For Each➛Question Record➛SubTotal Max","reference":"","reference_display":"SubTotal Max","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"subtotal_max"},{"name":"Created_1.current.scorecard_template.bonus_points_available","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template➛Bonus Points Available","reference":"","reference_display":"Bonus Points Available","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_templates","column_name":"bonus_points_available"},{"name":"Created_1.current.scorecard_template.points_available","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template➛Points Available","reference":"","reference_display":"Points Available","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_templates","column_name":"points_available"},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.__dont_treat_as_error__","label":"2 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.__action_status__","label":"2 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.table_name","label":"2 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.record","label":"2 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.Records","label":"2 - Look Up Records➛Question Records","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.Table","label":"2 - Look Up Records➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.scorecard_template","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_scorecards","column_name":"scorecard_template"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item","label":"3 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.record","label":"4 - Create Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.table_name","label":"4 - Create Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.__action_status__","label":"4 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.__dont_treat_as_error__","label":"4 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{}},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.template","label":"3 - For Each➛Question Record➛Template","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_questions","column_name":"template"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.category","label":"3 - For Each➛Question Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"category","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"label":"Section","used":false,"rawLabel":"Section","selected":false,"missing":false,"image":"","reference":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Question","used":false,"rawLabel":"Question","selected":false,"missing":false,"image":"","reference":false,"value":"Questions","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Bonus Question","used":false,"rawLabel":"Bonus Question","selected":false,"missing":false,"image":"","reference":false,"value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Sub Total","used":false,"rawLabel":"Sub Total","selected":false,"missing":false,"image":"","reference":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.max_score","label":"3 - For Each➛Question Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"max_score"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.min_score","label":"3 - For Each➛Question Record➛Minimum Score","reference":"","reference_display":"Minimum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"min_score"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.order","label":"3 - For Each➛Question Record➛Order","reference":"","reference_display":"Order","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"order"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.question","label":"3 - For Each➛Question Record➛Question","reference":"","reference_display":"Question","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_questions","column_name":"question"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.type","label":"3 - For Each➛Question Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"type","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"label":"Yes/No","used":false,"rawLabel":"Yes/No","selected":false,"missing":false,"image":"","reference":false,"value":"Yes/No","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Range","used":false,"rawLabel":"Range","selected":false,"missing":false,"image":"","reference":false,"value":"Range","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Sub Total","used":false,"rawLabel":"Sub Total","selected":false,"missing":false,"image":"","reference":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Section","used":false,"rawLabel":"Section","selected":false,"missing":false,"image":"","reference":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.status","label":"1 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.error_message","label":"1 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.log","label":"1 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current.points_available","label":"Trigger - Record Created➛Scorecard Record➛Points Available","reference":"","reference_display":"Points Available","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_scorecards","column_name":"points_available"},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.record","label":"1 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.table_name","label":"1 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.scorecard_template.performance_scale","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template➛Performance Scale","reference":"","reference_display":"Performance Scale","type":"html","base_type":"html","parent_table_name":"x_autg_kbb_secret_templates","column_name":"performance_scale"},{"name":"e479ac8a-d941-4d6e-af53-587650b5681a.__action_status__","label":"5 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e479ac8a-d941-4d6e-af53-587650b5681a.__dont_treat_as_error__","label":"5 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.record.number","label":"4 - Create Record➛Answer Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_answers","column_name":"number"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_for_section.order","label":"3 - For Each➛Question Record➛SubTotal for Section➛Order","reference":"","reference_display":"Order","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"order"}]</label_cache>
+        <label_cache>[{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_for_section.order","label":"3 - For Each➛Question Record➛SubTotal for Section➛Order","reference":"","reference_display":"Order","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"order"},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.record.number","label":"4 - Create Record➛Answer Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_answers","column_name":"number"},{"name":"e479ac8a-d941-4d6e-af53-587650b5681a.__dont_treat_as_error__","label":"5 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e479ac8a-d941-4d6e-af53-587650b5681a.__action_status__","label":"5 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.scorecard_template.performance_scale","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template➛Performance Scale","reference":"","reference_display":"Performance Scale","type":"html","base_type":"html","parent_table_name":"x_autg_kbb_secret_templates","column_name":"performance_scale"},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.table_name","label":"1 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.record","label":"1 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.points_available","label":"Trigger - Record Created➛Scorecard Record➛Points Available","reference":"","reference_display":"Points Available","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_scorecards","column_name":"points_available"},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.log","label":"1 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.error_message","label":"1 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.status","label":"1 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.type","label":"3 - For Each➛Question Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"type","choices":[{"label":"-- None --","used":false,"missing":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"value":""},{"label":"Yes/No","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Yes/No","selected":false,"value":"Yes/No","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Range","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Range","selected":false,"value":"Range","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Sub Total","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Sub Total","selected":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Section","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Section","selected":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.question","label":"3 - For Each➛Question Record➛Question","reference":"","reference_display":"Question","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_questions","column_name":"question"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.order","label":"3 - For Each➛Question Record➛Order","reference":"","reference_display":"Order","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"order"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.min_score","label":"3 - For Each➛Question Record➛Minimum Score","reference":"","reference_display":"Minimum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"min_score"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.max_score","label":"3 - For Each➛Question Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"max_score"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.category","label":"3 - For Each➛Question Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"category","choices":[{"label":"-- None --","used":false,"missing":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"value":""},{"label":"Section","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Section","selected":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Question","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Question","selected":false,"value":"Questions","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Bonus Question","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Bonus Question","selected":false,"value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Sub Total","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Sub Total","selected":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.template","label":"3 - For Each➛Question Record➛Template","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_questions","column_name":"template"},{"name":"Created_1.current","label":"Trigger - Record Created➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.__dont_treat_as_error__","label":"4 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.__action_status__","label":"4 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.table_name","label":"4 - Create Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.record","label":"4 - Create Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item","label":"3 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Created_1.current.scorecard_template","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_scorecards","column_name":"scorecard_template"},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.Table","label":"2 - Look Up Records➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.Records","label":"2 - Look Up Records➛Question Records","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.record","label":"2 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.table_name","label":"2 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.__action_status__","label":"2 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.__dont_treat_as_error__","label":"2 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current.scorecard_template.points_available","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template➛Points Available","reference":"","reference_display":"Points Available","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_templates","column_name":"points_available"},{"name":"Created_1.current.scorecard_template.bonus_points_available","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template➛Bonus Points Available","reference":"","reference_display":"Bonus Points Available","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_templates","column_name":"bonus_points_available"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_max","label":"3 - For Each➛Question Record➛SubTotal Max","reference":"","reference_display":"SubTotal Max","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"subtotal_max"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_for_section.question","label":"3 - For Each➛Question Record➛SubTotal for Section➛Question","reference":"","reference_display":"Question","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_questions","column_name":"question"}]</label_cache>
         <master_snapshot>cac295131b431d5042b9ec29b04bcb1d</master_snapshot>
         <name>Answer records creation</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>d4fb8e5587c0e5d009bd64af8bbb3562</remote_trigger_id>
+        <remote_trigger_id>3255dcf087eb5d5409bd64af8bbb3525</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -29,7 +29,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>ca909d1f1b031d5042b9ec29b04bcb66</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Answer records creation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name>sys_hub_flow_ca909d1f1b031d5042b9ec29b04bcb66</sys_update_name>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 21:58:14</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:28</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=ca909d1f1b031d5042b9ec29b04bcb66"/>
@@ -57,10 +57,10 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-12-27 19:29:12</sys_created_on>
+        <sys_created_on>2022-12-01 01:02:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>d4fb8e5587c0e5d009bd64af8bbb3562</sys_id>
+        <sys_id>3255dcf087eb5d5409bd64af8bbb3525</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
@@ -70,7 +70,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:12</sys_updated_on>
+        <sys_updated_on>2022-12-01 01:02:43</sys_updated_on>
         <table>x_autg_kbb_secret_scorecards</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
@@ -79,14 +79,14 @@
         <identifier>ca909d1f1b031d5042b9ec29b04bcb66</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-12-27 19:29:12</sys_created_on>
-        <sys_id>90fb8e5587c0e5d009bd64af8bbb3563</sys_id>
+        <sys_created_on>2022-12-22 23:12:27</sys_created_on>
+        <sys_id>351fcdbb1bf3995802fc77b51a4bcbc2</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:12</sys_updated_on>
-        <trigger display_value="">d4fb8e5587c0e5d009bd64af8bbb3562</trigger>
+        <sys_updated_on>2022-12-22 23:12:27</sys_updated_on>
+        <trigger display_value="">3255dcf087eb5d5409bd64af8bbb3525</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ca909d1f1b031d5042b9ec29b04bcb66^sys_idNOT IN90fb8e5587c0e5d009bd64af8bbb3563"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ca909d1f1b031d5042b9ec29b04bcb66^sys_idNOT IN351fcdbb1bf3995802fc77b51a4bcbc2"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=ca909d1f1b031d5042b9ec29b04bcb66^sys_idNOT INe3a251131b431d5042b9ec29b04bcb3e"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -99,7 +99,7 @@
         <sys_created_on>2022-11-14 03:24:04</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e3a251131b431d5042b9ec29b04bcb3e</sys_id>
-        <sys_mod_count>49</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -107,7 +107,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:12</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:28</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -228,7 +228,7 @@
         <sys_created_on>2022-11-14 03:24:04</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>27a251131b431d5042b9ec29b04bcb39</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -236,7 +236,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:12</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -315,7 +315,7 @@
         <sys_created_on>2022-11-14 03:24:04</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>aba251131b431d5042b9ec29b04bcb34</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -323,7 +323,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:12</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -356,15 +356,15 @@
         <sys_created_on>2022-11-14 03:24:05</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3ba251131b431d5042b9ec29b04bcb6c</sys_id>
-        <sys_mod_count>136</sys_mod_count>
+        <sys_mod_count>110</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:30:20</sys_updated_on>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-22 23:12:28</sys_updated_on>
         <ui_id>6c791b9e-246c-4d24-b553-3ecd8af9c599</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3ba251131b431d5042b9ec29b04bcb6c"/>
@@ -401,26 +401,13 @@
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-11-14 03:24:05</sys_created_on>
         <sys_id>73a251131b431d5042b9ec29b04bcb6e</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:03</sys_updated_on>
+        <sys_updated_on>2022-11-28 16:56:15</sys_updated_on>
         <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
         <value>template={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.template}}^category={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.category}}^max_score={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.max_score}}^min_score={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.min_score}}^order={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.order}}^question_name={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.question}}^type={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.type}}^scorecard={{Created_1.current}}^subtotal_max={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_max}}^subtotal_for_section={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_for_section.order}}^question={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item}}</value>
     </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=3ba251131b431d5042b9ec29b04bcb6c^sys_idNOT INa7b4465d8700e5d009bd64af8bbb35b8"/>
-    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
-        <active>false</active>
-        <input_name>values</input_name>
-        <instance>3ba251131b431d5042b9ec29b04bcb6c</instance>
-        <referenced_table>sys_hub_action_instance</referenced_table>
-        <script>{"subtotal_for_section":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar sectionOrder \u003d fd_data._3__for_each.item.subtotal_for_section.order;\n\ngs.info(\"Answer records creation:Answers Section order \u003d \" + sectionOrder);\ngs.info(\"Answer records creation:Answers ParseIntSection order \u003d \" + parseInt(sectionOrder));\n","savedValue":"{{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_for_section.order}}"}}</script>
-        <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-12-27 18:57:44</sys_created_on>
-        <sys_id>a7b4465d8700e5d009bd64af8bbb35b8</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:03</sys_updated_on>
-    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3ba251131b431d5042b9ec29b04bcb6c"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=3ba251131b431d5042b9ec29b04bcb6c"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -437,15 +424,15 @@
         <sys_created_on>2022-11-14 03:24:04</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>63a251131b431d5042b9ec29b04bcb47</sys_id>
-        <sys_mod_count>136</sys_mod_count>
+        <sys_mod_count>110</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:30:19</sys_updated_on>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-22 23:12:28</sys_updated_on>
         <ui_id>50f3be6c-5f1f-447c-8140-558b60c32579</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=63a251131b431d5042b9ec29b04bcb47"/>
@@ -459,8 +446,8 @@
         <sys_id>3ba251131b431d5042b9ec29b04bcb63</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-22 15:27:53</sys_updated_on>
-        <value>250</value>
+        <sys_updated_on>2022-12-22 23:12:18</sys_updated_on>
+        <value>300</value>
         <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -557,15 +544,15 @@
         <sys_created_on>2022-11-15 02:13:42</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ae2c82a31b83dd5042b9ec29b04bcb45</sys_id>
-        <sys_mod_count>118</sys_mod_count>
+        <sys_mod_count>92</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:30:19</sys_updated_on>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-22 23:12:28</sys_updated_on>
         <ui_id>47ff4f45-dd48-474c-9b92-36bd3767e0e7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ae2c82a31b83dd5042b9ec29b04bcb45"/>
@@ -637,15 +624,15 @@
         <sys_created_on>2022-11-16 21:53:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e2d3a7488713599009bd64af8bbb350a</sys_id>
-        <sys_mod_count>86</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:30:20</sys_updated_on>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-22 23:12:28</sys_updated_on>
         <ui_id>e479ac8a-d941-4d6e-af53-587650b5681a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e2d3a7488713599009bd64af8bbb350a"/>
@@ -667,7 +654,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=ca909d1f1b031d5042b9ec29b04bcb66"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=ca909d1f1b031d5042b9ec29b04bcb66^sys_idNOT IN7fa251131b431d5042b9ec29b04bcb64"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">2b46e3471b63151042b9ec29b04bcbb6</block>
+        <block display_value="">7b0f4dbb1bf3995802fc77b51a4bcb3c</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -689,7 +676,7 @@
         <sys_created_on>2022-11-14 03:24:05</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7fa251131b431d5042b9ec29b04bcb64</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -697,7 +684,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:12</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:28</sys_updated_on>
         <ui_id>26e0fcea-da76-406c-8ec8-ef6615110cd6</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -796,14 +783,14 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"a6c2d5131b431d5042b9ec29b04bcb83","name":"plan","plan_signature":null}}</plan>
         <plan_id>ca909d1f1b031d5042b9ec29b04bcb66</plan_id>
-        <snapshot>fc3c86111bc429d042b9ec29b04bcb71</snapshot>
+        <snapshot>cac295131b431d5042b9ec29b04bcb1d</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-11-14 03:24:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>a6c2d5131b431d5042b9ec29b04bcb83</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -812,8 +799,8 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:12</sys_updated_on>
-        <trigger display_value="">d4fb8e5587c0e5d009bd64af8bbb3562</trigger>
+        <sys_updated_on>2022-12-22 23:12:27</sys_updated_on>
+        <trigger display_value="">3255dcf087eb5d5409bd64af8bbb3525</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ca909d1f1b031d5042b9ec29b04bcb66"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -827,7 +814,7 @@
         <copied_from_name/>
         <description>This flow creates answer records for each scorecard created.</description>
         <internal_name>secretshop_answer_records_creation</internal_name>
-        <label_cache>[{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_for_section.question","label":"3 - For Each➛Question Record➛SubTotal for Section➛Question","reference":"","reference_display":"Question","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_questions","column_name":"question"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_max","label":"3 - For Each➛Question Record➛SubTotal Max","reference":"","reference_display":"SubTotal Max","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"subtotal_max"},{"name":"Created_1.current.scorecard_template.bonus_points_available","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template➛Bonus Points Available","reference":"","reference_display":"Bonus Points Available","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_templates","column_name":"bonus_points_available"},{"name":"Created_1.current.scorecard_template.points_available","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template➛Points Available","reference":"","reference_display":"Points Available","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_templates","column_name":"points_available"},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.__dont_treat_as_error__","label":"2 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.__action_status__","label":"2 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.table_name","label":"2 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.record","label":"2 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.Records","label":"2 - Look Up Records➛Question Records","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.Table","label":"2 - Look Up Records➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.scorecard_template","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_scorecards","column_name":"scorecard_template"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item","label":"3 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.record","label":"4 - Create Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.table_name","label":"4 - Create Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.__action_status__","label":"4 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.__dont_treat_as_error__","label":"4 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{}},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.template","label":"3 - For Each➛Question Record➛Template","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_questions","column_name":"template"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.category","label":"3 - For Each➛Question Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"category","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"label":"Section","used":false,"rawLabel":"Section","selected":false,"missing":false,"image":"","reference":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Question","used":false,"rawLabel":"Question","selected":false,"missing":false,"image":"","reference":false,"value":"Questions","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Bonus Question","used":false,"rawLabel":"Bonus Question","selected":false,"missing":false,"image":"","reference":false,"value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Sub Total","used":false,"rawLabel":"Sub Total","selected":false,"missing":false,"image":"","reference":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.max_score","label":"3 - For Each➛Question Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"max_score"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.min_score","label":"3 - For Each➛Question Record➛Minimum Score","reference":"","reference_display":"Minimum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"min_score"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.order","label":"3 - For Each➛Question Record➛Order","reference":"","reference_display":"Order","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"order"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.question","label":"3 - For Each➛Question Record➛Question","reference":"","reference_display":"Question","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_questions","column_name":"question"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.type","label":"3 - For Each➛Question Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"type","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"label":"Yes/No","used":false,"rawLabel":"Yes/No","selected":false,"missing":false,"image":"","reference":false,"value":"Yes/No","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Range","used":false,"rawLabel":"Range","selected":false,"missing":false,"image":"","reference":false,"value":"Range","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Sub Total","used":false,"rawLabel":"Sub Total","selected":false,"missing":false,"image":"","reference":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Section","used":false,"rawLabel":"Section","selected":false,"missing":false,"image":"","reference":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.status","label":"1 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.error_message","label":"1 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.log","label":"1 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current.points_available","label":"Trigger - Record Created➛Scorecard Record➛Points Available","reference":"","reference_display":"Points Available","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_scorecards","column_name":"points_available"},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.record","label":"1 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.table_name","label":"1 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.scorecard_template.performance_scale","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template➛Performance Scale","reference":"","reference_display":"Performance Scale","type":"html","base_type":"html","parent_table_name":"x_autg_kbb_secret_templates","column_name":"performance_scale"},{"name":"e479ac8a-d941-4d6e-af53-587650b5681a.__action_status__","label":"5 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e479ac8a-d941-4d6e-af53-587650b5681a.__dont_treat_as_error__","label":"5 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.record.number","label":"4 - Create Record➛Answer Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_answers","column_name":"number"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_for_section.order","label":"3 - For Each➛Question Record➛SubTotal for Section➛Order","reference":"","reference_display":"Order","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"order"}]</label_cache>
+        <label_cache>[{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_for_section.order","label":"3 - For Each➛Question Record➛SubTotal for Section➛Order","reference":"","reference_display":"Order","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"order"},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.record.number","label":"4 - Create Record➛Answer Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_answers","column_name":"number"},{"name":"e479ac8a-d941-4d6e-af53-587650b5681a.__dont_treat_as_error__","label":"5 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e479ac8a-d941-4d6e-af53-587650b5681a.__action_status__","label":"5 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.scorecard_template.performance_scale","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template➛Performance Scale","reference":"","reference_display":"Performance Scale","type":"html","base_type":"html","parent_table_name":"x_autg_kbb_secret_templates","column_name":"performance_scale"},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.table_name","label":"1 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47ff4f45-dd48-474c-9b92-36bd3767e0e7.record","label":"1 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.points_available","label":"Trigger - Record Created➛Scorecard Record➛Points Available","reference":"","reference_display":"Points Available","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_scorecards","column_name":"points_available"},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.log","label":"1 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.error_message","label":"1 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"2bbb770e-327f-406b-a809-97505c52d30b.status","label":"1 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.type","label":"3 - For Each➛Question Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"type","choices":[{"label":"-- None --","used":false,"missing":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"value":""},{"label":"Yes/No","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Yes/No","selected":false,"value":"Yes/No","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Range","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Range","selected":false,"value":"Range","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Sub Total","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Sub Total","selected":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Section","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Section","selected":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.question","label":"3 - For Each➛Question Record➛Question","reference":"","reference_display":"Question","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_questions","column_name":"question"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.order","label":"3 - For Each➛Question Record➛Order","reference":"","reference_display":"Order","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"order"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.min_score","label":"3 - For Each➛Question Record➛Minimum Score","reference":"","reference_display":"Minimum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"min_score"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.max_score","label":"3 - For Each➛Question Record➛Maximum Score","reference":"","reference_display":"Maximum Score","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"max_score"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.category","label":"3 - For Each➛Question Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_autg_kbb_secret_questions","column_name":"category","choices":[{"label":"-- None --","used":false,"missing":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"value":""},{"label":"Section","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Section","selected":false,"value":"Section","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Question","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Question","selected":false,"value":"Questions","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Bonus Question","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Bonus Question","selected":false,"value":"Bonus Question","parameters":{"name":"x_autg_kbb_secret_questions"}},{"label":"Sub Total","used":false,"missing":false,"image":"","reference":false,"rawLabel":"Sub Total","selected":false,"value":"Sub Total","parameters":{"name":"x_autg_kbb_secret_questions"}}]},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.template","label":"3 - For Each➛Question Record➛Template","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_questions","column_name":"template"},{"name":"Created_1.current","label":"Trigger - Record Created➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.__dont_treat_as_error__","label":"4 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.__action_status__","label":"4 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.table_name","label":"4 - Create Record➛Answer Table","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6c791b9e-246c-4d24-b553-3ecd8af9c599.record","label":"4 - Create Record➛Answer Record","reference":"x_autg_kbb_secret_answers","reference_display":"Answer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item","label":"3 - For Each➛Question Record","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Created_1.current.scorecard_template","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template","reference":"x_autg_kbb_secret_templates","reference_display":"Template","type":"reference","base_type":"reference","parent_table_name":"x_autg_kbb_secret_scorecards","column_name":"scorecard_template"},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.Table","label":"2 - Look Up Records➛Question Table","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50f3be6c-5f1f-447c-8140-558b60c32579.Records","label":"2 - Look Up Records➛Question Records","reference":"x_autg_kbb_secret_questions","reference_display":"Question","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.record","label":"2 - Update Record➛Scorecard Record","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.table_name","label":"2 - Update Record➛Scorecard Table","reference":"x_autg_kbb_secret_scorecards","reference_display":"Scorecard","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.__action_status__","label":"2 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"f611d3de-46c8-4add-964b-d3e64a8abab3.__dont_treat_as_error__","label":"2 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current.scorecard_template.points_available","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template➛Points Available","reference":"","reference_display":"Points Available","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_templates","column_name":"points_available"},{"name":"Created_1.current.scorecard_template.bonus_points_available","label":"Trigger - Record Created➛Scorecard Record➛Scorecard Template➛Bonus Points Available","reference":"","reference_display":"Bonus Points Available","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_templates","column_name":"bonus_points_available"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_max","label":"3 - For Each➛Question Record➛SubTotal Max","reference":"","reference_display":"SubTotal Max","type":"integer","base_type":"integer","parent_table_name":"x_autg_kbb_secret_questions","column_name":"subtotal_max"},{"name":"26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_for_section.question","label":"3 - For Each➛Question Record➛SubTotal for Section➛Question","reference":"","reference_display":"Question","type":"string","base_type":"string","parent_table_name":"x_autg_kbb_secret_questions","column_name":"question"}]</label_cache>
         <master>true</master>
         <name>Answer records creation</name>
         <natlang/>
@@ -844,7 +831,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>cac295131b431d5042b9ec29b04bcb1d</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -853,7 +840,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:11</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:25</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_variable_value action="delete_multiple" query="document_key=cac295131b431d5042b9ec29b04bcb1d"/>
@@ -869,7 +856,7 @@
         <sys_created_on>2022-11-14 03:24:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5ac2d5131b431d5042b9ec29b04bcb51</sys_id>
-        <sys_mod_count>56</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -877,7 +864,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:12</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:27</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -998,7 +985,7 @@
         <sys_created_on>2022-11-14 03:24:31</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>86c2d5131b431d5042b9ec29b04bcb30</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1006,7 +993,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:11</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -1085,7 +1072,7 @@
         <sys_created_on>2022-11-14 03:24:31</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c6c295131b431d5042b9ec29b04bcb20</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1093,7 +1080,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:11</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_model_id/>
@@ -1126,7 +1113,7 @@
         <sys_created_on>2022-11-16 21:53:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1bd3e7488713599009bd64af8bbb358e</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1134,7 +1121,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:11</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:25</sys_updated_on>
         <ui_id>e479ac8a-d941-4d6e-af53-587650b5681a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1bd3e7488713599009bd64af8bbb358e"/>
@@ -1168,7 +1155,7 @@
         <sys_created_on>2022-11-15 03:15:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>444a96671b07dd5042b9ec29b04bcb16</sys_id>
-        <sys_mod_count>68</sys_mod_count>
+        <sys_mod_count>56</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1176,7 +1163,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:11</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:25</sys_updated_on>
         <ui_id>47ff4f45-dd48-474c-9b92-36bd3767e0e7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=444a96671b07dd5042b9ec29b04bcb16"/>
@@ -1248,7 +1235,7 @@
         <sys_created_on>2022-11-14 03:24:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>52c2d5131b431d5042b9ec29b04bcb50</sys_id>
-        <sys_mod_count>74</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1256,7 +1243,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:11</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:25</sys_updated_on>
         <ui_id>6c791b9e-246c-4d24-b553-3ecd8af9c599</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=52c2d5131b431d5042b9ec29b04bcb50"/>
@@ -1293,26 +1280,13 @@
         <sys_created_by>datluri-a</sys_created_by>
         <sys_created_on>2022-11-14 03:24:32</sys_created_on>
         <sys_id>d2c2d5131b431d5042b9ec29b04bcb51</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:10</sys_updated_on>
+        <sys_updated_on>2022-11-28 17:16:43</sys_updated_on>
         <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
         <value>template={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.template}}^category={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.category}}^max_score={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.max_score}}^min_score={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.min_score}}^order={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.order}}^question_name={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.question}}^type={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.type}}^scorecard={{Created_1.current}}^subtotal_max={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_max}}^subtotal_for_section={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_for_section.order}}^question={{26e0fcea-da76-406c-8ec8-ef6615110cd6.item}}</value>
     </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=52c2d5131b431d5042b9ec29b04bcb50^sys_idNOT IN62c44e5d8700e5d009bd64af8bbb3557"/>
-    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
-        <active>false</active>
-        <input_name>values</input_name>
-        <instance>52c2d5131b431d5042b9ec29b04bcb50</instance>
-        <referenced_table>sys_hub_action_instance</referenced_table>
-        <script>{"subtotal_for_section":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar sectionOrder \u003d fd_data._3__for_each.item.subtotal_for_section.order;\n\ngs.info(\"Answer records creation:Answers Section order \u003d \" + sectionOrder);\ngs.info(\"Answer records creation:Answers ParseIntSection order \u003d \" + parseInt(sectionOrder));\n","savedValue":"{{26e0fcea-da76-406c-8ec8-ef6615110cd6.item.subtotal_for_section.order}}"}}</script>
-        <sys_created_by>datluri-a</sys_created_by>
-        <sys_created_on>2022-12-27 18:57:56</sys_created_on>
-        <sys_id>62c44e5d8700e5d009bd64af8bbb3557</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:10</sys_updated_on>
-    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=52c2d5131b431d5042b9ec29b04bcb50"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=52c2d5131b431d5042b9ec29b04bcb50"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -1329,7 +1303,7 @@
         <sys_created_on>2022-11-14 03:24:31</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5ac2d5131b431d5042b9ec29b04bcb47</sys_id>
-        <sys_mod_count>74</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1337,7 +1311,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:11</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:25</sys_updated_on>
         <ui_id>50f3be6c-5f1f-447c-8140-558b60c32579</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5ac2d5131b431d5042b9ec29b04bcb47"/>
@@ -1351,8 +1325,8 @@
         <sys_id>1ec2d5131b431d5042b9ec29b04bcb49</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-22 15:27:55</sys_updated_on>
-        <value>250</value>
+        <sys_updated_on>2022-12-22 23:12:23</sys_updated_on>
+        <value>300</value>
         <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1437,7 +1411,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=cac295131b431d5042b9ec29b04bcb1d"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=cac295131b431d5042b9ec29b04bcb1d^sys_idNOT IN12c2d5131b431d5042b9ec29b04bcb3c"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">2b46e3471b63151042b9ec29b04bcbb6</block>
+        <block display_value="">7b0f4dbb1bf3995802fc77b51a4bcb3c</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1459,7 +1433,7 @@
         <sys_created_on>2022-11-14 03:24:31</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>12c2d5131b431d5042b9ec29b04bcb3c</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1467,7 +1441,7 @@
         <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>datluri-a</sys_updated_by>
-        <sys_updated_on>2022-12-27 19:29:11</sys_updated_on>
+        <sys_updated_on>2022-12-22 23:12:25</sys_updated_on>
         <ui_id>26e0fcea-da76-406c-8ec8-ef6615110cd6</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
