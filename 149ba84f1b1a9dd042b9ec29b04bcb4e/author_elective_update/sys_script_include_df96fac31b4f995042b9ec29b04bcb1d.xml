@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_autg_kbb_secret.answerchoice</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>answerchoice</name>
+        <script><![CDATA[var answerchoice = Class.create();
+answerchoice.prototype = {
+    initialize: function() {gs.info("answerchoice: Inside Script include");},
+	
+    getavaiableChoices: function(type, tableName) {
+		gs.info("answerchoice: Inside getavaiableChoices type =  " + type + "  tableName =  " +tableName);
+        var choiceList = [];
+        var gr = new GlideRecord('x_autg_kbb_secret_answer_choice');
+        gr.addQuery('dependent_value', type);
+        gr.addQuery('table', tableName);
+        gr.query();
+        while (gr.next()) {
+            choiceList.push(gr.getUniqueValue());
+			gs.info("answerchoice: choiceList = " + choiceList + " gr.getUniqueValue() =   " + gr.getUniqueValue());
+       
+        }
+        return 'sys_idIN' + choiceList;
+
+    },
+    type: 'answerchoice'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-13 16:06:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>df96fac31b4f995042b9ec29b04bcb1d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>answerchoice</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_script_include_df96fac31b4f995042b9ec29b04bcb1d</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-14 00:56:12</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</application>
+        <comments/>
+        <file_path/>
+        <instance_id>bcef3b732bcb784070acbb4f59da1588</instance_id>
+        <instance_name>coxautodev</instance_name>
+        <name>sys_script_include_df96fac31b4f995042b9ec29b04bcb1d</name>
+        <order/>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_autg_kbb_secret.answerchoice&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;answerchoice&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var answerchoice = Class.create();
+answerchoice.prototype = {
+    initialize: function() {gs.info("answerchoice: Inside Script include");},
+	
+    getavaiableChoices: function(type, tableName) {
+		gs.info("answerchoice: Inside getavaiableChoices type =  " + type + "  tableName =  " +tableName);
+        var choiceList = [];
+        var gr = new GlideRecord('x_autg_kbb_secret_answer_choice');
+        gr.addQuery('dependent_value', type);
+        gr.addQuery('table', tableName);
+        gr.query();
+        while (gr.next()) {
+            choiceList.push(gr.getUniqueValue());
+			gs.info("answerchoice: choiceList = " + choiceList + " gr.getUniqueValue() =   " + gr.getUniqueValue());
+       
+        }
+        return 'sys_idIN' + choiceList;
+
+    },
+    type: 'answerchoice'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;datluri-a&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-11-13 16:06:32&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;df96fac31b4f995042b9ec29b04bcb1d&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;answerchoice&lt;/sys_name&gt;&lt;sys_package display_value="Secret Shop" source="x_autg_kbb_secret"&gt;149ba84f1b1a9dd042b9ec29b04bcb4e&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Secret Shop"&gt;149ba84f1b1a9dd042b9ec29b04bcb4e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_df96fac31b4f995042b9ec29b04bcb1d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;datluri-a&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-14 00:56:12&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-958087781</payload_hash>
+        <record_name>answerchoice</record_name>
+        <reverted_from/>
+        <source>1c9ba84f1b1a9dd042b9ec29b04bcb50</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-14 00:56:12</sys_created_on>
+        <sys_id>add0f8131b8fd95042b9ec29b04bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18473a2fd430000001</sys_recorded_at>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-14 00:56:12</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>65d0f813368fd950de4bfc0fb4464565</update_guid>
+        <update_guid_history>65d0f813368fd950de4bfc0fb4464565:-958087781,a72bec5bdc4fd950d6ef6e4dcb9b9757:-1773777654,248047831603d9504760d38cb77544d2:-765047655,02108703ae03d95060cdb5324e1c2962:-682320114,aacffe8f96cf995060dff3e199c5e496:1408515621,e54a3e07c08f995019bb4b832946885a:-351888413,081a7a07df8f9950e24c31412a8fa409:1058564487,050abac3d48f99508103dcada573f99e:-1209917081,f189f283478f9950a35cd35e3352f89c:160297659,0f98fecb0d4f9950c0be903f0a7acd1b:1918697382,fa97ba0b2d4f9950aa68d28cd5925967:1198979423</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-14 00:57:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>29cca2f879364e5a8bfc3a6a370320f9</sys_id>
+        <sys_metadata>df96fac31b4f995042b9ec29b04bcb1d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>answerchoice</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
+        <sys_update_name>sys_script_include_df96fac31b4f995042b9ec29b04bcb1d</sys_update_name>
+        <sys_update_version display_value="sys_script_include_df96fac31b4f995042b9ec29b04bcb1d">add0f8131b8fd95042b9ec29b04bcb65</sys_update_version>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-14 00:57:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>false</admin_overrides>
+        <advanced>true</advanced>
+        <condition/>
+        <description>Allow list_edit for order in x_autg_kbb_secret_questions, for users with role x_autg_kbb_secret.template_admin, and if the ACL script returns true.</description>
+        <name>x_autg_kbb_secret_questions.order</name>
+        <operation display_value="list_edit">54f535270a0a0b8c007c67009ab2bdc0</operation>
+        <script><![CDATA[if (!current.isNewRecord()) {
+    if (current.type == "Section" || current.type == "Sub Total" || current.category == "Section" || current.category == "Sub Total") {
+        answer = false;
+    } else {
+        answer = true;
+    }
+} else {
+    answer = true;
+}]]></script>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-12-09 22:04:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b1e242e31ba7591042b9ec29b04bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_autg_kbb_secret_questions.order</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_security_acl_b1e242e31ba7591042b9ec29b04bcbd0</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-23 15:48:28</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_autg_kbb_secret.answers_user" name="x_autg_kbb_secret.answers_user">4376f84f1b5a9dd042b9ec29b04bcbf0</contains>
+        <role display_value="x_autg_kbb_secret.scorecard_admin" name="x_autg_kbb_secret.scorecard_admin">f6cbac8f1b1a9dd042b9ec29b04bcbc6</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-12-05 20:15:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>49a3c15287ab5d9409bd64af8bbb35bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_autg_kbb_secret.answers_user.x_autg_kbb_secret.scorecard_admin</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_user_role_contains_49a3c15287ab5d9409bd64af8bbb35bd</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-08 15:37:24</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

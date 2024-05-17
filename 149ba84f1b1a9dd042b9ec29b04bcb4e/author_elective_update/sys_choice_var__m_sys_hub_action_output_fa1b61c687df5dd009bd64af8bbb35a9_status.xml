@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="var__m_sys_hub_action_output_fa1b61c687df5dd009bd64af8bbb35a9" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>var__m_sys_hub_action_output_fa1b61c687df5dd009bd64af8bbb35a9</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-12-08 16:08:19</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>status</sys_name>
+            <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_hub_action_output_fa1b61c687df5dd009bd64af8bbb35a9_status</sys_update_name>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-12-08 16:38:16</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Success</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_fa1b61c687df5dd009bd64af8bbb35a9</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-22 18:14:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-12-08 16:38:16</sys_updated_on>
+            <value>Success</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Error</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_fa1b61c687df5dd009bd64af8bbb35a9</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>datluri-a</sys_created_by>
+            <sys_created_on>2022-11-22 18:14:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>datluri-a</sys_updated_by>
+            <sys_updated_on>2022-12-08 16:38:16</sys_updated_on>
+            <value>Error</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

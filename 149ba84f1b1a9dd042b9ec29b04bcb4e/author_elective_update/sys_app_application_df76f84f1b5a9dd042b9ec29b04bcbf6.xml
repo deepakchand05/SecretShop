@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>false</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Answers</name>
+        <order>100</order>
+        <roles>x_autg_kbb_secret.answers_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-10-06 23:55:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>df76f84f1b5a9dd042b9ec29b04bcbf6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Answers</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_app_application_df76f84f1b5a9dd042b9ec29b04bcbf6</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-10-07 00:38:08</sys_updated_on>
+        <title>Answers</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</application>
+        <comments/>
+        <file_path/>
+        <instance_id>bcef3b732bcb784070acbb4f59da1588</instance_id>
+        <instance_name>coxautodev</instance_name>
+        <name>sys_app_application_df76f84f1b5a9dd042b9ec29b04bcbf6</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>false</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Answers</name><order>100</order><roles>x_autg_kbb_secret.answers_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>datluri-a</sys_created_by><sys_created_on>2022-10-06 23:55:20</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>df76f84f1b5a9dd042b9ec29b04bcbf6</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Answers</sys_name><sys_overrides/><sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope><sys_update_name>sys_app_application_df76f84f1b5a9dd042b9ec29b04bcbf6</sys_update_name><sys_updated_by>datluri-a</sys_updated_by><sys_updated_on>2022-10-07 00:38:08</sys_updated_on><title>Answers</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>-972233482</payload_hash>
+        <record_name>Answers</record_name>
+        <reverted_from/>
+        <source>1c9ba84f1b1a9dd042b9ec29b04bcb50</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-10-07 00:38:08</sys_created_on>
+        <sys_id>5640cd4f1b9a9dd042b9ec29b04bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183afe0cc260000001</sys_recorded_at>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-10-07 00:38:08</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>1e40cd4fe19a9dd09a2e7cc70429261e</update_guid>
+        <update_guid_history>1e40cd4fe19a9dd09a2e7cc70429261e:-972233482,1f767c4f375a9dd0432f17251de594d1:-1004202123</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">7190458f1b9a9dd042b9ec29b04bcbd1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-10-07 00:39:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>0cc2384c19b142c08d641863a4862181</sys_id>
+        <sys_metadata>df76f84f1b5a9dd042b9ec29b04bcbf6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Answers</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
+        <sys_update_name>sys_app_application_df76f84f1b5a9dd042b9ec29b04bcbf6</sys_update_name>
+        <sys_update_version display_value="sys_app_application_df76f84f1b5a9dd042b9ec29b04bcbf6">5640cd4f1b9a9dd042b9ec29b04bcb1f</sys_update_version>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-10-07 00:39:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

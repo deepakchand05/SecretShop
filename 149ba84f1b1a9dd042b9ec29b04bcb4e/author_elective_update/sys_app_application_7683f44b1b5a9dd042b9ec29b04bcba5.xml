@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>false</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Scorecards</name>
+        <order>100</order>
+        <roles>x_autg_kbb_secret.scorecards_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-10-06 23:42:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>7683f44b1b5a9dd042b9ec29b04bcba5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Scorecards</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_app_application_7683f44b1b5a9dd042b9ec29b04bcba5</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-10-07 00:38:18</sys_updated_on>
+        <title>Scorecards</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</application>
+        <comments/>
+        <file_path/>
+        <instance_id>bcef3b732bcb784070acbb4f59da1588</instance_id>
+        <instance_name>coxautodev</instance_name>
+        <name>sys_app_application_7683f44b1b5a9dd042b9ec29b04bcba5</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>false</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Scorecards</name><order>100</order><roles>x_autg_kbb_secret.scorecards_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>datluri-a</sys_created_by><sys_created_on>2022-10-06 23:42:28</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>7683f44b1b5a9dd042b9ec29b04bcba5</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Scorecards</sys_name><sys_overrides/><sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope><sys_update_name>sys_app_application_7683f44b1b5a9dd042b9ec29b04bcba5</sys_update_name><sys_updated_by>datluri-a</sys_updated_by><sys_updated_on>2022-10-07 00:38:18</sys_updated_on><title>Scorecards</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>-404386382</payload_hash>
+        <record_name>Scorecards</record_name>
+        <reverted_from/>
+        <source>1c9ba84f1b1a9dd042b9ec29b04bcb50</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-10-07 00:38:18</sys_created_on>
+        <sys_id>7450cd4f1b9a9dd042b9ec29b04bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183afe0f25d0000001</sys_recorded_at>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-10-07 00:38:18</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>3c50cd4fbd9a9dd0b4d4b8dc7a84f023</update_guid>
+        <update_guid_history>3c50cd4fbd9a9dd0b4d4b8dc7a84f023:-404386382,f683f44b155a9dd0611c817f64d34aa8:1816328625</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">7d90458f1b9a9dd042b9ec29b04bcbc8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-10-07 00:39:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>33c229a4de6047b594b38b10099bbf21</sys_id>
+        <sys_metadata>7683f44b1b5a9dd042b9ec29b04bcba5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scorecards</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
+        <sys_update_name>sys_app_application_7683f44b1b5a9dd042b9ec29b04bcba5</sys_update_name>
+        <sys_update_version display_value="sys_app_application_7683f44b1b5a9dd042b9ec29b04bcba5">7450cd4f1b9a9dd042b9ec29b04bcb24</sys_update_version>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-10-07 00:39:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

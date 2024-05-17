@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="DELETE">
+        <group_id/>
+        <report_id display_value="Scorecard above 75%">19be784c8767155409bd64af8bbb3500</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-28 20:07:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9dbe784c8767155409bd64af8bbb3500</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>19be784c8767155409bd64af8bbb3500</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_report_users_groups_9dbe784c8767155409bd64af8bbb3500</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-28 20:07:57</sys_updated_on>
+        <user_id display_value="Deepak Atluri Admin">e6bd384a139ab600a593bcaf3244b0ce</user_id>
+    </sys_report_users_groups>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</application>
+        <comments/>
+        <file_path/>
+        <instance_id>bcef3b732bcb784070acbb4f59da1588</instance_id>
+        <instance_name>coxautodev</instance_name>
+        <name>sys_report_users_groups_9dbe784c8767155409bd64af8bbb3500</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id/>
+        <report_id display_value="Scorecard above 75%">19be784c8767155409bd64af8bbb3500</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-28 20:07:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9dbe784c8767155409bd64af8bbb3500</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>19be784c8767155409bd64af8bbb3500</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_report_users_groups_9dbe784c8767155409bd64af8bbb3500</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-11-28 20:07:57</sys_updated_on>
+        <user_id display_value="Deepak Atluri Admin">e6bd384a139ab600a593bcaf3244b0ce</user_id>
+    </sys_report_users_groups>
+</record_update>]]></payload>
+        <payload_hash>1570223866</payload_hash>
+        <record_name>19be784c8767155409bd64af8bbb3500</record_name>
+        <reverted_from/>
+        <source>1f7e0cfc876b5d5409bd64af8bbb35ea</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-12-01 00:38:10</sys_created_on>
+        <sys_id>c7bfc87487ab5d5409bd64af8bbb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>184cb1e98120000001</sys_recorded_at>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-01 00:38:10</sys_updated_on>
+        <type>Report Users and Groups</type>
+        <update_guid>07bfc874baab5d5491a2b63e6856952b</update_guid>
+        <update_guid_history>07bfc874baab5d5491a2b63e6856952b:0,d1be784ce6671554fbee0c5ffd2b6503:-192441342</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-12-02 16:42:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_report_users_groups">sys_report_users_groups</sys_db_object>
+        <sys_id>e68d6eab9ace49f693ed9da40d477d29</sys_id>
+        <sys_metadata>9dbe784c8767155409bd64af8bbb3500</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>19be784c8767155409bd64af8bbb3500</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
+        <sys_update_name>sys_report_users_groups_9dbe784c8767155409bd64af8bbb3500</sys_update_name>
+        <sys_update_version display_value="sys_report_users_groups_9dbe784c8767155409bd64af8bbb3500">c7bfc87487ab5d5409bd64af8bbb352b</sys_update_version>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-02 16:42:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

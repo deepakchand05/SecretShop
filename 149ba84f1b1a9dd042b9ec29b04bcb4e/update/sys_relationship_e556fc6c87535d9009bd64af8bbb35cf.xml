@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_autg_kbb_secret_scorecards</basic_apply_to>
+        <basic_query_from>x_autg_kbb_secret_answers</basic_query_from>
+        <insert_callback/>
+        <name>Scoring</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+	current.addQuery("scorecard",parent.sys_id);
+	current.orderBy('order');
+
+})(current, parent);]]></query_with>
+        <reference_field/>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-11-17 22:35:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e556fc6c87535d9009bd64af8bbb35cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scoring</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_relationship_e556fc6c87535d9009bd64af8bbb35cf</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-08 15:37:24</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=e556fc6c87535d9009bd64af8bbb35cf"/>
+</record_update>

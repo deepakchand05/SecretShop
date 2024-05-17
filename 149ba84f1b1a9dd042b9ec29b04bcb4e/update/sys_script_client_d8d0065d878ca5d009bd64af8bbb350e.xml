@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>min_score</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>CellEdit - Min score less than Max score</name>
+        <order/>
+        <script><![CDATA[function onCellEdit(sysIDs, table, oldValues, newValue, callback) {
+    var saveAndClose = true;
+    var uResult;
+
+
+    uResult = confirm("Minimum Score can not be equal to or greater than Maximum Score");
+    if (uResult == true) {
+        saveAndClose == true;
+    } else {
+        saveAndClose = false;
+    }
+
+    callback(saveAndClose);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-12-27 18:40:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>d8d0065d878ca5d009bd64af8bbb350e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CellEdit - Min score less than Max score</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_script_client_d8d0065d878ca5d009bd64af8bbb350e</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-27 21:58:14</sys_updated_on>
+        <table>x_autg_kbb_secret_questions</table>
+        <type>onCellEdit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

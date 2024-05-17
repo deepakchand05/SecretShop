@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Scorecards activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.x_autg_kbb_secret_scorecards_activity.fields</name>
+        <read_roles>admin</read_roles>
+        <suffix>x_autg_kbb_secret</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-10-14 17:51:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>92df686d1b22d55042b9ec29b04bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.ui.x_autg_kbb_secret_scorecards_activity.fields</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_properties_92df686d1b22d55042b9ec29b04bcbe2</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-08 15:37:24</sys_updated_on>
+        <type>string</type>
+        <value>number,active,additional_comments,dealership,percent_of_points,scorecard_template,shop_date,shopper,shopper_alias,state,work_notes,sys_created_on,sys_created_by,performance_scale,points_available,svoc,sys_tags,total_score,sys_updated_on,sys_updated_by,sys_mod_count,watch_list,*Email*,*Relations*,*Attachments*</value>
+        <write_roles>admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=92df686d1b22d55042b9ec29b04bcbe2"/>
+</record_update>

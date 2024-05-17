@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description>This event gets Triggered when a question is created after subtotal </description>
+        <event_name>x_autg_kbb_secret.subtotalQInsert</event_name>
+        <fired_by>BR "Update subtotal on Q insert"</fired_by>
+        <queue/>
+        <suffix>subtotalQInsert</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-12-06 22:44:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2f5daa22872791d409bd64af8bbb35fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_autg_kbb_secret.subtotalQInsert</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sysevent_register_2f5daa22872791d409bd64af8bbb35fb</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-08 15:37:24</sys_updated_on>
+        <table>x_autg_kbb_secret_questions</table>
+    </sysevent_register>
+</record_update>

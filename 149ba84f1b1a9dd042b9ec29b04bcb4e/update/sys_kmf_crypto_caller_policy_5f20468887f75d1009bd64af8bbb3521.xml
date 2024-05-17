@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_crypto_caller_policy">
+    <sys_kmf_crypto_caller_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <approval_type/>
+        <check_script_hash>false</check_script_hash>
+        <crypto_module display_value="com_snc_platform_security_oauth_glideencrypter">8e4dffa067331010b28becccb585efc1</crypto_module>
+        <crypto_spec display_value="com_snc_platform_security_oauth_glideencrypter --- Symmetric Key Wrapping/Unwrapping">0a4d33e067331010b28becccb585ef96</crypto_spec>
+        <granular_operation/>
+        <identity_group_alias/>
+        <impersonation>false</impersonation>
+        <instance_recipient/>
+        <owner>bcef3b732bcb784070acbb4f59da1588</owner>
+        <policy_name>AutoGen-scope-x_autg_kbb_secret-global.com_snc_platform_security_oauth_glideencrypter</policy_name>
+        <result>reject</result>
+        <script_hash/>
+        <script_table/>
+        <signature_data/>
+        <specify_purpose>false</specify_purpose>
+        <sys_class_name>sys_kmf_crypto_caller_policy</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-12-11 11:09:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5f20468887f75d1009bd64af8bbb3521</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_kmf_crypto_caller_policy_5f20468887f75d1009bd64af8bbb3521</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-13 21:07:24</sys_updated_on>
+        <target_role/>
+        <target_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</target_scope>
+        <target_script/>
+        <type>3</type>
+        <used>false</used>
+    </sys_kmf_crypto_caller_policy>
+</record_update>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_autg_kbb_secret_answer_choices</description>
+        <name>x_autg_kbb_secret_answer_choices</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>nnunna-a</sys_created_by>
+        <sys_created_on>2022-11-03 17:00:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>40146f7f1b72199042b9ec29b04bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_autg_kbb_secret_answer_choices</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_security_acl_40146f7f1b72199042b9ec29b04bcb78</sys_update_name>
+        <sys_updated_by>nnunna-a</sys_updated_by>
+        <sys_updated_on>2022-11-03 17:00:31</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</application>
+        <comments/>
+        <file_path/>
+        <instance_id>bcef3b732bcb784070acbb4f59da1588</instance_id>
+        <instance_name>coxautodev</instance_name>
+        <name>sys_security_acl_40146f7f1b72199042b9ec29b04bcb78</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_autg_kbb_secret_answer_choices</description><name>x_autg_kbb_secret_answer_choices</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>nnunna-a</sys_created_by><sys_created_on>2022-11-03 17:00:31</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>40146f7f1b72199042b9ec29b04bcb78</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_autg_kbb_secret_answer_choices</sys_name><sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope><sys_update_name>sys_security_acl_40146f7f1b72199042b9ec29b04bcb78</sys_update_name><sys_updated_by>nnunna-a</sys_updated_by><sys_updated_on>2022-11-03 17:00:31</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-215705956</payload_hash>
+        <record_name>x_autg_kbb_secret_answer_choices</record_name>
+        <reverted_from/>
+        <source>7bd3c33f1b3ad59042b9ec29b04bcb18</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>nnunna-a</sys_created_by>
+        <sys_created_on>2022-11-03 17:00:31</sys_created_on>
+        <sys_id>4c146f7f1b72199042b9ec29b04bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1843e6fe6990000001</sys_recorded_at>
+        <sys_updated_by>nnunna-a</sys_updated_by>
+        <sys_updated_on>2022-11-03 17:00:31</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>44146f7fff7219904c70e98c3d8343bf</update_guid>
+        <update_guid_history>44146f7fff7219904c70e98c3d8343bf:-215705956</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>nnunna-a</sys_created_by>
+        <sys_created_on>2022-11-03 17:42:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>aba6f737a55248c486bed9c4a803f899</sys_id>
+        <sys_metadata>40146f7f1b72199042b9ec29b04bcb78</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_autg_kbb_secret_answer_choices</sys_name>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_parent display_value="">0c146f7f1b72199042b9ec29b04bcbc3</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_scope_delete display_value="">13ea4be206e24634a94d3c7f48d8fe69</sys_scope_delete>
+        <sys_update_name>sys_security_acl_40146f7f1b72199042b9ec29b04bcb78</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_40146f7f1b72199042b9ec29b04bcb78">4c146f7f1b72199042b9ec29b04bcbbf</sys_update_version>
+        <sys_updated_by>nnunna-a</sys_updated_by>
+        <sys_updated_on>2022-11-03 17:42:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_label/>
+        <action_name/>
+        <action_query>false</action_query>
+        <action_run_at>server</action_run_at>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <application/>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_autg_kbb_secret_questions</collection>
+        <condition/>
+        <description>Update subtotal on Question insertion after subtotal is created.</description>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_autg_kbb_secret_questions">template.state=Draft^EQ<item display_value="Draft" endquery="false" field="template.state" goto="false" newquery="false" operator="=" or="false" value="Draft"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update subtotal on Q insert</name>
+        <onclick/>
+        <order>100</order>
+        <priority>100</priority>
+        <read_access_action>false</read_access_action>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+    //gs.eventQueue("x_autg_kbb_secret.subtotalQInsert",current,current.template.sys_id,gs.getUserName());
+
+    var secretShop = new x_autg_kbb_secret.secretshopUtilities();
+    secretShop.newQuestionUpdateSubtotal(current, current.template.sys_id);
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>datluri-a</sys_created_by>
+        <sys_created_on>2022-12-06 22:47:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>457fa66a872791d409bd64af8bbb354c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update subtotal on Q insert</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Secret Shop" source="x_autg_kbb_secret">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Secret Shop">149ba84f1b1a9dd042b9ec29b04bcb4e</sys_scope>
+        <sys_update_name>sys_script_457fa66a872791d409bd64af8bbb354c</sys_update_name>
+        <sys_updated_by>datluri-a</sys_updated_by>
+        <sys_updated_on>2022-12-13 21:07:24</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+</record_update>
